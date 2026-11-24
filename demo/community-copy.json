@@ -1,0 +1,152 @@
+{
+  "zh-Hant": {
+    "title": "旅途中的疑問",
+    "lead": "遇到問題、想聊聊故事，或有讓遊戲更好的點子，都歡迎告訴我們。",
+    "ask": "提問與回饋",
+    "private": "不用登入，也不收集 Email。回覆僅供開發者閱讀；常見問題會整理到這裡。請勿填寫密碼或私人資料。",
+    "stat": "累計開始旅程：{n} 次",
+    "statNote": "記錄成功進入故事或挑戰的開始事件，會合併短時間內的重複；不是不重複玩家數或即時在線人數，數字可能延遲更新。",
+    "faq": [
+      [
+        "手機怎麼玩？",
+        "用瀏覽器開啟後點「立即試玩」，再點「全螢幕開始」。手機建議橫向；若瀏覽器不支援自動轉向，請手動轉橫。可隨時使用「結束全螢幕」。"
+      ],
+      [
+        "進度會保存嗎？",
+        "進度保存在目前瀏覽器，不會跨裝置同步。請定期用遊戲內存檔功能匯出備份；勿清除網站資料。"
+      ],
+      [
+        "五種語言都有配音嗎？",
+        "字幕與配音可分開選擇。六位主角已接入中文、英文、日文、韓文 AI 配音；繁簡共用中文。若個別音檔無法播放，可按「下一句」閱讀。"
+      ],
+      [
+        "網頁版如何更新？",
+        "每次進入會檢查網站版本，也能手動檢查。有新版時只提醒；請先完成對局並存檔，再回開場更新。"
+      ],
+      [
+        "網頁遊玩算 Google Play 封測嗎？",
+        "不計入。必須在 Google Play 封測開放後加入測試，並從 Play 安裝 Android 測試版；加入連結會公布在上方。"
+      ]
+    ]
+  },
+  "en": {
+    "title": "Questions along the way",
+    "lead": "Found a problem, want to talk about the story, or have an idea? We would like to hear it.",
+    "ask": "Questions & feedback",
+    "private": "No sign-in or email collection. Only the developer can read responses. Common questions will be added here. Do not include passwords or private data.",
+    "stat": "Journeys started: {n}",
+    "statNote": "Counts successful story or challenge starts, with short-session repeats grouped. This is not a count of unique people or players online. Updates may be delayed.",
+    "faq": [
+      [
+        "How do I play on my phone?",
+        "Choose Play now, then Start fullscreen. Landscape is recommended. If automatic rotation is unavailable, rotate your phone manually. You can exit fullscreen at any time."
+      ],
+      [
+        "Is my progress saved?",
+        "Progress stays in this browser and does not sync across devices. Export backups from the in-game save menu regularly. Do not clear site data."
+      ],
+      [
+        "Which voices are available?",
+        "Choose subtitles and voices separately. All six heroes have Chinese, English, Japanese and Korean AI voices connected; both Chinese text versions share Chinese voices. If audio fails, choose Next line to read."
+      ],
+      [
+        "How does the web version update?",
+        "The site checks its version on entry, and you can check manually. It only notifies you. Finish your duel and save before returning to the opening menu to update."
+      ],
+      [
+        "Does browser play count toward the Google Play closed test?",
+        "No. Once the closed test opens, join it and install the Android test build from Google Play. The join link will appear above."
+      ]
+    ]
+  },
+  "ja": {
+    "title": "旅の途中の疑問",
+    "lead": "不具合、物語の感想、改善のアイデアなど、お気軽にお寄せください。",
+    "ask": "質問・フィードバック",
+    "private": "ログイン不要、メールアドレスの収集もありません。回答は開発者のみが確認します。よくある質問はここに掲載します。パスワードや個人情報は記入しないでください。",
+    "stat": "旅の開始回数：{n} 回",
+    "statNote": "物語や挑戦を正常に開始した回数です。短時間の重複はまとめます。実人数や現在の接続人数ではなく、反映には時間がかかる場合があります。",
+    "faq": [
+      [
+        "スマートフォンで遊ぶには？",
+        "「今すぐ遊ぶ」から「全画面で開始」を選びます。横向き推奨です。自動回転に対応していない場合は手動で横向きにしてください。全画面表示はいつでも終了できます。"
+      ],
+      [
+        "進行状況は保存されますか？",
+        "現在のブラウザに保存され、端末間では同期されません。ゲーム内の保存メニューから定期的にバックアップを書き出してください。サイトデータを削除しないでください。"
+      ],
+      [
+        "音声はどの言語に対応していますか？",
+        "字幕と音声は別々に選べます。6人の主人公に中国語・英語・日本語・韓国語のAI音声を接続しています。繁体字と簡体字は中国語音声を共用します。再生できないときも「次の文」で進めます。"
+      ],
+      [
+        "ウェブ版の更新方法は？",
+        "ページを開いたときと手動操作でバージョンを確認します。新版があっても通知のみです。対戦を終えて保存してからオープニングに戻って更新してください。"
+      ],
+      [
+        "ブラウザでのプレイはGoogle Playのテストに含まれますか？",
+        "含まれません。クローズドテスト開始後に参加し、Google PlayからAndroidテスト版をインストールする必要があります。参加リンクは上に掲載します。"
+      ]
+    ]
+  },
+  "ko": {
+    "title": "여정 중 궁금한 점",
+    "lead": "문제나 이야기 감상, 개선 아이디어가 있다면 알려 주세요.",
+    "ask": "질문과 의견 보내기",
+    "private": "로그인이나 이메일 수집 없이 이용할 수 있어요. 답변은 개발자만 확인하며 자주 묻는 질문은 여기에 정리해요. 비밀번호나 개인정보는 적지 마세요.",
+    "stat": "누적 여정 시작: {n}회",
+    "statNote": "이야기나 도전을 정상적으로 시작한 횟수예요. 짧은 시간의 중복은 합쳐요. 실제 이용자 수나 현재 접속자 수가 아니며 반영이 늦을 수 있어요.",
+    "faq": [
+      [
+        "휴대폰으로 어떻게 플레이하나요?",
+        "지금 플레이에서 전체 화면 시작을 누르세요. 가로 화면을 권장해요. 자동 회전이 지원되지 않으면 직접 가로로 돌려 주세요. 전체 화면은 언제든 종료할 수 있어요."
+      ],
+      [
+        "진행 상황은 저장되나요?",
+        "현재 브라우저에 저장되며 다른 기기와 동기화되지 않아요. 게임의 저장 메뉴에서 정기적으로 백업을 내보내세요. 사이트 데이터를 지우지 마세요."
+      ],
+      [
+        "어떤 언어의 음성이 있나요?",
+        "자막과 음성을 따로 선택할 수 있어요. 주인공 6명의 중국어·영어·일본어·한국어 AI 음성이 연결되어 있어요. 번체자와 간체자는 중국어 음성을 함께 써요. 재생되지 않아도 다음 문장으로 읽을 수 있어요."
+      ],
+      [
+        "웹 버전은 어떻게 업데이트하나요?",
+        "페이지를 열 때나 수동으로 버전을 확인해요. 새 버전이 있어도 알림만 표시해요. 대전을 마치고 저장한 뒤 시작 화면으로 돌아가 업데이트하세요."
+      ],
+      [
+        "브라우저 플레이도 Google Play 비공개 테스트에 포함되나요?",
+        "포함되지 않아요. 테스트가 열리면 참여하고 Google Play에서 Android 테스트 버전을 설치해야 해요. 참여 링크는 위에 안내할 예정이에요."
+      ]
+    ]
+  },
+  "zh-Hans": {
+    "title": "旅途中的疑问",
+    "lead": "遇到问题、想聊聊故事，或有让游戏更好的点子，都欢迎告诉我们。",
+    "ask": "提问与反馈",
+    "private": "不用登录，也不收集 Email。回复仅供开发者阅读；常见问题会整理到这里。请勿填写密码或私人资料。",
+    "stat": "累计开始旅程：{n} 次",
+    "statNote": "记录成功进入故事或挑战的开始事件，会合并短时间内的重复；不是不重复玩家数或实时在线人数，数字可能延迟更新。",
+    "faq": [
+      [
+        "手机怎么玩？",
+        "用浏览器打开后点“立即试玩”，再点“全屏开始”。手机建议横向；如果浏览器不支持自动转向，请手动转横。可以随时使用“退出全屏”。"
+      ],
+      [
+        "进度会保存吗？",
+        "进度保存在当前浏览器，不会跨设备同步。请定期用游戏内存档功能导出备份；不要清除网站数据。"
+      ],
+      [
+        "五种语言都有配音吗？",
+        "字幕与配音可分开选择。六位主角已接入中文、英文、日文、韩文 AI 配音；繁简共用中文。若个别音频无法播放，可按“下一句”阅读。"
+      ],
+      [
+        "网页版如何更新？",
+        "每次进入会检查网站版本，也能手动检查。有新版时只提醒；请先完成对局并存档，再回开场更新。"
+      ],
+      [
+        "网页游玩算 Google Play 封测吗？",
+        "不计入。必须在 Google Play 封测开放后加入测试，并从 Play 安装 Android 测试版；加入链接会公布在上方。"
+      ]
+    ]
+  }
+}

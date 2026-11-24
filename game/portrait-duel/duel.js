@@ -513,7 +513,7 @@ function startCampaign(){
   for(const id of campaignRun.introVideoIds||[])seenDebuts.add('1:'+id);
   applyDuelHeroes(S.state.config.country,S.state.config.enemy);if(S.state.expedition)applyExpedition();if(S.state.nether?.queen)globalThis.ShenluUnderworldUI.apply(S.state,stage);
 
-  saveCampaign();render();drive();if(restartNote){const body=dialog('牌組已更新');el('p',restartNote,body);el('button','繼續',body).onclick=()=>$('dialog').close();}
+  saveCampaign();render();globalThis.ShenluDemoStatistics?.start();drive();if(restartNote){const body=dialog('牌組已更新');el('p',restartNote,body);el('button','繼續',body).onclick=()=>$('dialog').close();}
 
  }catch(error){clearTimeout(autoTimer);const body=dialog('無法恢復挑戰');el('p',globalThis.ShenluPlayerCopy.error(error,'duel')+'。原存檔已保留。',body);el('button','返回旅程與備份',body).onclick=()=>location.href='../campaign/index.html?view=saves';}
 
