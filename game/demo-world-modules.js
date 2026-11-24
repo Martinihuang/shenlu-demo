@@ -1,0 +1,1 @@
+TW09Data.worldModules=[EgyptDeck,OnmyojiDeck,EnvoyDeck,ThaiDeck,IndiaDeck,ClergyDeck,NordicDeck,TaiwanFemaleDeck];

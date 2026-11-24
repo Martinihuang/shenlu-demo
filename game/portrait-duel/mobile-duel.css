@@ -1,0 +1,222 @@
+
+html.shenlu-mobile.landscape-duel .stage{width:1920px;height:886px;overflow:clip!important}
+html.shenlu-mobile.landscape-duel .viewport{overflow:clip!important}
+html.shenlu-mobile.landscape-duel .allied-close-layer{height:550px;overflow:clip;z-index:4;pointer-events:none}
+html.shenlu-mobile.landscape-duel #nearUnits .cardUnit{overflow:clip;pointer-events:auto}
+html.shenlu-mobile.landscape-duel .panel{border:2px solid #cfb579;background:linear-gradient(120deg,#0b2939ed,#061522ed);border-radius:2px;box-shadow:inset 0 0 0 4px #091522,inset 0 0 0 5px #8b733d;filter:none}
+html.shenlu-mobile.landscape-duel .panel:after{content:'';position:absolute;inset:7px;pointer-events:none;border:0;background:linear-gradient(#d5b26c,#d5b26c) left top/17px 2px no-repeat,linear-gradient(#d5b26c,#d5b26c) left top/2px 17px no-repeat,linear-gradient(#d5b26c,#d5b26c) right top/17px 2px no-repeat,linear-gradient(#d5b26c,#d5b26c) right top/2px 17px no-repeat,linear-gradient(#d5b26c,#d5b26c) left bottom/17px 2px no-repeat,linear-gradient(#d5b26c,#d5b26c) left bottom/2px 17px no-repeat,linear-gradient(#d5b26c,#d5b26c) right bottom/17px 2px no-repeat,linear-gradient(#d5b26c,#d5b26c) right bottom/2px 17px no-repeat}
+html.shenlu-mobile.landscape-duel #ownHUD{left:8px!important;top:8px!important;width:390px!important;height:122px!important;padding:10px 75px 8px 146px;overflow:visible}
+html.shenlu-mobile.landscape-duel #enemyHUD{left:auto!important;right:8px!important;top:8px!important;width:390px!important;height:122px!important;padding:10px 146px 8px 15px;overflow:visible}
+html.shenlu-mobile.landscape-duel .own-title,html.shenlu-mobile.landscape-duel .enemy-title{margin:0!important;font-size:30px!important;line-height:1.15;font-weight:400}
+html.shenlu-mobile.landscape-duel .own-title>span,html.shenlu-mobile.landscape-duel .enemy-title>span{font-size:24px!important;line-height:1.3}
+html.shenlu-mobile.landscape-duel .own-title b,html.shenlu-mobile.landscape-duel .enemy-title b{font-size:38px!important}
+html.shenlu-mobile.landscape-duel .portrait{top:0!important;width:138px!important;height:175px!important;background:transparent;border:0;clip-path:none;overflow:clip}
+html.shenlu-mobile.landscape-duel .own-face{left:0!important}.landscape-duel .enemy-face{left:auto!important;right:0!important}
+html.shenlu-mobile.landscape-duel .portrait img{top:-10px!important;left:-66px!important;width:270px!important;height:400px!important;object-fit:contain}
+html.shenlu-mobile.landscape-duel #menu{left:322px!important;top:19px!important;width:60px!important;height:90px!important;z-index:25;background:transparent!important;border:0!important;box-shadow:none;font-size:24px!important;opacity:1;color:#f9d581!important}
+html.shenlu-mobile.landscape-duel #menu:after{display:none}.landscape-duel .hamburger{font-size:34px}
+html.shenlu-mobile.landscape-duel #phase{left:700px!important;top:8px!important;width:520px!important;height:72px!important;font-size:36px!important;letter-spacing:2px}
+html.shenlu-mobile.landscape-duel .traps{top:245px!important;bottom:auto!important;left:36px!important;width:55px!important;height:76px!important;padding:0!important;box-shadow:none;border:1px solid #b49a66;overflow:visible}
+html.shenlu-mobile.landscape-duel .traps:has(#back1){left:auto!important;right:176px!important}
+html.shenlu-mobile.landscape-duel .trap-label{position:absolute;left:0;top:-31px;font-size:24px!important}
+html.shenlu-mobile.landscape-duel .trap-cells{margin:0;position:absolute;inset:0;width:100%;height:100%;display:block;overflow:clip}
+html.shenlu-mobile.landscape-duel .trap-cells button:not(.empty){position:absolute;inset:0!important;min-width:0!important;width:100%!important;height:100%!important;border:0}
+html.shenlu-mobile.landscape-duel .trap-cells img{width:100%!important;height:100%!important;object-fit:cover}
+html.shenlu-mobile.landscape-duel .field-display,html.shenlu-mobile.landscape-duel .discard-display{top:245px!important;width:55px!important;height:76px!important;bottom:auto!important;box-shadow:none;border:1px solid #d4af68;background:#153043;overflow:visible}
+html.shenlu-mobile.landscape-duel #grave0{left:108px!important;top:245px!important}html.shenlu-mobile.landscape-duel #field0{left:180px!important}
+html.shenlu-mobile.landscape-duel #grave1{left:auto!important;right:104px!important;top:245px!important}html.shenlu-mobile.landscape-duel #field1{left:auto!important;right:32px!important}
+html.shenlu-mobile.landscape-duel .discard-label{position:absolute;top:-31px;left:-8px;width:80px;white-space:nowrap;font-size:24px!important;line-height:28px}
+html.shenlu-mobile.landscape-duel .discard-display:before{content:'';position:absolute;inset:0;background:url('../duel-intro/cardback.lossless.webp') center/100% 100%}
+html.shenlu-mobile.landscape-duel .discard-count{display:none}
+html.shenlu-mobile.landscape-duel .field-display:after{content:'場地';position:absolute;left:0;top:-31px;font-size:24px;white-space:nowrap;color:#f0dfbd}
+html.shenlu-mobile.landscape-duel .enemybadge,html.shenlu-mobile.landscape-duel .ally-number{font:42px/1.1 Georgia,serif!important;min-width:116px;padding:4px 10px!important;background:#07152266!important;border:0!important;box-shadow:none}
+html.shenlu-mobile.landscape-duel .enemybadge .stance-value{font-size:42px!important}.landscape-duel .enemy-unit-stance{display:none}
+html.shenlu-mobile.landscape-duel .enemy-unit-name{font-size:24px!important;background:#0b182155!important}
+html.shenlu-mobile.landscape-duel .hand-backing{top:550px!important;height:336px!important;left:0;width:1920px;z-index:5;background:#081c29f0;border-top:2px solid #d1b473}
+html.shenlu-mobile.landscape-duel .roster{left:8px!important;top:554px!important;right:auto!important;bottom:auto!important;width:376px!important;height:324px!important;padding:46px 12px 10px}
+html.shenlu-mobile.landscape-duel .roster:before{content:'我方靈體　點選切換近景';position:absolute;left:20px;top:14px;font-size:24px;color:#f3d797}
+html.shenlu-mobile.landscape-duel .roster-list{margin:0!important;display:flex!important;flex-direction:column!important;width:100%;height:100%;gap:7px}
+html.shenlu-mobile.landscape-duel .roster-row{width:100%!important;height:80px!important;flex:1;padding:6px 14px!important;border:1px solid #a98b58!important;background:#0b2435;overflow:hidden}
+html.shenlu-mobile.landscape-duel .roster-face,html.shenlu-mobile.landscape-duel .roster-face-wrap{display:none!important}
+html.shenlu-mobile.landscape-duel .roster-info{font-size:30px!important;line-height:1.15}.landscape-duel .roster-info>div{font-size:26px!important}.landscape-duel .empty-roster{font-size:30px}
+html.shenlu-mobile.landscape-duel #hand{left:398px!important;top:569px!important;width:824px!important;height:303px!important;bottom:auto!important;right:auto!important;overflow:auto clip!important;z-index:8;pointer-events:auto;border:1px solid #c0a369;padding-top:12px;background:#102b3b44;scrollbar-width:thin}
+html.shenlu-mobile.landscape-duel .card{top:12px!important;width:158px!important;height:271px!important;padding:4px;border:2px solid #d9b55e;border-radius:2px;background:#0c2534;transform:none!important}
+html.shenlu-mobile.landscape-duel .card.selected{transform:none!important;border-color:#fff2b2;filter:drop-shadow(0 0 9px #ffd360);z-index:10!important}
+html.shenlu-mobile.landscape-duel .card-inner{display:grid;grid-template-rows:42px 1fr 25px;background:#102334;position:relative;border:0}
+html.shenlu-mobile.landscape-duel .card-name{grid-row:1;position:static!important;width:100%;height:auto!important;font:29px/40px serif!important;color:#fff4d5!important;border:1px solid #cbb16b;white-space:nowrap;letter-spacing:0;background:#0b2334!important}
+html.shenlu-mobile.landscape-duel .card-name:before,html.shenlu-mobile.landscape-duel .card-name:after{display:none}
+html.shenlu-mobile.landscape-duel .card-art{grid-row:2;height:auto!important;position:static!important;border:1px solid #aa8d55;overflow:clip}
+html.shenlu-mobile.landscape-duel .card-art img{height:100%;width:100%;object-fit:cover}.landscape-duel .card-stars{display:none}
+html.shenlu-mobile.landscape-duel .card-stats{grid-row:3;font-size:21px!important;color:#e4d9bd!important;line-height:23px!important}
+html.shenlu-mobile.landscape-duel #mobileActions{left:1236px!important;top:554px!important;width:676px!important;height:238px!important;display:block;padding:22px!important;z-index:9;overflow:auto}
+html.shenlu-mobile.landscape-duel #mobileActions strong{display:inline-block;font:44px serif;color:#ffe2a0;margin:0 14px 10px 0}
+html.shenlu-mobile.landscape-duel #mobileActions small{display:inline-block;font-size:27px;background:#17425b;border:1px solid #478ba5;padding:3px 13px;border-radius:4px}
+html.shenlu-mobile.landscape-duel #mobileActions p{font:30px/1.55 serif!important;margin:4px 0 10px;max-height:96px;overflow:auto;color:#f0eee2}
+html.shenlu-mobile.landscape-duel #mobileActions button{font:28px serif!important;padding:8px 18px;min-height:52px;border:1px solid #c6a85b;color:#fff2c4;background:linear-gradient(#174664,#0a243a)}
+html.shenlu-mobile.landscape-duel .mobile-choice-row{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+html.shenlu-mobile.landscape-duel #view{left:1248px!important;top:807px!important;width:190px!important;height:61px!important;bottom:auto!important;font-size:31px!important;z-index:20}
+html.shenlu-mobile.landscape-duel #primary{left:1448px!important;top:807px!important;width:208px!important;height:61px!important;bottom:auto!important;font-size:31px!important;z-index:20}
+html.shenlu-mobile.landscape-duel #end{left:1666px!important;top:807px!important;width:235px!important;height:61px!important;bottom:auto!important;font-size:31px!important;z-index:20}
+html.shenlu-mobile.landscape-duel #notice{left:1236px!important;top:515px!important;width:676px!important;box-sizing:border-box;padding-right:12px;text-align:right;font-size:24px!important;line-height:30px!important}
+html.shenlu-mobile.landscape-duel #lessonGoal{left:420px!important;top:20px!important;font-size:26px!important}
+
+html.shenlu-mobile.landscape-duel #stage .card.selected{translate:none!important;scale:1!important;transform:none!important}
+html.shenlu-mobile.landscape-duel #stage .card-name{position:relative!important;padding:0 7px!important;min-height:42px!important;overflow:hidden}
+html.shenlu-mobile.landscape-duel #stage .card-name:before,html.shenlu-mobile.landscape-duel #stage .card-name:after{display:block!important;content:'';position:absolute;top:4px;width:8px;height:8px;border-top:1px solid #dfbd6d}.landscape-duel #stage .card-name:before{left:3px;border-left:1px solid #dfbd6d}.landscape-duel #stage .card-name:after{right:3px;border-right:1px solid #dfbd6d}
+html.shenlu-mobile.landscape-duel #stage .traps,html.shenlu-mobile.landscape-duel #stage .enemy-hand-count{display:none!important}
+html.shenlu-mobile.landscape-duel #stage .mobile-ambush,html.shenlu-mobile.landscape-duel #stage .discard-display,html.shenlu-mobile.landscape-duel #stage .field-display{position:absolute!important;width:55px!important;height:76px!important;top:252px!important;bottom:auto!important;z-index:10;padding:0;border:1px solid #b69b59;border-radius:2px;background:#0d2435}
+html.shenlu-mobile.landscape-duel #stage #ambush0{left:38px!important;right:auto!important}html.shenlu-mobile.landscape-duel #stage #grave0{left:110px!important;right:auto!important}html.shenlu-mobile.landscape-duel #stage #field0{left:182px!important;right:auto!important}
+html.shenlu-mobile.landscape-duel #stage #ambush1{left:auto!important;right:182px!important}html.shenlu-mobile.landscape-duel #stage #grave1{left:auto!important;right:110px!important}html.shenlu-mobile.landscape-duel #stage #field1{left:auto!important;right:38px!important}
+html.shenlu-mobile.landscape-duel #stage .mobile-ambush img{width:100%;height:100%;object-fit:cover}.mobile-ambush:before{content:'伏兵';position:absolute;top:-32px;left:0;white-space:nowrap;font:24px serif;color:#f4e7cc}
+html.shenlu-mobile.landscape-duel #stage #mobileActions{height:313px!important;padding-bottom:92px!important;overflow:clip!important}
+html.shenlu-mobile.landscape-duel #stage #mobileActions p{max-height:81px!important;line-height:1.35!important;font-size:29px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:clip!important}
+html.shenlu-mobile.landscape-duel #stage #mobileActions>button{border:0!important;background:none!important;color:#8cdbef!important;padding:0!important;min-height:32px!important;font-size:26px!important;float:right}
+html.shenlu-mobile.landscape-duel #stage .mobile-choice-row{margin-top:8px!important}.landscape-duel .mobile-choice-row button{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+html.shenlu-mobile.landscape-duel #stage .hand .card{translate:none!important;scale:1!important;touch-action:manipulation}.landscape-duel #stage #hand{touch-action:pan-x!important}
+html.shenlu-mobile.landscape-duel #stage .discard-label{transform:none!important}
+
+html.shenlu-mobile.landscape-duel #stage #ownHUD,html.shenlu-mobile.landscape-duel #stage #enemyHUD{height:122px!important;min-height:122px!important;max-height:122px!important;bottom:auto!important;box-sizing:border-box!important;}
+html.shenlu-mobile.landscape-duel #stage #enemyHUD .enemy-title,html.shenlu-mobile.landscape-duel #stage #ownHUD .own-title{margin:0!important;line-height:1.15!important;}
+html.shenlu-mobile.landscape-duel #stage #hand{display:block!important;padding:0!important;overflow:hidden!important;touch-action:manipulation!important;}
+html.shenlu-mobile.landscape-duel #stage #hand .card{position:absolute!important;}
+html.shenlu-mobile.landscape-duel #stage #hand .card-inner{display:grid!important;grid-template-rows:42px minmax(0,1fr) 30px!important;}
+html.shenlu-mobile.landscape-duel #stage #hand .card-stats{position:static!important;grid-row:3!important;inset:auto!important;display:block!important;height:30px!important;line-height:26px!important;padding:2px 3px!important;background:#0b1c29!important;border-top:1px solid #aa8d55;text-align:center!important;}
+
+html.shenlu-mobile.landscape-duel #stage .mobile-ambush[hidden],html.shenlu-mobile.landscape-duel #stage .discard-display[hidden],html.shenlu-mobile.landscape-duel #stage .field-display[hidden]{display:none!important;}
+
+html.shenlu-mobile.landscape-duel #stage #hand .card-stats{font-size:18px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:clip!important;width:100%!important;min-width:0!important;}
+
+/* Both set cards and expedition defense cards fill their slot width. */
+html.shenlu-mobile.landscape-duel #stage .cardUnit.hidden{top:var(--field-slot-top)!important;width:var(--field-slot-width)!important;height:var(--field-slot-height)!important;}
+html.shenlu-mobile.landscape-duel #stage .cardUnit.hidden>img.set-spirit{position:absolute!important;left:50%!important;top:100%!important;width:66.6667%!important;height:auto!important;max-height:none!important;margin:0!important;object-fit:contain!important;transform:translate(-50%,-50%) rotate(90deg) translateX(-50%)!important;}
+html.shenlu-mobile.landscape-duel #stage .expedition-duel .cardUnit>.defense-screen,html.shenlu-mobile.landscape-duel #stage.expedition-duel .cardUnit>.defense-screen{width:100%!important;height:auto!important;aspect-ratio:1.5!important;max-width:none!important;bottom:0!important;}
+html.shenlu-mobile.landscape-duel #stage.expedition-duel .cardUnit>.defense-screen img{width:66.6667%!important;height:150%!important;max-height:none!important;object-fit:fill!important;}
+
+html.shenlu-mobile.landscape-duel #stage .cardUnit.hidden>img.set-spirit{width:auto!important;height:var(--field-slot-width)!important;transform:translate(-50%,-50%) rotate(90deg) translateX(-50%)!important;}
+html.shenlu-mobile.landscape-duel #stage.expedition-duel .cardUnit>.defense-screen{aspect-ratio:var(--cardback-ratio,1.5)!important;}
+html.shenlu-mobile.landscape-duel #stage.expedition-duel .cardUnit>.defense-screen img{width:auto!important;height:var(--field-slot-width)!important;object-fit:contain!important;}
+
+/* Friendly close-up set cards fit fully inside the 160px visible slot. */
+html.shenlu-mobile.landscape-duel #stage #nearUnits .cardUnit.hidden>img.set-spirit{width:auto!important;height:210px!important;max-height:none!important;}
+
+html.shenlu-mobile.landscape-duel #stage .cardUnit.front-defense-marker>.defense-screen{width:100%!important;height:auto!important;aspect-ratio:var(--cardback-ratio,1.5)!important;max-width:none!important;bottom:0!important;}
+html.shenlu-mobile.landscape-duel #stage .cardUnit.front-defense-marker>.defense-screen img{width:auto!important;height:var(--field-slot-width)!important;max-height:none!important;object-fit:contain!important;}
+/* Card backs use card geometry, independent of the enlarged spirit artwork box. */
+html.shenlu-mobile.landscape-duel #stage #enemyUnits .cardUnit{--enemy-cardback-width:calc(var(--field-slot-width) * 0.5384615385);}
+html.shenlu-mobile.landscape-duel #stage #enemyUnits .cardUnit.hidden>img.set-spirit{height:var(--enemy-cardback-width)!important;}
+html.shenlu-mobile.landscape-duel #stage #enemyUnits .cardUnit.front-defense-marker>.defense-screen{width:var(--enemy-cardback-width)!important;height:auto!important;}
+html.shenlu-mobile.landscape-duel #stage #enemyUnits .cardUnit.front-defense-marker>.defense-screen img{height:var(--enemy-cardback-width)!important;}
+
+html.shenlu-mobile.landscape-duel .panel:after{background:url("../../mobile/ornaments/tl.svg") left top/30px 30px no-repeat,url("../../mobile/ornaments/tr.svg") right top/30px 30px no-repeat,url("../../mobile/ornaments/bl.svg") left bottom/30px 30px no-repeat,url("../../mobile/ornaments/br.svg") right bottom/30px 30px no-repeat!important}
+html.shenlu-mobile.landscape-duel #stage .card-name:before,html.shenlu-mobile.landscape-duel #stage .card-name:after{border:0!important;width:14px!important;height:14px!important;background:url("../../mobile/ornaments/tl.svg") center/contain no-repeat!important}
+html.shenlu-mobile.landscape-duel #stage .card-name:after{background-image:url("../../mobile/ornaments/tr.svg")!important}
+
+/* Keep the accepted curved accents on phase, action buttons and card names. */
+html.shenlu-mobile.landscape-duel #phase:after,html.shenlu-mobile.landscape-duel #view:after,html.shenlu-mobile.landscape-duel #primary:after,html.shenlu-mobile.landscape-duel #end:after{background:url("../../mobile/ornaments/curl-tl.svg") left top/30px 30px no-repeat,url("../../mobile/ornaments/curl-tr.svg") right top/30px 30px no-repeat,url("../../mobile/ornaments/curl-bl.svg") left bottom/30px 30px no-repeat,url("../../mobile/ornaments/curl-br.svg") right bottom/30px 30px no-repeat!important}
+html.shenlu-mobile.landscape-duel #stage .card-name:before{background-image:url("../../mobile/ornaments/curl-tl.svg")!important;width:22px!important;height:22px!important;top:1px!important}
+html.shenlu-mobile.landscape-duel #stage .card-name:after{background-image:url("../../mobile/ornaments/curl-tr.svg")!important;width:22px!important;height:22px!important;top:1px!important}
+html.shenlu-mobile.landscape-duel .roster-row{background-image:url("../../mobile/ornaments/tl.svg"),url("../../mobile/ornaments/tr.svg"),url("../../mobile/ornaments/bl.svg"),url("../../mobile/ornaments/br.svg");background-position:left top,right top,left bottom,right bottom;background-size:22px 22px;background-repeat:no-repeat}
+
+/* Reserve the lower strip for persistent turn controls. */
+html.shenlu-mobile.landscape-duel #stage #mobileActions{height:238px!important;padding:12px 18px!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:48px 62px minmax(0,1fr);gap:6px 10px!important;overflow:hidden!important;box-sizing:border-box}
+html.shenlu-mobile.landscape-duel #stage #mobileActions strong{font-size:34px!important;line-height:44px;margin:0!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.shenlu-mobile.landscape-duel #stage #mobileActions small{font-size:26px;align-self:center}
+html.shenlu-mobile.landscape-duel #stage #mobileActions p{grid-column:1;grid-row:2;margin:0!important;font-size:28px!important;line-height:1.1!important;max-height:none!important}
+html.shenlu-mobile.landscape-duel #stage #mobileActions>button{grid-column:2;grid-row:2;float:none!important;align-self:center}
+html.shenlu-mobile.landscape-duel #stage .mobile-choice-row{grid-column:1/-1;grid-row:3;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important;margin:0!important;min-height:0;overflow:auto;align-content:start}
+html.shenlu-mobile.landscape-duel #stage .mobile-choice-row button{min-height:72px!important;font-size:30px!important;white-space:normal!important;padding:6px!important}
+
+html.shenlu-mobile.landscape-duel #stage #view,html.shenlu-mobile.landscape-duel #stage #primary,html.shenlu-mobile.landscape-duel #stage #end{top:786px!important;height:81px!important;font-size:31px!important}
+html.shenlu-mobile.landscape-duel #stage .mobile-choice-row button{min-height:82px!important}
+
+/* Selected hand cards show their full text only through the detail button. */
+html.shenlu-mobile.landscape-duel #stage #mobileActions{grid-template-rows:48px 48px minmax(0,1fr)!important}
+html.shenlu-mobile.landscape-duel #stage #mobileActions>small{grid-column:2;grid-row:1}
+/* Wide choice menus: two actions per row; prose keeps its full reading width. */
+@media (orientation:landscape){
+html.shenlu-mobile #dialog:not(.deck-mode) #dialogBody:not(.goal-content):not(:has(>.detailArt)):has(>button~button){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+html.shenlu-mobile #dialog:not(.deck-mode) #dialogBody:not(.goal-content):not(:has(>.detailArt)):has(>button~button)>:not(button){grid-column:1/-1;order:-1}
+html.shenlu-mobile #dialog:not(.deck-mode) #dialogBody:not(.goal-content):not(:has(>.detailArt)):has(>button~button)>button{width:100%!important;min-width:0;min-height:46px!important;margin:0!important;white-space:normal!important;overflow-wrap:anywhere;box-sizing:border-box}
+html.shenlu-mobile #result .result-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+html.shenlu-mobile #result .result-card>:not(button){grid-column:1/-1}
+html.shenlu-mobile #result .result-card>button{width:100%;min-width:0;margin:0;white-space:normal;overflow-wrap:anywhere}
+}
+html.shenlu-mobile #dialog #dialogBody>button.action-choice,html.shenlu-mobile #mobileActions .action-choice{white-space:pre-line!important;line-height:1.35!important;overflow-wrap:anywhere}
+
+/* Video debuts fit the actual 886px mobile stage, including their two-line caption. */
+html.shenlu-mobile.landscape-duel #fx .video-debut .summon-art{top:30px;height:calc(100% - 160px);left:50%;object-fit:contain;object-position:center}
+html.shenlu-mobile.landscape-duel #fx .video-debut .summon-caption{top:calc(100% - 100px)}
+
+/* Turn text sits directly on the arena; enemy copy clears the corner ornaments. */
+html.shenlu-mobile.landscape-duel #stage #phase.panel{background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;filter:none!important;backdrop-filter:none!important}
+html.shenlu-mobile.landscape-duel #stage #phase.panel>.frame,html.shenlu-mobile.landscape-duel #stage #phase.panel::before,html.shenlu-mobile.landscape-duel #stage #phase.panel::after{display:none!important;content:none!important;background:none!important;border:0!important;box-shadow:none!important}
+html.shenlu-mobile.landscape-duel #stage #phaseText{text-shadow:0 2px 4px #000,0 0 6px #000b}
+html.shenlu-mobile.landscape-duel #stage #enemyHUD.panel{padding-left:46px!important}
+
+/* Expand the arena floor while preserving character scale and mobile controls. */
+html.shenlu-mobile.landscape-duel #stage .hand-backing{top:calc(550px + var(--duel-bottom-shift,0px))!important}
+html.shenlu-mobile.landscape-duel #stage .roster,html.shenlu-mobile.landscape-duel #stage #mobileActions{top:calc(554px + var(--duel-bottom-shift,0px))!important}
+html.shenlu-mobile.landscape-duel #stage #hand{top:calc(569px + var(--duel-bottom-shift,0px))!important}
+html.shenlu-mobile.landscape-duel #stage #notice,html.shenlu-mobile.landscape-duel #stage.nether-duel #notice{top:calc(515px + var(--duel-bottom-shift,0px))!important}
+html.shenlu-mobile.landscape-duel #stage #view,html.shenlu-mobile.landscape-duel #stage #primary,html.shenlu-mobile.landscape-duel #stage #end{top:calc(807px + var(--duel-bottom-shift,0px))!important}
+html.shenlu-mobile.landscape-duel #stage #enemyUnits,html.shenlu-mobile.landscape-duel #stage #values,html.shenlu-mobile.landscape-duel #stage #nearUnits{translate:0 calc(var(--duel-bottom-shift,0px) / 2)}
+
+/* Summon and tribute choices temporarily grow up to the enemy portrait. */
+html.shenlu-mobile.landscape-duel #stage #mobileActions.choosing-summon{grid-template-rows:48px auto minmax(0,1fr)!important;top:var(--choice-top,210px)!important;height:calc(792px + var(--duel-bottom-shift,0px) - var(--choice-top,210px))!important;z-index:10}
+html.shenlu-mobile.landscape-duel #stage #mobileActions.choosing-summon .mobile-choice-row{grid-template-columns:minmax(0,1fr)!important;overscroll-behavior:contain}
+html.shenlu-mobile.landscape-duel #stage #mobileActions.choosing-summon .mobile-choice-row button{min-height:96px!important;text-align:left!important}
+html.shenlu-mobile.landscape-duel #stage #mobileActions.choosing-summon>p{grid-column:1/-1;white-space:pre-line;display:block;-webkit-line-clamp:unset}
+html.shenlu-mobile #dialog .item-unavailable-reason{font-size:17px!important;line-height:1.45;color:#e9cba3;margin:0 0 12px!important}
+
+/* PC viewport-aware battlefield; only shipped in the PC tree. */
+/* Keep focus on lower controls from scrolling the entire desktop arena. */
+html.pc-battlefield.landscape-duel,html.pc-battlefield.landscape-duel body{overflow:clip!important}
+html.pc-battlefield.landscape-duel #stage #nearUnits,
+html.pc-battlefield.landscape-duel #stage #enemyUnits,
+html.pc-battlefield.landscape-duel #stage #values{translate:none!important}
+html.pc-battlefield.landscape-duel #stage #nearUnits{height:100%!important;overflow:visible!important}
+html.pc-battlefield.landscape-duel #stage #nearUnits .cardUnit{overflow:clip!important}
+html.pc-battlefield.landscape-duel #stage .unit.cardUnit{transform:none!important}
+html.pc-battlefield.landscape-duel #stage #enemyUnits .cardUnit{--enemy-cardback-width:min(210px,calc(var(--field-slot-width) * .5384615385))}
+html.pc-battlefield.landscape-duel #stage #nearUnits .defense-screen{top:auto!important;bottom:0!important;width:60%!important;max-width:180px!important}
+html.pc-battlefield.landscape-duel #stage .enemybadge,
+html.pc-battlefield.landscape-duel #stage .ally-number{transform:translateX(-50%)!important;text-align:center;max-width:none;box-sizing:border-box}
+html.pc-battlefield.landscape-duel #stage .enemybadge{font-size:28px;line-height:32px;padding:0 4px}
+html.pc-battlefield.landscape-duel #stage .enemybadge .enemy-unit-name{display:block;position:static;transform:none;margin:0 auto;max-width:100%;font-size:20px;line-height:22px;padding:0 2px}
+html.pc-battlefield.landscape-duel #stage .enemybadge .enemy-unit-stance{font-size:18px;line-height:24px}
+html.pc-battlefield.landscape-duel #stage .enemybadge .stance-value{font-size:28px;line-height:32px}
+
+/* Keep friendly close-ups in the foreground; enemy reserves retain their rear row. */
+html.pc-battlefield.landscape-duel #stage #values{z-index:8;pointer-events:none}
+html.pc-battlefield.landscape-duel #stage #values>button{pointer-events:auto}
+
+/* Extra desktop space extends the arena background around the fixed mobile-ratio stage. */
+html.pc-battlefield body{background-size:cover;background-position:center;background-repeat:no-repeat}
+/* Soften only the copied scenery above the centered PC stage. */
+html.pc-battlefield body::before{content:"";position:fixed;inset:0 0 auto;height:max(0px,calc((100dvh - var(--scene-height,100dvh)) / 2));pointer-events:none;z-index:0;background:linear-gradient(#07101b26,#07101b0d);filter:none;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+/* Move the lower player controls and friendly foreground together into the desktop floor margin. */
+html.pc-battlefield.landscape-duel .viewport,
+html.pc-battlefield.landscape-duel #stage{overflow:visible!important}
+html.pc-battlefield.landscape-duel #stage #nearUnits,
+html.pc-battlefield.landscape-duel #stage .ally-number,
+html.pc-battlefield.landscape-duel #stage .hand-backing,
+html.pc-battlefield.landscape-duel #stage .roster,
+html.pc-battlefield.landscape-duel #stage #hand,
+html.pc-battlefield.landscape-duel #stage #mobileActions,
+html.pc-battlefield.landscape-duel #stage #notice,
+html.pc-battlefield.landscape-duel #stage #view,
+html.pc-battlefield.landscape-duel #stage #primary,
+html.pc-battlefield.landscape-duel #stage #end{translate:0 var(--pc-lower-shift,0px)!important}
+html.pc-battlefield.landscape-duel #stage #mobileActions.choosing-summon{translate:none!important;height:calc(792px + var(--pc-lower-shift,0px) - var(--choice-top,210px))!important}
+
+/* Keep PC action reasons readable without covering the action buttons. */
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon){grid-template-columns:minmax(0,1fr) auto auto;grid-template-rows:48px minmax(0,1fr) auto!important}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>strong{grid-column:1;grid-row:1}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>small{grid-column:2;grid-row:1}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>button{grid-column:3;grid-row:1}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>p{grid-column:1/-1;min-height:0;display:block;-webkit-line-clamp:unset;line-height:1.25!important;white-space:pre-line;overflow-wrap:anywhere;overflow:auto!important}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>.mobile-choice-row{max-height:82px}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon)>.mobile-choice-row:empty{display:none}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon):not(:has(>p)){grid-template-rows:48px 0 minmax(0,1fr)!important}
+html.pc-battlefield.landscape-duel #stage #mobileActions:not(.choosing-summon):not(:has(>p))>.mobile-choice-row{max-height:none}

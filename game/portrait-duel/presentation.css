@@ -1,0 +1,102 @@
+/* Portrait presentation: keep the fixed stage and battle controls. */
+.cardUnit.hidden{height:170px!important;width:240px!important}
+.allied-close-layer .cardUnit.hidden{top:1040px!important}
+.cardUnit.hidden img.set-spirit{position:absolute;left:50%;top:50%;width:140px;height:210px;max-height:none;margin:0;object-fit:contain;transform:translate(-50%,-50%) rotate(90deg)}
+.roster-face.set-spirit{transform:rotate(90deg);width:39px;height:55px;max-width:39px;margin:0 7px;background:none}
+.hand{display:block;top:1405px;height:246px;overflow:visible;padding:0;touch-action:manipulation;pointer-events:none}
+.hand .card{position:absolute;width:150px;height:216px;transform:rotate(var(--fan-angle));transform-origin:50% 100%;pointer-events:auto;transition:transform .14s}
+.hand .card:focus-visible,.hand .card:hover{z-index:30!important;transform:translateY(-14px) rotate(0deg)}
+.hand .card-type{font-size:19px;line-height:22px;min-height:22px;text-align:left;padding-left:6px}
+.hand .card-stars{height:19px;min-height:19px;line-height:19px;font-size:12px;letter-spacing:0;color:#a75c00;text-shadow:0 1px #fff1a5;text-align:left;padding-left:4px;white-space:nowrap}
+.hand .card-art{height:125px;min-height:0;flex:1}
+.hand .card-name{font-size:18px;line-height:23px;text-align:left;padding-left:4px;white-space:nowrap}
+.hand .card-stats{font-size:14px;line-height:17px;text-align:left;padding-left:4px}
+.portrait{overflow:hidden;object-fit:unset}
+.portrait img{display:block;position:absolute;left:-42.5%;top:-5px;width:185%;height:auto;max-width:none;object-fit:contain}
+.enemy-face{height:164px;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%,0 13%)}
+.own-face{top:-56px;height:182px;clip-path:polygon(0 0,87% 0,100% 100%,0 100%)}
+#enemyHUD .enemy-title{margin-top:28px;line-height:1.3}
+#enemyHUD .enemy-title span{line-height:1.5}
+.result[hidden]{display:none}
+.result{position:absolute;inset:0;z-index:25;display:flex;align-items:center;justify-content:center;background:#06101acc;backdrop-filter:blur(5px)}
+.result-card{width:690px;padding:55px 45px;text-align:center;color:#f7e3b3;border:2px solid #c6a361;border-radius:18px;background:radial-gradient(ellipse at top,#574526,#101e2d 70%);box-shadow:0 0 80px #e8b95444}
+.result h1{font-size:65px;letter-spacing:8px;margin:20px 0 32px}
+.result p{font-size:27px;line-height:1.65;white-space:pre-wrap}
+.result .result-mark{font-size:25px;letter-spacing:14px;color:#d0ad69}
+.result button{display:block;width:100%;padding:22px;margin:17px 0;border:1px solid #a18b62;background:#18283c;color:#ffedc5;font-size:28px;border-radius:9px}
+.result.loss .result-card{background:linear-gradient(#343a40,#111820);color:#d3d6d9;border-color:#757e86;box-shadow:none}
+.result.loss .result-mark,.result.loss button{color:#c3cad0;border-color:#68747c}
+.stage.defeated>.background,.stage.defeated>#enemyUnits,.stage.defeated>#nearUnits,.stage.defeated>#enemyHero{filter:grayscale(1) brightness(.45)}
+#fx .summon-show{position:absolute;left:0;top:200px;width:1920px;height:1080px;background:radial-gradient(ellipse,#2c78987a,transparent 67%)}
+#fx .summon-show.high{background:radial-gradient(ellipse,#543d258c,#061321cc 65%,transparent)}
+#fx .summon-art{left:50%;top:100px;width:510px;height:730px;transform-origin:50% 70%;filter:drop-shadow(0 0 24px #a7edff);object-position:50% 100%;z-index:2}
+#fx .normal .summon-art{top:260px;height:440px;width:330px}
+.summon-ring{position:absolute;left:50%;top:53%;width:560px;height:560px;border:3px solid #8ae4fc;border-radius:50%;box-shadow:0 0 55px #69d5ff,inset 0 0 55px #69d5ff;outline:1px solid #ccf7ff;outline-offset:22px}
+.high .summon-ring{border-color:#ffe49a;box-shadow:0 0 90px #ffd567,inset 0 0 60px #ffe3ab;outline-color:#e9c878}
+.summon-ring:after{content:'';position:absolute;inset:38px;border:2px solid #ffe3ab99;transform:rotate(45deg)}
+.summon-caption{position:absolute;z-index:3;top:850px;left:0;width:100%;text-align:center;white-space:pre-line;font-size:37px;line-height:1.5;color:#ffe9aa;text-shadow:0 3px 9px #000}
+.normal .summon-caption{top:725px;font-size:29px}
+.summon-particle{position:absolute;left:50%;top:53%;width:8px;height:8px;border-radius:50%;background:#fff0af;box-shadow:0 0 15px #fff3b7;transform:rotate(var(--angle)) translateX(var(--spread))}
+/* Modals share the actual portrait stage bounds, even inside a wide desktop window. */
+dialog{box-sizing:border-box;width:calc(var(--scene-width, 100vw) - 24px);max-width:calc(100vw - 24px);max-height:calc(var(--scene-height, 100dvh) - 32px);min-width:0;padding:12px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+dialog header{top:-12px;min-width:0}dialog h2{min-width:0;overflow-wrap:anywhere}dialog header button{flex:none}
+dialog p,dialog button,dialog .log,dialog small{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal}
+dialog img{max-width:100%}dialog .cardlist{min-width:0}
+#fx .summon-show.high{top:180px;height:1135px;background:#07101aea}
+#fx .high .summon-art{top:25px;left:50%;width:790px;height:1000px;object-fit:contain;filter:none;transform:translateX(-50%)!important}
+#fx .high .summon-ring,#fx .high .summon-particle{display:none}
+#fx .high .summon-caption{top:1030px;font-size:30px;line-height:1.3}
+#attackRoute{position:absolute;inset:0;width:1920px;height:1080px;z-index:13;pointer-events:none}
+#attackConfirm{position:absolute;left:30px;top:1070px;width:793px;z-index:15;padding:15px;background:#0b1828f5;border:2px solid #a3dfee;border-radius:8px;font-size:26px;text-align:center}
+#attackConfirm p{margin:0 0 12px;overflow-wrap:anywhere}#attackConfirm button{font-size:26px;padding:14px 28px;margin:0 10px;background:#253c50;border:1px solid #dab673;border-radius:5px}
+#effectHint{position:absolute;left:30px;top:244px;width:793px;z-index:14;padding:14px 20px;border:1px solid #ddb46d;background:#101d2cf0;color:#ffe9b4;font-size:25px;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere;pointer-events:none}
+#lessonGoal{position:absolute;left:18px;top:162px;width:402px;z-index:10;padding:12px;background:#101e2fe8;border:1px solid #e0bb72;font-size:23px;line-height:1.35;overflow-wrap:anywhere}
+[hidden]#attackRoute,[hidden]#attackConfirm,[hidden]#effectHint,[hidden]#lessonGoal{display:none}
+#attackRoute{display:none!important}
+dialog .action-choice{font-size:15px;line-height:1.55;white-space:pre-wrap}
+dialog .choice-context{padding:10px;border-left:3px solid #d2b471;background:#1b2a3a}
+dialog .sl-deck-editor{padding:8px;font-size:14px;border:0;min-width:0}
+dialog .sl-deck-editor__columns{display:grid;grid-template-columns:minmax(0,1fr)}
+dialog .sl-deck-editor__columns>*{min-width:0}
+dialog .sl-deck-editor__toolbar,dialog .sl-deck-editor__filters,dialog .sl-deck-editor__actions{display:flex;flex-wrap:wrap;min-width:0}
+dialog .sl-deck-editor input,dialog .sl-deck-editor select{max-width:100%;min-width:0}
+dialog .sl-deck-editor button{line-height:1.6;white-space:pre-wrap;font-size:14px}
+dialog .sl-deck-editor__row button:last-child{width:62px}
+dialog .sl-deck-editor__collection,dialog .sl-deck-editor__deck{max-height:220px;overflow-y:auto;overflow-x:hidden}
+dialog .sl-card-stats{font-size:16px;color:#ffe4a0;font-weight:bold}
+.result button[hidden]{display:none}
+
+/* One hand-card frame; card types use borders, leaving illustration space. */
+.hand .card{--type-color:#c4914e;border:3px solid var(--type-color);background:var(--type-color);padding:2px}
+.hand .card[data-kind="spell"]{--type-color:#28b8a1}
+.hand .card[data-kind="trap"]{--type-color:#bc69d5}
+.hand .card-inner{width:100%;height:100%;border:0}
+.hand .card-art{width:100%;overflow:hidden;background:radial-gradient(ellipse at 50% 28%,#627681,#243542 65%,#14212d)}
+.hand .card-art img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block}
+.hand .card-name{font-size:18px;line-height:23px}
+.hand .card[data-kind="spell"] .card-stats,.hand .card[data-kind="trap"] .card-stats{display:none}
+
+/* The art window is identical for every type; spirit values overlay the art. */
+.hand .card-inner{position:relative}
+.hand .card-art{height:auto;flex:1;min-height:0}
+.hand .card-name{height:23px;min-height:23px;flex:none;overflow:hidden;text-overflow:ellipsis}
+.hand .card-stars{position:absolute;top:0;left:0;right:0;z-index:1;background:linear-gradient(#fff4d7da,transparent);pointer-events:none}
+.hand .card-stats{position:absolute;left:0;right:0;bottom:23px;padding:2px 4px;text-align:right;color:#fff7de;background:linear-gradient(transparent,#101822d9);text-shadow:0 1px 2px #000;pointer-events:none}
+
+/* Clipped close-up sprites must not scroll their layer when a card gains focus. */
+.allied-close-layer{overflow:clip}
+/* Original landscape action art: focus the event, without changing source pixels. */
+img[src*="TW43-T02"]{--action-crop-x:72%}
+img[src*="JP24-S02"]{--action-crop-x:77%}
+img[src*="JP24-S06"]{--action-crop-x:68%}
+img[src*="JP24-S07"]{--action-crop-x:38%}
+.hand .card[data-kind="spell"] .card-art img,.hand .card[data-kind="trap"] .card-art img{object-fit:cover;object-position:var(--action-crop-x,50%) 50%}
+.trap-cells button img{display:block;object-fit:cover;object-position:var(--action-crop-x,50%) 50%}
+dialog .detailArt{width:100%;object-fit:contain;object-position:center;aspect-ratio:auto}
+
+dialog .detailArt.india-spirit-composite,dialog .detailArt.egypt-spirit-composite,dialog .detailArt.norse-spirit-composite,dialog .detailArt.vatican-spirit-composite{background-size:cover;background-position:center;aspect-ratio:2/3;object-fit:contain;object-position:center bottom;}
+
+/* Enemy HP follows the same name / LP rows as the player HUD. */
+#enemyHUD .enemy-title > span{font-size:17px;line-height:1.15;color:#c6c2b5}
+#enemyHUD .enemy-lp{font-size:30px;font-weight:400;line-height:1.15}
+#enemyHUD .enemy-lp b{font-size:34px}

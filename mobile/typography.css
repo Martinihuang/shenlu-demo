@@ -1,0 +1,12 @@
+/* Shared Chinese typography. Keep existing sizes, spacing and image lettering. */
+
+
+/* Important layer keeps legacy font shorthands from restoring system fonts. */
+@layer shenluTypography{
+ :root{--shenlu-kai:ShenluKai,ShenluTextSans,sans-serif;--shenlu-text:ShenluTextSans,ShenluKai,sans-serif}
+ *,*::before,*::after{font-family:var(--shenlu-text)!important}
+ :is(h1,h2,h3,h4,h5,h6,[role=heading],button,a,summary,legend),:is(h1,h2,h3,h4,h5,h6,[role=heading],button,a,summary,legend) *{font-family:var(--shenlu-kai)!important;font-synthesis:weight!important}
+ :is(.card-name,#cardList strong,#app>header>strong,#mobileActions strong,#speaker,.cinematic-subtitles strong,.lc-card strong,.deck-card strong,.own-title,.own-title>span,.enemy-title,.enemy-title>span,.roster-info>div:first-child,.enemy-unit-name,.speaker,.dialogue-speaker,.cinematic-speaker,.dialogue-top,#hero-name,#phaseText,#queenName,.hero-name,.opponent strong,.result-caption,.stage-plate strong,.world-nameplate strong){font-family:var(--shenlu-kai)!important}
+ :is(.option,.minor span,.mode,.country,.enter,.otherworld,.utility,.countries span,.back,.world-title),:is(.option,.minor span,.mode,.country,.enter,.otherworld,.utility,.countries span,.back) *{font-family:var(--shenlu-kai)!important}
+ :is(.detail-copy p,.detail-copy p *,#dialogBody p,#dialogBody p *,#dialogueText,#dialogueText *,.cinematic-subtitles p,.cinematic-subtitles p *,#notice,#mobileActions p,#mobileActions p *,.rules,.rules *,.action-choice,.action-choice *,input,textarea,select,option){font-family:var(--shenlu-text)!important}
+}

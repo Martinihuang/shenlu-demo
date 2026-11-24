@@ -1,0 +1,21 @@
+@font-face{font-family:ShenluDemoText;src:url('../assets/fonts/ShenluDemoSansSubset.woff2?v=dafd0b4c3efe');font-display:swap}
+body,button,select,dialog,dialog button,dialog h2,dialog h3{font-family:ShenluDemoText,system-ui,sans-serif!important}
+.sr-only{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.country-word{width:100%;height:100%;display:block}
+.countries .country-word{max-height:1.6em}.countries .sr-only{display:none}
+.country-heading .country-word{width:8cqw;height:3cqw}.country-heading .sr-only{display:none}
+.demo-pack-options{display:grid;gap:14px;margin:22px 0;font-size:20px}
+.demo-pack-options label{display:flex;justify-content:space-between;gap:16px;align-items:center}
+.demo-pack-options select{max-width:60%;padding:9px;background:#211729;color:#ffe8bd;border:1px solid #ae8d5a;font-size:18px}
+.demo-menu-status{position:absolute;right:1.8%;top:2%;color:#f6dfab;font-size:14px;text-shadow:0 2px 4px black;z-index:100}
+dialog img.demo-nether-preview{width:100%;max-height:55vh;object-fit:contain}
+html[lang=en] .menu .option.start{font-size:76px;letter-spacing:2px;white-space:nowrap}
+html[lang=en] .menu .option:not(.start){font-size:58px;letter-spacing:2px;white-space:nowrap}
+html[lang=en] .menu .minor{font-size:46px;letter-spacing:2px}
+html[lang=en] .menu .minor button{white-space:nowrap;letter-spacing:1px}
+html[lang=en] #scene>.subtitle{font-size:48px;letter-spacing:2px;white-space:nowrap}
+
+.demo-full-rules summary{cursor:pointer;color:#f6dfab;padding:8px 0}.demo-full-rules p{white-space:pre-line}#demoLanguageError{position:fixed;bottom:12px;left:5%;width:90%;box-sizing:border-box;padding:12px;background:#241b25;color:#fff;z-index:9999} [data-demo-guide] ol{padding-left:1.3em}[data-demo-guide] details{margin:12px 0}[data-demo-guide] button{margin-top:12px}
+.entry-card.locked:before{content:attr(data-demo-locked)}
+
+@media(max-width:1100px){html[lang="en"] .detail-copy p{font-size:16px;line-height:1.4}}

@@ -1,0 +1,14 @@
+
+:root{--desktop-width:min(100vw,177.777778dvh);--desktop-height:min(100dvh,56.25vw)}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{display:grid;place-items:center;background:#080b12}
+body>main#app,body>main.stage{box-sizing:border-box;width:var(--desktop-width);max-width:var(--desktop-width);height:var(--desktop-height);margin:0;min-width:0;min-height:0}
+body>main#app{container-type:inline-size}
+#app .heroes{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}
+#app .heroes .opponent-card{min-width:0;min-height:0;height:100%}
+#app .heroes .opponent-art{flex:1;aspect-ratio:auto;min-height:0}
+#app .journey-links{min-width:0}
+#app .journey-links>a{min-width:0;overflow-wrap:anywhere}
+#app>.row{min-width:0}
+#app h1{font-size:clamp(16px,5cqw,22px)}
+@media(max-height:600px){#app{gap:4px;padding:4px 8px}#app .banner{height:40px}#app .notice,#app #content>p{font-size:11px}#app button,#app a{min-height:28px;padding:4px;font-size:12px}#app .opponent-job,#app .opponent-name{padding:4px 2px;font-size:12px}}

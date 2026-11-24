@@ -1,0 +1,57 @@
+/* Reuse the game's gold frames and button artwork without changing layout or type sizes. */
+@layer shenluOrnaments{
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) :is(main#app,main[aria-label="異世界卡牌"]){background:radial-gradient(ellipse at 20% 0,#72433245,transparent 60%),linear-gradient(125deg,#16111af5,#080b13f8),url('../assets/menu-shared-v1/opening-concept-v2/art-plate-v2.webp') center/cover!important;color:#f5e1b3!important}
+ :is(.lc-library,.lc-deck,.lc-detail.card-detail,.sl-preview,.sl-slot,.sl-backups>section,main[aria-label="異世界卡牌"] #detail){position:relative;background:radial-gradient(ellipse at 50% 0,#65412b33,transparent 68%),linear-gradient(125deg,#1c1720f8,#090e16fc)!important;border-color:#b99559!important;box-shadow:inset 0 0 0 2px #080b12,inset 0 0 0 3px #82623d66,0 4px 14px #0005!important}
+ :is(.lc-library,.lc-deck,.sl-preview,.sl-backups>section)::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;box-sizing:border-box;border:6px solid transparent;border-image:url('../assets/selection-ornaments-v1/panel-frame.svg') 3% 5% fill stretch;opacity:.8}
+ :is(.lc-detail .detail-top,.lc-detail .detail-overlay,.lc-detail .detail-copy,.lc-detail .detail-actions,main[aria-label="異世界卡牌"] .filters){background:transparent!important}
+ :is(.lc-library,.lc-deck,.sl-preview,main[aria-label="異世界卡牌"]) :is(h1,h2){color:#ffe2a1!important;text-shadow:0 1px 3px #000!important}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) button:not(.lc-card):not(.sl-slot){background:#15121b url('../game/battle-ui/button_end.svg') center/100% 100% no-repeat!important;border:1px solid transparent!important;border-radius:0!important;color:#f8e3b5!important;box-shadow:none!important;text-align:center!important}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) :is(button.primary,button[aria-pressed=true]:not(.sl-slot):not(.lc-card),button[aria-current=true],.lc-footer .primary,.sl-continue){background:#45171b url('../game/battle-ui/button_primary.svg') center/100% 100% no-repeat!important;color:#fff0c1!important;text-shadow:0 1px 3px #000!important}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) :is(input,select){background:#100e16!important;border-color:#a88a55!important;color:#f8e1b4!important;border-radius:2px!important}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) option{background:#17121b!important;color:#f8e1b4!important}
+ body.collection-landscape .lc-card,main[aria-label="異世界卡牌"] #cardList button{background:radial-gradient(ellipse at 50% 20%,#51352055,transparent 68%),linear-gradient(#1d1820,#0c1018)!important;border-color:#9c7b45!important;box-shadow:inset 0 0 0 2px #0b0a10,inset 0 0 0 3px #79603b55!important;color:#f7e6bb!important}
+ body.collection-landscape .lc-card[aria-pressed=true],main[aria-label="異世界卡牌"] #cardList button[aria-pressed=true],.sl-slot[aria-pressed=true]{border-color:#ffe1a1!important;background:radial-gradient(ellipse at 50% 10%,#8b573344,transparent 70%),linear-gradient(#3c1b25,#15121b)!important;box-shadow:inset 0 0 0 2px #1b1016,inset 0 0 0 3px #bd9255,0 0 12px #cc91402b!important}
+ :is(.lc-filters,.lc-workspace-tabs,.lc-footer,.sl-tabs,.sl-footer){border-color:#90703f!important}
+ :is(.lc-pager,.sl-footer,main[aria-label="異世界卡牌"] nav){color:#e2c890!important}
+ dialog:not(#shenluSpiritGallery):not(.journey-gallery){border-color:#cfac70!important;border-radius:3px!important;background:radial-gradient(ellipse at 50% 0,#66342c50,transparent 75%),linear-gradient(135deg,#231923f9,#0e1019fc)!important;color:#f5e3bf!important;outline:1px solid #6c512d!important;outline-offset:-7px!important;box-shadow:inset 0 0 0 2px #1a1117,0 20px 80px #000c!important}
+ dialog:not(#shenluSpiritGallery):not(.journey-gallery) header{background:linear-gradient(90deg,#291821f5,#19131bf5)!important;border-bottom:1px solid #997443!important}
+ dialog:not(#shenluSpiritGallery):not(.journey-gallery) :is(h1,h2,h3){color:#ffe0a1!important}
+ dialog:not(#shenluSpiritGallery):not(.journey-gallery) button{background:#18121b url('../game/battle-ui/button_end.svg') center/100% 100% no-repeat!important;border:1px solid transparent!important;border-radius:0!important;color:#f9e1ac!important;text-align:center!important}
+ dialog:not(#shenluSpiritGallery):not(.journey-gallery) button.primary{background-image:url('../game/battle-ui/button_primary.svg')!important}
+ #settings-dialog .settings-storage{clear:both;border-top:1px solid #80603c;margin-top:16px;padding-top:4px}
+ #settings-dialog .settings-storage summary{cursor:pointer;min-height:44px;display:list-item;line-height:44px;color:#d9c298}
+ #settings-dialog .settings-storage button{float:none;display:block;max-width:100%;margin:4px 0 12px;color:#edc0b0!important}
+}
+
+/* Nine-slice the existing artwork so wide and narrow controls keep the same corners. */
+@layer shenluOrnaments{
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) button:not(.lc-card):not(.sl-slot),dialog:not(#shenluSpiritGallery):not(.journey-gallery) button{position:relative;isolation:isolate!important;background-image:none!important;background-color:#18131b!important}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) button:not(.lc-card):not(.sl-slot)::before,dialog:not(#shenluSpiritGallery):not(.journey-gallery) button::before{content:'';position:absolute;inset:0;z-index:-1;box-sizing:border-box;border:8px solid transparent;border-image:url('../game/battle-ui/button_end.svg') 23% 13% fill stretch;pointer-events:none}
+ :is(body.collection-landscape,body.saves-landscape,body:has(main[aria-label="異世界卡牌"])) :is(button.primary,button[aria-pressed=true]:not(.sl-slot):not(.lc-card),button[aria-current=true],.lc-footer .primary,.sl-continue)::before,dialog:not(#shenluSpiritGallery):not(.journey-gallery) button.primary::before{border-image-source:url('../game/battle-ui/button_primary.svg')}
+}
+
+/* The full card library uses the same readable mobile canvas as the deck editor. */
+@layer shenluOrnaments{
+ main[aria-label="異世界卡牌"]{position:relative!important;inset:auto!important;transform:none!important;width:100%!important;height:100%!important;padding:10px 16px!important;grid-template-rows:36px 40px minmax(0,1fr) 20px!important;gap:8px!important}
+ main[aria-label="異世界卡牌"] :is(header,.filters,nav){gap:12px!important}
+ main[aria-label="異世界卡牌"] header h1{font-size:22px!important}
+ main[aria-label="異世界卡牌"] :is(button,select){font-size:16px!important;min-height:38px!important;padding:6px 14px!important}
+ main[aria-label="異世界卡牌"] .filters label{font-size:16px!important;gap:8px!important}
+ main[aria-label="異世界卡牌"] .filters select{min-width:160px!important}
+ main[aria-label="異世界卡牌"] #count{font-size:15px!important}
+ main[aria-label="異世界卡牌"] .body{grid-template-columns:54% minmax(0,1fr)!important;gap:14px!important}
+ main[aria-label="異世界卡牌"] .list-panel{grid-template-rows:minmax(0,1fr) 38px!important;gap:6px!important}
+ main[aria-label="異世界卡牌"] #cardList{gap:7px!important}
+ main[aria-label="異世界卡牌"] #cardList button{padding:6px!important;gap:4px!important}
+ main[aria-label="異世界卡牌"] #cardList strong{font-size:16px!important;line-height:20px!important}
+ main[aria-label="異世界卡牌"] #cardList small{font-size:12px!important;line-height:16px!important}
+ main[aria-label="異世界卡牌"] #detail{grid-template-columns:42% minmax(0,1fr)!important;grid-template-rows:auto auto auto minmax(0,1fr) 30px!important;padding:10px 12px!important;gap:6px 12px!important}
+ main[aria-label="異世界卡牌"] #detail>img{grid-column:1!important;grid-row:1/-1!important}
+ main[aria-label="異世界卡牌"] #detail>:not(img){grid-column:2!important}
+ main[aria-label="異世界卡牌"] #detail h2{font-size:21px!important;line-height:1.25!important}
+ main[aria-label="異世界卡牌"] .card-meta{font-size:14px!important;line-height:20px!important}
+ main[aria-label="異世界卡牌"] .effect{font-size:16px!important;line-height:1.55!important;overflow:auto!important;min-height:0!important}
+ main[aria-label="異世界卡牌"] #detail nav{font-size:14px!important;gap:4px!important}
+ main[aria-label="異世界卡牌"] #detail nav button{font-size:14px!important;min-height:30px!important;padding:3px 6px!important}
+ main[aria-label="異世界卡牌"] .notice{font-size:13px!important;line-height:20px!important}
+}

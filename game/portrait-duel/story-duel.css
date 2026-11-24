@@ -1,0 +1,11 @@
+/* Story encounter art and mission text stay inside the accepted portrait stage. */
+.story-duel #enemyHero[hidden]{display:none}
+.story-duel>.background{filter:brightness(.76) saturate(.9);object-position:50% 60%}
+.story-duel #lessonGoal{position:absolute;left:26px;top:244px;width:795px;box-sizing:border-box;max-height:158px;overflow:auto;font:26px/1.35 system-ui;white-space:pre-line;background:#101822eb;border:1px solid #b99a5f;border-radius:10px;padding:10px 14px;z-index:10;color:#fff0ce}
+.story-duel #enemyHUD .portrait img{object-position:50% 20%;object-fit:cover;transform:none}
+.story-duel .enemy-title{font-size:25px}
+body:has(.story-duel) dialog{box-sizing:border-box;width:min(94vw,var(--scene-width,580px));max-height:88dvh}
+
+/* Mission details are opened on demand, leaving the stage clear. */
+#lessonGoal,.story-duel #lessonGoal{width:auto;max-width:360px;max-height:none;left:26px;top:244px;font:28px/1.35 system-ui;padding:12px 24px;border-radius:10px;cursor:pointer;white-space:normal;overflow:visible}
+.goal-content p{line-height:1.7;overflow-wrap:anywhere}.goal-pages{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:16px}.goal-pages button{width:auto!important;flex:0 1 auto;padding:10px 14px}.goal-pages span{white-space:nowrap;font-size:.85em}

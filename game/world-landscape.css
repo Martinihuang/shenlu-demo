@@ -1,0 +1,41 @@
+html.landscape-world body{font-family:"DFKai-SB","BiauKai",serif;background:#080d16;color:#f3deab}
+html.landscape-world body>main#app.world-selection{position:absolute;left:50%;top:50%;width:1920px;max-width:none;height:1080px;padding:0;margin:0;container-type:normal;transform:translate(-50%,-50%) scale(var(--world-scale,1));transform-origin:center;overflow:hidden;background:linear-gradient(#080d163d,#080d1655 65%,#080d16e8),var(--country-art) center 30%/cover}
+#app.world-selection button,#app.world-selection a,.world-modal button{font-family:inherit;font-weight:400;color:#f3deab;border:2px solid #c8a45e;border-radius:2px;background:linear-gradient(125deg,#172238f5,#080f1df5);box-shadow:inset 0 0 0 4px #0a1220,inset 0 0 0 5px #705129;cursor:pointer;text-decoration:none;transition:filter 150ms,box-shadow 150ms}
+#app.world-selection button:hover:not(:disabled),#app.world-selection a:hover,.world-modal button:hover:not(:disabled){filter:brightness(1.06)}
+#app.world-selection button:active:not(:disabled),.world-modal button:active:not(:disabled){filter:brightness(.92)}
+#app.world-selection button:focus-visible,#app.world-selection a:focus-visible,.world-modal button:focus-visible{outline:3px solid #fff4ce;outline-offset:4px}
+#app.world-selection button:disabled,.world-modal button:disabled{opacity:.5;cursor:default}
+#app.world-selection .world-header{position:absolute;inset:0 0 auto;height:88px;background:#0b1320f0;border-bottom:1px solid #c8a45e;z-index:3}
+#app.world-selection #world-back{position:absolute;left:40px;top:16px;width:244px;height:60px;font-size:30px;letter-spacing:2px;padding:0}
+#app.world-selection #world-progress{position:absolute;right:40px;top:16px;width:320px;height:60px;font-size:30px;line-height:40px;letter-spacing:2px;padding:0}
+#app.world-selection .world-footer #expedition-entry{left:418px;top:36px;width:550px;height:104px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;font-size:32px;line-height:42px}
+#app.world-selection #expedition-entry small{font-size:23px;line-height:32px;color:#cbbeaa;letter-spacing:1px}
+#app.world-selection h1{position:absolute;left:680px;top:12px;width:560px;height:66px;line-height:60px;margin:0;text-align:center;font-size:48px;font-weight:400;letter-spacing:3px}
+#app.world-selection #content[data-view=fight]{position:absolute;left:100px;top:114px;width:1724px;height:730px;display:grid;grid-template-columns:848px 848px;gap:28px;padding:0}
+#app.world-selection .world-person{position:relative;width:848px;height:730px;margin:0;padding:0;overflow:hidden;border:2px solid #c8a45e;text-shadow:0 2px 4px #000;background:#08101b;box-shadow:inset 0 0 0 5px #70512955}
+#app.world-selection .world-person::after{content:"";position:absolute;inset:7px;pointer-events:none;border:1px solid #c8a45e70;background:linear-gradient(135deg,#ffe09b 0 2px,transparent 3px) top left/30px 30px no-repeat,linear-gradient(225deg,#ffe09b 0 2px,transparent 3px) top right/30px 30px no-repeat}
+#app.world-selection .world-person[aria-pressed=true]{border-color:#ffe09b;box-shadow:inset 0 0 0 1px #fff4ce,0 0 12px #ffd6778c,0 0 28px #db9c6147}
+#app.world-selection .world-person-scene{position:absolute;inset:0;background:linear-gradient(0deg,#08101bb8,transparent 50%),var(--country-art) center 25%/cover}
+#app.world-selection .world-person:nth-child(2) .world-person-scene{background-position:center,65% 25%}
+#app.world-selection .world-person-art{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 6px 12px #0008);pointer-events:none}
+#app.world-selection .world-nameplate{position:absolute;left:8px;right:8px;bottom:10px;height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(#07101ca6,#07101cf0);border-top:1px solid #c8a45e;border-bottom:1px solid #705129}
+#app.world-selection .world-nameplate strong{font-size:50px;line-height:60px;letter-spacing:6px;font-weight:400}
+#app.world-selection .world-nameplate strong::before,#app.world-selection .world-nameplate strong::after{content:"✧";font-size:24px;color:#c8a45e;margin:0 34px;vertical-align:middle}
+#app.world-selection .world-nameplate small{font-size:26px;line-height:34px;letter-spacing:3px}
+#app.world-selection .world-badge{position:absolute;left:30px;top:30px;width:62px;height:206px;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;font-size:24px;letter-spacing:3px;line-height:28px;background:#0b1320ed;border:1px solid #c8a45e;box-shadow:inset 0 0 0 4px #111929,inset 0 0 0 5px #705129}
+#app.world-selection .world-badge.claimed{color:#cbbeaaff;border-color:#705129}
+#app.world-selection .world-check{display:none;position:absolute;right:22px;bottom:48px;width:84px;height:84px;line-height:80px;border:2px solid #ffe09b;border-radius:50%;background:#392a19eb;color:#fff4ce;font-size:50px;box-shadow:0 0 18px #ffd67780}
+#app.world-selection [aria-pressed=true]>.world-check{display:block}
+#app.world-selection .world-footer{position:absolute;left:0;top:880px;width:1920px;height:152px;background:#0b1320f0;border-top:1px solid #c8a45e}
+#app.world-selection .world-selected{position:absolute;left:96px;top:62px;font-size:30px;line-height:48px;white-space:nowrap}
+#app.world-selection #world-selected-name{font-size:38px;font-weight:400;letter-spacing:2px}
+#app.world-selection .world-prize{position:absolute;left:418px;top:64px;border-left:1px solid #705129;border-right:1px solid #705129;width:255px;text-align:center;font-size:32px;line-height:42px}
+#app.world-selection .world-hint{position:absolute;left:712px;top:48px;width:280px;font-size:24px;line-height:34px;margin:0;color:#cbbeaa}
+#app.world-selection .world-footer button{position:absolute;top:46px;height:82px;font-size:30px;line-height:40px;letter-spacing:1px;padding:0}
+#app.world-selection #world-deck{left:1010px;width:236px}#app.world-selection #world-reward{left:1263px;width:242px}
+#app.world-selection #world-confirm{left:1524px;top:36px;width:345px;height:104px;font-size:46px;line-height:58px;letter-spacing:4px;border:3px solid #ffe09b;color:#241809;background:linear-gradient(120deg,#b8873f,#f4d790,#c4944a);box-shadow:inset 0 0 0 5px #f4d790,inset 0 0 0 6px #705129,0 0 18px #e8b54f47}
+#app.world-selection .world-tools{position:absolute;left:100px;right:100px;bottom:6px;height:36px;display:flex;justify-content:center;align-items:center;gap:28px}
+#app.world-selection .world-tools a{font-size:22px;padding:2px 12px;line-height:28px;border:0;box-shadow:none;background:none;color:#cbbeaa}
+.world-modal{width:min(1100px,92vw);max-height:90vh;margin:auto;padding:24px 32px;background:#0b1320fa;color:#f3deab;border:2px solid #c8a45e;font-family:"DFKai-SB","BiauKai",serif;font-size:clamp(16px,1.6vw,24px);box-shadow:0 20px 80px #000c}
+.world-modal::backdrop{background:#02050bca}.world-modal header{display:flex;align-items:center;justify-content:space-between;gap:20px}.world-modal h2{font-size:1.5em;font-weight:400;margin:0}.world-modal button{font-size:inherit;padding:10px 20px}.world-modal p{line-height:1.6}.world-card-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:200px}.world-card-list button{text-align:left}.world-modal nav{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:24px}.world-card-effect{white-space:pre-line}
+@media(prefers-reduced-motion:reduce){#app.world-selection button,#app.world-selection a,.world-modal button{transition:none}}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>神籙｜選擇主角</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="character-selection.css"><link rel="stylesheet" href="../mobile/common.css?v=pc-shared-20261022-r1&reviewv=20261023-c2&reviewv=20261023-c3&menusv=20261023-r2"><link rel="stylesheet" href="../mobile/redesign.css?v=pc-shared-20261022-r1&bossdeckv=20261023-c1&reviewv=20261023-c2&reviewv=20261023-c3&shareditems=20261023-r12"><link rel="stylesheet" href="../mobile/typography.css?v=20261023-two-fonts-r4"><link rel="stylesheet" href="../mobile/ornate-menus.css?v=20261023-r2&slimv=4e6fce26a0ea"><link rel="stylesheet" href="../demo/formal-menu.css?fontv=dafd0b4c3efe"><link rel="stylesheet" href="../demo/localization.css?l10n=layout-v1&layoutv=bd4236aac1cd"></head>
+<body>
+<main class="stage" aria-label="主角選擇">
+ <div class="scene-fill" aria-hidden="true"></div><img class="scene" id="scene" alt="">
+ <div class="vignette" aria-hidden="true"></div>
+ <a class="back" href="opening.html?uwv=pc-20261021-1">返回開場</a>
+ <header class="masthead"><div class="logo">神籙</div></header>
+ <span class="preview-label">橫版遊戲</span>
+ <button class="arrow prev" id="prev" aria-label="上一位主角"></button>
+ <button class="arrow next" id="next" aria-label="下一位主角"></button>
+ <section class="hero-info" aria-live="polite" aria-atomic="true">
+  <div class="panel-art" aria-hidden="true"></div><div class="panel-cloud" aria-hidden="true"></div>
+  <div class="country-heading"><img class="country-emblem" id="country-emblem" alt=""><div class="country" id="country"></div></div><div class="ornament" aria-hidden="true"></div>
+  <h1 id="hero-name"></h1><p class="job" id="job"></p>
+  <div class="divider" aria-hidden="true"></div><h2 id="story-title"></h2><p class="summary" id="summary"></p>
+  <button class="confirm" id="confirm">確認主角</button>
+ </section>
+ <section class="hero-picker" aria-label="本國主角"><button class="random ornate" id="random"><svg class="dice" aria-hidden="true" viewBox="0 0 32 34"><path d="M16 2 29 9v16l-13 7L3 25V9Z"/><path d="m3 9 13 8 13-8M16 17v15"/><g><ellipse cx="16" cy="9" rx="2.5" ry="1.5"/><circle cx="8" cy="16" r="1.6"/><circle cx="11" cy="24" r="1.6"/><circle cx="22" cy="17" r="1.6"/><circle cx="25" cy="23" r="1.6"/></g></svg>隨機選角</button><div class="portraits" id="portraits"></div></section>
+ <nav class="countries" id="countries" aria-label="選擇國別"></nav>
+ <p class="load-error" id="load-error" role="alert" hidden>主角圖片尚未載入，請重新整理。</p>
+</main>
+
+<script src="../game/player-display-copy.js?v=feeb860ee7ad-165fb9144fc5"></script><script defer src="../game/demo-storage.js"></script><script defer src="../game/portrait-duel/core/data.js"></script><script defer src="../game/portrait-duel/core/cn.js"></script><script defer src="../game/portrait-duel/core/kr.js"></script><script defer src="../game/portrait-duel/core/egypt-deck.js"></script><script defer src="../game/portrait-duel/core/taiwan-female-deck.js"></script><script defer src="../game/portrait-duel/core/story-enemies.js"></script><script defer src="../game/portrait-duel/core/yuan-story-enemies.js"></script><script defer src="../game/portrait-duel/core/karim-story-enemies.js"></script><script defer src="../game/portrait-duel/core/salma-story-enemies.js"></script><script defer src="../game/portrait-duel/core/einar-story-enemies.js"></script><script defer src="../game/portrait-duel/core/ingrid-story-enemies.js"></script><script defer src="../game/portrait-duel/core/onmyoji-deck.js"></script><script defer src="../game/portrait-duel/core/envoy-deck.js"></script><script defer src="../game/portrait-duel/core/thai-deck.js"></script><script defer src="../game/portrait-duel/core/india-deck.js"></script><script defer src="../game/portrait-duel/core/clergy-deck.js"></script><script defer src="../game/portrait-duel/core/nordic-deck.js"></script><script defer src="../game/demo-world-modules.js"></script><script defer src="../game/portrait-duel/core/expedition-no.js"></script><script defer src="../game/portrait-duel/core/expedition-eg.js?demo=eg-expedition-v1"></script><script defer src="../game/portrait-duel/core/expedition.js"></script><script src="../game/portrait-duel/core/yunshu.js?demo=cn-cards-20261123"></script><script defer src="../game/portrait-duel/core/duel-engine.js?fixv=de9d9c5b6a8e"></script><script defer src="../game/portrait-duel/lesson-data.js"></script><script defer src="../game/portrait-duel/story-lessons.js?tccopy=feeb860ee7ad-165fb9144fc5"></script><script defer src="../game/portrait-duel/yuan-story-lessons.js"></script><script defer src="../game/portrait-duel/meeting-lessons.js"></script><script defer src="../game/portrait-duel/karim-story-lessons.js?fixv=9414aa7b719e"></script><script defer src="../game/portrait-duel/salma-story-lessons.js?fixv=fcfac201173f"></script><script defer src="../game/portrait-duel/eg-meeting-lessons.js?fixv=a1720897d941"></script><script defer src="../game/portrait-duel/einar-story-lessons.js?fixv=fbdac90fcfeb"></script><script defer src="../game/portrait-duel/ingrid-story-lessons.js?fixv=da18da4478c9"></script><script defer src="../game/portrait-duel/no-meeting-lessons.js?fixv=e397cb2f876a"></script><script defer src="../game/portrait-duel/lessons.js"></script><script defer src="../game/portrait-duel/session.js"></script><script defer src="../game/campaign/campaign-data.js"></script><script defer src="../game/save-manager.js?tccopy=feeb860ee7ad-165fb9144fc5"></script><script defer src="../game/campaign/store.js?tccopy=feeb860ee7ad-165fb9144fc5&flowv=318ced714189&rewardchoice=4e9016b6d87d"></script><script defer src="../game/demo-art.js?fixv=f854561e1d72&slimv=a5a3a7f1e158"></script><script defer src="../game/demo-locale-audio.js?layoutv=4957d90e73e9&fixv=7c122877fe0d&slimv=38fc19221582"></script><script defer src="../game/story-data.js"></script><script defer src="../game/story-yuan-data.js?fixv=84327c1eca71"></script><script defer src="../game/story-karim-data.js?fixv=e8960ff2c048"></script><script defer src="../game/story-salma-data.js?fixv=f73c36839d68"></script><script defer src="../game/story-meeting-data.js"></script><script defer src="../game/story-eg-meeting-data.js?fixv=92f5c14a8fbd"></script><script defer src="../game/story-einar-data.js?fixv=de5ca1aac32b"></script><script defer src="../game/story-ingrid-data.js?fixv=7d82942ea9ec"></script><script defer src="../game/story-no-meeting-data.js?fixv=6cd0b64030e9"></script><script defer src="../game/story-goals.js?fixv=a2f2b37ca509"></script><script defer src="../game/duel-intro/video-bindings.js?slimv=a10b66749d44"></script><script defer src="../game/portrait-duel/attack-videos.js?attackv=1446512d8a63&slimv=5fc55424b10a"></script><script defer src="../game/portrait-duel/landscape-stage-backgrounds.js"></script><script defer src="../preview/pc-runtime.js"></script><script defer src="selection-type-data.js"></script><script defer src="character-selection-data.js"></script><script defer src="character-selection.js"></script><script defer src="../demo/word-art-display.js"></script><script src="../demo/dynamic-copy.js?l10n=dynamic-v1"></script><script src="../demo/i18n.js?l10n=core-v2&layoutv=4bb21c7b189c&fixv=318ca99b9f26&stage8copy=8523a1c13569&stage8hud=fe3a8478503d"></script><script defer src="../demo/formal-menu.js?l10n=core-v2&layoutv=3d90e6b35c5a&fixv=29103baf060c"></script></body><script defer src="../mobile/common.js?v=pc-shared-20261022-r1&reviewv=20261023-c2&reviewv=20261023-c3"></script></html>
+
+<script defer src="../demo/i18n-display.js?l10n=core-v2&layoutv=11f2aa25bc83&fixv=26fae1458a44"></script>
+<link data-demo-mobile-web="style" rel="stylesheet" href="../demo/mobile-web.css?v=2065f8e0e27f"><script data-demo-mobile-web="script" defer src="../demo/mobile-web.js?v=2065f8e0e27f&fixv=a709f2358320"></script>

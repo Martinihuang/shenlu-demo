@@ -1,0 +1,26 @@
+#dialog.deck-mode{width:var(--scene-width);height:var(--scene-height);max-width:100vw;max-height:100dvh;padding:0;border:0;border-radius:0;overflow:hidden}
+#dialog.deck-mode>header{display:none}
+#dialog.deck-mode #dialogBody{height:100%;min-height:0;overflow:hidden}
+.deck-grid-app{height:100%;display:grid;grid-template-rows:62px 84px minmax(0,1fr) 40px 112px;gap:5px;padding:10px;background:linear-gradient(#152335,#081321);color:#f3e8ca;overflow:hidden;font:14px/1.35 system-ui;box-sizing:border-box;touch-action:pan-y}
+.deck-grid-app *{box-sizing:border-box;min-width:0}
+#dialog .deck-grid-app button{margin:0;padding:7px;font:inherit;line-height:1.3;white-space:normal;background:#24384c;color:#fce7b9;border:1px solid #7a725b;border-radius:6px;cursor:pointer;min-height:30px}
+#dialog .deck-grid-app button:disabled{opacity:.42;cursor:default}
+#dialog .deck-grid-app button[aria-pressed=true]{background:#775b2e;border-color:#ffe0a3}
+.dg-header{display:grid!important;grid-template-columns:1fr auto;position:static!important;background:none!important;align-items:center;gap:3px!important}
+.dg-header>strong{font-size:18px}.dg-summary{grid-column:1/-1;color:#bfcbdb;font-size:12px}
+.dg-filters,.dg-tabs{display:flex;flex-wrap:wrap;gap:5px;align-content:center}
+.dg-filters>button,.dg-tabs>button{flex:1;width:auto!important}.dg-filter-row{display:flex;width:100%;gap:6px}.dg-filter-row select{width:50%;padding:7px;color:#fbe8c3;background:#182b3e;border:1px solid #7c775f;border-radius:5px;font-size:13px}.dg-selected{width:100%;font-size:14px;color:#ffe4a0}
+.dg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:6px;min-height:0;overflow:hidden;touch-action:pan-y}
+#dialog .dg-card{height:100%;display:flex;flex-direction:column;padding:4px;gap:1px;text-align:center;overflow:hidden;background:linear-gradient(#293f52,#152330)}
+.dg-art{flex:1;min-height:0;position:relative;background:#0c1723;overflow:hidden;border-radius:4px}.dg-art img{width:100%;height:100%;object-fit:contain}.dg-count{position:absolute;right:0;bottom:0;background:#07131ce8;border-radius:3px;color:#ffe59c;padding:1px 3px;font-size:11px}
+.dg-name{font-size:12px;line-height:1.2;min-height:28px;display:flex;align-items:center;justify-content:center;overflow-wrap:anywhere}.dg-stars{font-size:10px;line-height:13px;color:#ffd979;white-space:nowrap}.dg-values{font-size:10px;line-height:13px;white-space:nowrap;color:#e6ecf4}
+.dg-empty{grid-column:1/-1;align-self:center;text-align:center}
+.dg-pager{display:flex;align-items:center;gap:7px}.dg-pager button{width:auto!important;flex:1}.dg-pager span{text-align:center;flex:1;white-space:nowrap;font-size:12px}
+.dg-footer{display:flex;align-content:end;flex-wrap:wrap;gap:5px;min-height:0;overflow:hidden}
+#dialog .dg-message{width:100%;margin:0;line-height:1.3;font-size:12px;min-height:30px;max-height:32px;overflow-wrap:anywhere;color:#e6c995}
+.dg-footer>button{flex:1;min-height:34px!important;width:auto!important}.dg-footer>.dg-wide{flex-basis:100%}
+.dg-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-height:0;overflow:hidden}
+.dg-compare-card{display:flex;flex-direction:column;gap:5px;padding:8px;background:#14273a;border:1px solid #9b835d;border-radius:8px;overflow:hidden;min-height:0}.dg-compare-card small{color:#b3c7dc;font-size:12px}.dg-compare-card>strong{font-size:15px;min-height:36px;overflow-wrap:anywhere}.dg-compare-art{height:30%;min-height:35px;flex-shrink:1}.dg-compare-art img{width:100%;height:100%;object-fit:contain}
+#dialog .dg-compare-card p{font-size:13px;line-height:1.45;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+#dialog .dg-effect{font-size:13px;line-height:1.4}
+@media(max-height:740px){.deck-grid-app{grid-template-rows:54px 74px minmax(0,1fr) 34px 100px;gap:4px;padding:7px}.dg-compare-art{height:22%}.dg-name{min-height:24px;font-size:11px}.dg-compare-card>strong{font-size:13px;min-height:30px}#dialog .dg-compare-card p{font-size:12px;line-height:1.35}.dg-header>strong{font-size:16px}}

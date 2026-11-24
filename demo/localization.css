@@ -1,0 +1,145 @@
+.demo-full-rules summary{cursor:pointer;color:#f6dfab;padding:8px 0}
+.demo-full-rules p{white-space:pre-line}
+.demo-help-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:12px;margin-top:20px}
+.demo-help-actions>form,.demo-help-actions>button{min-width:0;max-width:100%;margin:0!important}
+.demo-help-actions>form{display:flex}
+#help-dialog .demo-help-actions button{float:none!important;margin:0!important;min-height:48px;width:100%;box-sizing:border-box;white-space:normal;letter-spacing:0;line-height:1.25}
+#cinematicPanel .cinematic-subtitles p>span{font-size:inherit;padding:0}
+@media(max-width:1100px){
+ html.shenlu-mobile[lang="en"] body.collection-landscape #content .lc-detail .detail-copy p{font-size:16px!important;line-height:1.4!important}
+}
+
+/* Keep the accepted frames; localized copy may wrap inside their existing bounds. */
+html[lang]:not([lang="zh-Hant"]) .hero-info .job,
+html[lang]:not([lang="zh-Hant"]) .hero-info #confirm{
+ max-width:100%;min-width:0;white-space:normal;word-break:normal;
+ overflow-wrap:break-word;letter-spacing:0;line-height:1.2;text-wrap:balance;
+}
+html[lang]:not([lang="zh-Hant"]) .hero-info #confirm{
+ display:grid;place-items:center;padding-inline:1cqw;
+}
+html[lang]:not([lang="zh-Hant"]) .hero-info .summary{
+ flex:1 1 0;min-height:0;max-width:100%;overflow:auto;letter-spacing:0;
+}
+html[lang="en"] .hero-info .job,
+html[lang="en"] .hero-info #confirm{font-size:clamp(14px,1.45cqw,28px)}
+
+html[lang]:not([lang="zh-Hant"]) .journey-stage .mode-tabs button,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .journey-tools button,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .gold-action,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .panel-heading h2,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .entry-caption span,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .selection-detail h3{
+ min-width:0;max-width:100%;white-space:normal;letter-spacing:0;
+ word-break:normal;overflow-wrap:break-word;text-wrap:balance;
+}
+html[lang]:not([lang="zh-Hant"]) .journey-stage .mode-tabs button,
+html[lang]:not([lang="zh-Hant"]) .journey-stage .gold-action{
+ line-height:1.15;padding-inline:.7cqw;
+}
+html[lang="en"] .journey-stage .mode-tabs button{font-size:clamp(13px,1.25cqw,24px)}
+html[lang="en"] .journey-stage .journey-tools button{font-size:clamp(12px,1.05cqw,20px)}
+html[lang="en"] .journey-stage .gold-action{font-size:clamp(14px,1.2cqw,23px)}
+html[lang="en"] .journey-stage .panel-heading h2{font-size:clamp(14px,1.3cqw,25px)}
+
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-progress,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-back,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-confirm,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-deck,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-reward,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection .world-nameplate strong,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection .world-nameplate small{
+ min-width:0;max-width:100%;white-space:normal;letter-spacing:0;
+ word-break:normal;overflow-wrap:break-word;text-wrap:balance;
+}
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-progress,
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-back{
+ padding:2px 12px;line-height:1.15;
+}
+html[lang]:not([lang="zh-Hant"]) #app.world-selection #world-confirm{
+ padding:6px 12px;line-height:1.15;
+}
+html[lang="en"] #app.world-selection #world-progress,
+html[lang="en"] #app.world-selection #world-back{font-size:24px}
+html[lang="en"] #app.world-selection #world-confirm{font-size:32px}
+html[lang="en"] #app.world-selection .world-nameplate strong{font-size:40px;line-height:1.2}
+
+/* The two foreground figures retain their existing name strip and art bounds. */
+html[lang]:not([lang="zh-Hant"]) .portraits .portrait .portrait-name{
+ display:flex;align-items:center;justify-content:center;max-width:100%;
+ white-space:normal;letter-spacing:0;word-break:normal;overflow-wrap:break-word;
+ padding:.1cqw .15cqw;line-height:1;text-wrap:balance;
+}
+html[lang="ja"] .portraits .portrait .portrait-name{font-size:1cqw}
+
+/* The live world menu is an embedded 3120px nations canvas, not world-portrait. */
+html[lang]:not([lang="zh-Hant"]) #scene:has(>#countryName) :is(.back,.mode,.description,.enter,.otherworld,.utility,h1){
+ letter-spacing:0;white-space:normal;word-break:normal;overflow-wrap:break-word;
+ text-align:center;text-wrap:balance;
+}
+html[lang]:not([lang="zh-Hant"]) #scene:has(>#countryName) #countryName>svg{
+ max-width:100%;max-height:100%;flex-shrink:1;
+}
+html[lang]:not([lang="zh-Hant"]) #scene:has(>#countryName) :is(.description,.utility){
+ padding-inline:24px;line-height:1.1;
+}
+/* Override only the inline max-content/nowrap imposed by centerLabels(). */
+html[lang]:not([lang="zh-Hant"]) #scene:has(>#countryName) :is(.back,.mode)>.frame-label{
+ width:calc(100% - 80px)!important;max-width:calc(100% - 80px)!important;
+ white-space:normal!important;line-height:1.15!important;
+ text-align:center;overflow-wrap:break-word;
+}
+html[lang]:not([lang="zh-Hant"]) #scene:has(>#countryName) :is(.enter,.otherworld)>.button-label{
+ width:calc(100% - 360px)!important;max-width:calc(100% - 360px)!important;
+ white-space:normal!important;line-height:1.15!important;
+ text-align:center;overflow-wrap:break-word;
+}
+html[lang="en"] #scene:has(>#countryName) :is(.back,.mode){font-size:48px}
+html[lang="en"] #scene:has(>#countryName) :is(.description,.utility){font-size:48px}
+html[lang="en"] #scene:has(>#countryName) :is(.enter,.otherworld){font-size:52px}
+
+/* Localized return text must remain inside the original arrow frame. */
+html[lang]:not([lang="zh-Hant"]) .journey-stage a.back{white-space:normal;letter-spacing:0;font-size:clamp(12px,.9cqw,18px);line-height:1.1;padding-right:.5cqw;display:flex;align-items:center}
+html[lang="en"] .journey-stage .hero-signature{max-height:72%;display:flex;flex-direction:row;align-items:flex-start;gap:.6cqw}
+html[lang="en"] .journey-stage .hero-signature h1,html[lang="en"] .journey-stage .hero-signature p{max-height:100%;letter-spacing:0;line-height:1.15;margin:0;white-space:normal}
+html[lang="en"] .journey-stage .hero-signature p{font-size:clamp(12px,1cqw,20px)}
+
+/* Current JA professions are at most 12 full-width characters; fit the whole reading. */
+html[lang="ja"] .hero-info .job{font-size:1.75cqw;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+
+/* Leave a separate top strip for the locked badge; chapter titles stay below it. */
+html[lang]:not([lang="zh-Hant"]) .journey-stage .entry-card.locked .entry-caption{top:28%;bottom:0;min-height:0;padding-top:.15cqw;padding-bottom:.15cqw;align-items:center}
+html[lang="ja"] #scene:has(>#countryName) .utility{font-size:48px}
+
+/* Native selects must show the full selected option; the existing filter strip can scroll. */
+html[lang]:not([lang="zh-Hant"]) body.collection-landscape .lc-filters select{width:auto!important;min-width:14ch!important;max-width:none!important;padding-right:1.8em!important}
+html[lang]:not([lang="zh-Hant"]) body.collection-landscape .lc-filters input{width:22ch!important;min-width:0!important}
+html.shenlu-mobile[lang]:not([lang="zh-Hant"]) body.collection-landscape #content .lc-detail .detail-top{flex-wrap:wrap!important}
+html.shenlu-mobile[lang]:not([lang="zh-Hant"]) body.collection-landscape #content .lc-detail .detail-top h1{min-width:0!important;flex:1 1 12ch!important;white-space:normal!important;overflow-wrap:break-word!important;line-height:1.2!important}
+html.shenlu-mobile[lang]:not([lang="zh-Hant"]) body.collection-landscape #content .lc-detail .detail-tabs{flex:1 1 auto!important;flex-wrap:wrap!important;min-width:0!important}
+html.shenlu-mobile[lang]:not([lang="zh-Hant"]) body.collection-landscape #content.editing .lc-detail.card-detail{grid-template-rows:auto minmax(0,1fr)!important}
+
+/* New reward guidance stays inside the existing text and receipt surfaces. */
+.demo-reward-claim{display:flex;flex-wrap:wrap;align-items:center;gap:.4em .8em;max-width:100%}
+.demo-reward-claim p{margin:0}
+#stage-message .demo-reward-edit{max-width:100%;margin-left:0;white-space:normal;overflow-wrap:break-word}
+#stage-message:has(.demo-reward-claim){box-sizing:border-box;max-height:80dvh;overflow:auto}
+html[lang="ja"] #scene:has(>#countryName) .description,html[lang="ko"] #scene:has(>#countryName) .description{font-size:48px}
+html[lang="en"] #scene:has(>#countryName) #description[data-reward-guide]{font-size:42px}
+html[lang="ja"] #scene:has(>#countryName) #description[data-reward-guide]{font-size:46px}
+
+/* Reserve the horizontal scrollbar as well as the complete filter labels. */
+html.shenlu-mobile body.collection-landscape #content.filters-open{grid-template-rows:38px 84px minmax(0,1fr) 44px!important}
+html.shenlu-mobile body.collection-landscape #content .lc-filters{align-items:flex-start!important}
+
+/* English chapter names need room beside the chapter-number badge. */
+html[lang="en"] .journey-stage .entry-caption span{font-size:clamp(12px,1.3cqw,22px);line-height:1.12}
+html[lang="ko"] #scene:has(>#countryName) .utility{font-size:48px}
+html[lang]:not([lang="zh-Hant"]) #scene .opening-animation{letter-spacing:0!important;white-space:nowrap}
+html[lang="ko"] #scene .minor{font-size:48px;letter-spacing:0}
+html[lang="ko"] #scene .minor button{white-space:nowrap}
+@media(min-width:1101px){
+ html.shenlu-mobile body.collection-landscape #content.filters-open{grid-template-rows:38px auto minmax(0,1fr) 44px!important}
+ html.shenlu-mobile body.collection-landscape #content .lc-filters{flex-wrap:wrap!important;overflow:visible!important}
+ html.shenlu-mobile body.collection-landscape #content .lc-filters>button{align-self:flex-end}
+}

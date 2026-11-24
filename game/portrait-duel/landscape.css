@@ -1,0 +1,104 @@
+/* Accepted v11 stage geometry, applied to the live duel controls. */
+html.landscape-duel .expedition-duel .cardUnit[data-side="1"]:not(.hidden)::before{content:"";position:absolute;bottom:-3px;left:28%;width:44%;height:15px;border-radius:50%;background:radial-gradient(ellipse,#07101780,transparent 72%);pointer-events:none}
+html.landscape-duel .expedition-hand-toggle{position:absolute;left:1380px;top:1000px;z-index:9;padding:9px 14px;border:1px solid #b79c65;border-radius:4px;background:#102331e8;color:#f4dfae;font-size:19px}
+html.landscape-duel .expedition-hand-collapsed #hand{visibility:hidden;pointer-events:none}
+html.landscape-duel .expedition-duel .enemy-unit-name{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);padding:2px 7px;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#071321bf;border-radius:3px;font-size:16px}
+html.landscape-duel .expedition-duel .enemy-unit-stance{font-size:16px;margin-right:6px}
+html.landscape-duel .expedition-duel .enemybadge>.stance-value{display:inline;font-size:20px}
+html.landscape-duel .stage{width:1920px;height:1080px}
+html.landscape-duel .background{object-fit:cover;object-position:center!important;filter:none!important}
+html.landscape-duel .vignette{background:linear-gradient(#02091655,transparent 23%,transparent 75%,#020916bb);pointer-events:none}
+html.landscape-duel #enemyHero{display:none}
+html.landscape-duel .allied-close-layer{width:1920px;height:1080px;overflow:clip}
+html.landscape-duel .panel{border:2px solid #baa477;background:linear-gradient(135deg,#112a3aee,#07111ceb);box-shadow:inset 0 0 0 4px #0c1822,inset 0 0 0 5px #756a4b,0 5px 15px #0006;border-radius:5px;filter:none}
+html.landscape-duel .panel>.frame{display:none}
+html.landscape-duel #enemyHUD{left:auto!important;right:22px;top:18px!important;width:345px!important;height:142px!important;padding:12px 185px 12px 16px;overflow:visible}
+html.landscape-duel #ownHUD{left:22px!important;top:auto!important;bottom:22px;width:345px!important;height:142px!important;padding:12px 14px 12px 185px;overflow:visible}
+html.landscape-duel .enemy-face,html.landscape-duel .own-face{width:168px;height:284px;clip-path:none;border:0;background:none;pointer-events:none;overflow:hidden}
+html.landscape-duel .enemy-face{left:auto;right:7px;top:7px}
+html.landscape-duel .own-face{left:7px;top:auto!important;bottom:7px}
+html.landscape-duel .portrait img{left:-84px;top:-8px;width:336px;height:504px;object-fit:contain!important;object-position:50% 0%!important;transform:none!important}
+html.landscape-duel #enemyHUD .enemy-title,html.landscape-duel .own-title{margin:0;font-size:20px;line-height:1.3;white-space:normal}
+html.landscape-duel #enemyHUD .enemy-title>span,html.landscape-duel .own-title>span{display:block;margin:5px 0;font-size:19px;line-height:1.3;color:#fff1d2}
+html.landscape-duel #enemyHUD .enemy-lp,html.landscape-duel .own-title>div{font-size:22px;line-height:32px;font-weight:400;white-space:nowrap}
+html.landscape-duel #enemyHUD .enemy-lp b,html.landscape-duel .own-title b{font-size:29px}
+html.landscape-duel #menu{left:20px!important;top:18px!important;width:76px!important;height:80px!important;font-size:20px}
+html.landscape-duel .hamburger{font-size:28px;line-height:32px}
+html.landscape-duel #phase{left:20px!important;top:113px!important;width:290px!important;height:58px!important;font-size:20px;padding:12px 10px}
+html.landscape-duel .traps{width:285px!important;height:68px!important;padding:10px 12px;gap:8px}
+html.landscape-duel .traps:has(#back1){left:auto!important;right:22px;top:325px!important}
+html.landscape-duel .traps:has(#back0){left:22px!important;top:auto!important;bottom:324px}
+html.landscape-duel .trap-label{font-size:17px}
+html.landscape-duel .field-display{position:absolute;width:28px;height:42px;z-index:9;padding:0;border:1px solid #d5b477;border-radius:2px;background:#142332;cursor:pointer;overflow:hidden}
+html.landscape-duel .field-display[hidden]{display:none}
+html.landscape-duel #field1{right:246px;top:252px}
+html.landscape-duel #field0{left:266px;bottom:258px}
+html.landscape-duel .field-display img{display:block;width:100%;height:100%;object-fit:fill}
+html.landscape-duel .field-display:disabled{opacity:.65;cursor:default}
+html.landscape-duel .field-display:focus-visible{outline:3px solid #fff0ac;outline-offset:3px}
+html.landscape-duel .trap-cells{flex:0 0 auto;gap:5px}
+html.landscape-duel .trap-cells button,html.landscape-duel .trap-cells i{width:28px;height:42px;flex:none}
+html.landscape-duel .trap-cells button img{width:100%;height:100%}
+html.landscape-duel .roster{left:auto!important;right:22px;top:auto!important;bottom:22px;width:210px!important;height:284px!important;background:none;border:0;box-shadow:none;z-index:8}
+html.landscape-duel .roster-list{display:flex;flex-direction:column;gap:10px;height:100%;margin:0}
+html.landscape-duel .roster-row{width:100%;height:88px;flex:none;padding:8px;gap:8px;text-align:left;border:2px solid #baa477;border-radius:5px;background:rgba(10,29,40,.85)}
+html.landscape-duel .roster-face,html.landscape-duel .otherworld .roster-face-wrap{width:53px;height:68px;flex-shrink:0;object-fit:cover;object-position:top;border-radius:3px}
+html.landscape-duel .roster-info{min-width:0;font-size:16px;line-height:1.3}
+html.landscape-duel .roster-info>span{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+html.landscape-duel .roster-info>div{font-size:20px;color:#fff2c4;white-space:nowrap;margin-top:5px}
+html.landscape-duel .empty-roster{font-size:18px}
+html.landscape-duel .enemybadge,html.landscape-duel .ally-number{background:rgba(6,17,27,.45);border-color:rgba(207,184,126,.45);box-shadow:none;text-shadow:0 2px 4px #000}
+html.landscape-duel .enemybadge{font-size:23px;padding:4px 16px}
+html.landscape-duel .ally-number{font-size:29px;padding:7px 22px;z-index:8}
+html.landscape-duel .hand-backing{display:none}
+html.landscape-duel .hand{left:575px;top:722px;width:770px;height:208px;display:block;padding:0;overflow:visible;pointer-events:none;z-index:6}
+html.landscape-duel .hand .card{width:148px;height:208px;transform-origin:50% 170%;transform:rotate(var(--fan-angle));pointer-events:auto;transition:translate .16s,scale .16s;box-shadow:0 7px 14px #000b}
+html.landscape-duel .hand .card:hover,html.landscape-duel .hand .card:focus-visible{transform:rotate(var(--fan-angle));translate:0 -20px;z-index:30!important;filter:brightness(1.12)}
+html.landscape-duel .hand .card.selected{translate:0 -30px;scale:1.12;z-index:29!important;border-color:#fff0a7}
+html.landscape-duel .hand .card-name{font-size:14px;line-height:26px;height:27px;min-height:27px;text-align:center;padding:0 1px}
+html.landscape-duel .hand .card-stats{bottom:27px;font-size:15px;line-height:17px;padding:3px 5px}
+html.landscape-duel .hand .card-stars{font-size:14px}
+html.landscape-duel .nohand{font-size:23px;padding-top:140px}
+html.landscape-duel .action{top:auto!important;bottom:18px;width:220.667px!important;height:62px!important;font-size:23px;letter-spacing:0;z-index:8}
+html.landscape-duel #view{left:615px!important}
+html.landscape-duel #primary{left:849.667px!important;background:linear-gradient(#693331,#341a24)}
+html.landscape-duel #end{left:1084.334px!important;background:linear-gradient(#54412a,#302b25);border-color:#d6b778}
+html.landscape-duel #lessonGoal,html.landscape-duel .story-duel #lessonGoal{left:112px;top:25px;width:auto;max-width:270px;font:21px/1.35 "Microsoft JhengHei",sans-serif;padding:12px 16px}
+html.landscape-duel #notice{left:575px;top:975px;width:770px;max-height:39px;font-size:19px;line-height:1.4;pointer-events:none}
+html.landscape-duel #effectHint{left:575px;top:100px;width:770px;font-size:25px;padding:16px 22px;text-align:center;border-radius:6px;box-shadow:0 6px 24px #0009}
+html.landscape-duel #skipFX{left:20px;top:185px;font-size:20px}
+html.landscape-duel #attackRoute{width:1920px;height:1080px}
+html.landscape-duel #attackConfirm{left:575px;top:630px;width:770px;font-size:23px}
+html.landscape-duel #attackConfirm button{font-size:23px;padding:12px 26px}
+html.landscape-duel #fx{width:1920px;height:1080px}
+html.landscape-duel #fx .summon-show,html.landscape-duel #fx .summon-show.high{left:0;top:0;width:1920px;height:1080px}
+html.landscape-duel #fx .summon-art,html.landscape-duel #fx .high .summon-art{top:45px;width:760px;height:840px}
+html.landscape-duel #fx .normal .summon-art{top:200px;width:430px;height:610px}
+html.landscape-duel #fx .summon-caption,html.landscape-duel #fx .high .summon-caption,html.landscape-duel #fx .normal .summon-caption{top:900px;font-size:30px}
+html.landscape-duel .allied-close-layer .cardUnit.hidden{top:825px!important}
+html.landscape-duel .result-card{width:760px;padding:24px 38px;max-height:1020px;overflow:auto}
+html.landscape-duel .result h1{font-size:48px;margin:10px 0 15px}
+html.landscape-duel .result p{font-size:23px;line-height:1.45;margin:12px 0}
+html.landscape-duel .result button{font-size:23px;padding:13px;margin:10px 0}
+html.landscape-duel dialog,html.landscape-duel body:has(.story-duel) dialog{width:min(820px,94vw);max-width:94vw;max-height:90dvh;padding:18px}
+html.landscape-duel dialog header{top:-18px}
+html.landscape-duel dialog .detailArt{height:min(36dvh,320px);width:100%;object-fit:contain}
+@media(prefers-reduced-motion:reduce){html.landscape-duel .hand .card{transition:none}}
+
+#effectHint[data-side="0"]{border-color:#89d9eb;color:#e1faff;background:#102c3bf2}
+#effectHint[data-side="1"]{border-color:#efad81;color:#fff0d5;background:#402322f2}
+
+html.landscape-duel .enemy-hand-count{position:absolute;right:22px;top:401px;width:285px;padding:7px 12px;border:1px solid #bda16b88;border-radius:3px;background:#10202bce;color:#eadbb9;font-size:18px;line-height:26px;z-index:8;pointer-events:none}
+
+/* Concealed expedition spirits keep their slot geometry; the rotated card rests on its lower edge. */
+html.landscape-duel .expedition-duel #enemyUnits .cardUnit.hidden,html.landscape-duel .expedition-duel #nearUnits .cardUnit.hidden{top:var(--field-slot-top)!important;width:var(--field-slot-width)!important;height:var(--field-slot-height)!important}
+html.landscape-duel .expedition-duel .cardUnit.hidden>img.set-spirit{top:calc(100% - 70px);left:50%;width:140px;height:210px;max-height:none;margin:0;transform:translate(-50%,-50%) rotate(90deg)}
+
+/* Public discard piles beside each side's trap row, matching field-card dimensions. */
+html.landscape-duel .discard-display{position:absolute;width:28px;height:42px;z-index:9;padding:0;border:1px solid #d5b477;border-radius:2px;background:linear-gradient(#243542,#0b1723);color:#f8e6be;cursor:pointer;overflow:visible}
+html.landscape-duel #grave0{left:335px;bottom:337px}
+html.landscape-duel #grave1{right:347px;top:338px}
+html.landscape-duel .discard-label{position:absolute;bottom:calc(100% + 5px);left:50%;transform:translateX(-50%);font-size:16px;line-height:20px;white-space:nowrap;text-shadow:0 2px 3px #000}
+html.landscape-duel .discard-count{display:block;font-size:19px;line-height:40px;text-align:center}
+html.landscape-duel .discard-display:disabled{opacity:.65;cursor:default}
+html.landscape-duel .discard-display:focus-visible{outline:3px solid #fff0ac;outline-offset:3px}

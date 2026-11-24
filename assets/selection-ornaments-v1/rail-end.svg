@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 12" fill="none"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8c7043"/><stop offset=".3" stop-color="#e4c581"/><stop offset=".5" stop-color="#fff0b4"/><stop offset=".7" stop-color="#bc9048"/><stop offset="1" stop-color="#e3bd72"/></linearGradient>
+<linearGradient id="fine" gradientUnits="userSpaceOnUse" x1="0" x2="90" y1="0" y2="0"><stop stop-color="#917444" stop-opacity="0"/><stop offset=".25" stop-color="#b49358"/><stop offset=".75" stop-color="#cfb075"/><stop offset="1" stop-color="#a28146" stop-opacity="0"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fffce5"/><stop offset=".14" stop-color="#ffe6a0" stop-opacity=".9"/><stop offset=".45" stop-color="#d8a844" stop-opacity=".28"/><stop offset="1" stop-color="#c99436" stop-opacity="0"/></radialGradient>
+<linearGradient id="dark" x2=".5" y2="1"><stop stop-color="#29251b" stop-opacity=".94"/><stop offset="1" stop-color="#0b0e12" stop-opacity=".96"/></linearGradient>
+</defs><path stroke="url(#fine)" d="M0 6H70M82 6H90"/><path stroke="#a78a54" d="m71 6 4-3 4 3-4 3Z"/></svg>

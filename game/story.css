@@ -1,0 +1,71 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#070c12;color:#f7dda0;font-family:system-ui,"Microsoft JhengHei",sans-serif}body{display:grid;place-items:center}button,a{font:inherit}button,.button{background:#241f17;border:1px solid #aa8843;border-radius:7px;color:#ffe3a0;cursor:pointer;padding:.6em;text-decoration:none;text-align:center}a{color:#eed694}button:disabled{opacity:.4;cursor:default}[hidden]{display:none!important}#storyApp{width:min(100vw,177.777778dvh);height:min(100dvh,56.25vw);display:flex;flex-direction:column;background:#101925;overflow:hidden;position:relative;font-size:clamp(11px,1.6dvh,17px)}header{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 10px;flex:0 0 auto;border-bottom:1px solid #675332}header a{font-size:.85em}header strong{font-size:.94em}header button{padding:4px 8px}#chapterView{padding:12px;min-height:0;flex:1;display:flex;flex-direction:column;gap:9px}h1,p{margin:0}h1{font-size:1.5em}.lead{font-size:.88em;line-height:1.6;color:#c8d3df}#chapterGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;flex:1;min-height:0}#chapterGrid button{display:flex;flex-direction:column;justify-content:center;gap:5px;min-width:0;padding:6px 3px}#chapterGrid small{font-size:.78em;color:#c7b58b}#chapterGrid strong{font-size:.9em;overflow-wrap:anywhere}.coming{font-size:.82em;text-align:center;color:#aab2bb}#sceneView{display:flex;flex-direction:column;flex:1;min-height:0}.scene-art{position:relative;flex:1;min-height:0;background:#131d26;overflow:hidden}.scene-art img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}.scene-title{position:absolute;bottom:0;width:100%;padding:28px 12px 10px;background:linear-gradient(transparent,#101925)}.scene-title small{color:#ffda8b}.dialogue{padding:11px 13px;flex:0 0 auto;min-height:31%;display:flex;flex-direction:column;gap:9px}.dialogue-top{display:flex;justify-content:space-between;font-size:.95em}#pageCount{font-size:.8em;color:#aab2bb}#dialogueText{font-size:1em;line-height:1.7;min-height:5.1em;overflow-wrap:anywhere}#goal{font-size:.82em;color:#b6cce0;line-height:1.5}#rewardInfo{font-size:.8em}.actions{display:flex;gap:8px}.actions button{flex:1}#skip{flex:.65;background:transparent}#deckLink{text-align:center;font-size:.85em}footer{text-align:center;padding:5px;font-size:.73em;color:#8e9dab}#error{position:absolute;inset:auto 10px 28px;background:#421e23;border:1px solid #e6a480;padding:12px;line-height:1.6;z-index:5}@media(max-height:650px){.dialogue{gap:5px;padding:8px 11px}#dialogueText{line-height:1.5;min-height:4.5em}header{padding:6px 8px}#chapterView{padding:8px;gap:6px}}
+/* Chapter artwork stays inside the fixed chapter grid. */
+#chapterGrid .chapter-card{position:relative;overflow:hidden;isolation:isolate;justify-content:flex-end;padding:7px 4px;gap:3px;border-color:#8e7449;min-height:0;text-shadow:0 2px 4px #000;background:#18202b}
+.chapter-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.chapter-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(#0005,transparent 25%,#080d16c9 62%,#080d16f5)}
+#chapterGrid .chapter-number{position:absolute;top:6px;left:7px;font-size:1.06em;color:#fff0c0;font-weight:700}
+#chapterGrid .chapter-name{color:#ffe5a1;line-height:1.35;font-size:.9em}
+#chapterGrid .chapter-status{color:#e3d5b3;font-size:.71em;line-height:1.3}
+#chapterGrid button:disabled{opacity:.72}#chapterGrid button:disabled .chapter-image{filter:grayscale(.7) brightness(.65)}
+.scene-art{background-size:cover;background-position:center}
+
+/* First chapter shows the whole action: tiger on the cord and A-Ze lifting the talisman. */
+.scene-art[data-chapter="L1"] img{object-fit:cover;object-position:center 42%;padding:0;background:none}
+.scene-art[data-chapter="L1"] .scene-title{padding-top:8px;background:linear-gradient(transparent,#101925e6 35%)}
+
+#goal{align-self:flex-start;padding:.35em .8em;color:#ffe3a0;font-size:.88em}
+#goalDialog{box-sizing:border-box;width:min(88vw,760px);max-height:86dvh;margin:auto;padding:14px;border:1px solid #b99a5f;border-radius:12px;background:#101925;color:#ffe3a0;font:15px/1.65 system-ui,"Microsoft JhengHei",sans-serif;overflow:auto}
+#goalDialog::backdrop{background:#000a}#goalDialog header{padding:0 0 10px}#goalDialog h2{font-size:1.08em;margin:0}#goalBody p{margin:12px 0;overflow-wrap:anywhere}.goal-pages{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}.goal-pages button{padding:.5em .8em}.goal-pages span{font-size:.85em;white-space:nowrap}
+
+/* Story choices keep each step on a fixed page. */
+#storyChoices{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:.88em}#storyChoices button{padding:.45em;line-height:1.4}#storyChoices button[aria-pressed=true]{background:#564326;border-color:#ffdc8a}#storyChoices a{grid-column:1/-1;text-align:center;font-size:.9em}.scene-art img.partner-portrait{object-fit:contain;object-position:center bottom;padding:0 0 48px}.scene-art{background-size:cover;background-position:center}
+
+/* Accepted A-Ze landscape chapter art: preserve the complete composition. */
+.scene-art img[src*="story/landscape/tw-az/"]{object-fit:contain;object-position:center;background:#101925}
+
+/* Accepted tw-yuan landscape chapter art: preserve the complete composition. */
+.scene-art img[src*="story/landscape/tw-yuan/"]{object-fit:contain;object-position:center;background:#101925}
+
+/* Accepted landscape narrative images; desktop layout is the default. */
+#storyApp.landscape-story{width:min(100vw,177.7778dvh);height:min(100dvh,56.25vw);font-size:clamp(12px,1.85dvh,20px)}
+.landscape-story #sceneView{position:relative}
+.landscape-story .scene-art{position:absolute;inset:0;background:#070c12!important}
+.landscape-story .scene-art img,.landscape-story .scene-art[data-chapter] img{object-fit:contain;object-position:center;padding:0;background:#070c12}
+.landscape-story .scene-title{top:0;bottom:auto;width:auto;max-width:70%;padding:12px 24px;background:linear-gradient(90deg,#080e19dd,transparent);text-shadow:0 2px 4px #000}
+.landscape-story .dialogue{position:absolute;bottom:12px;left:5%;width:90%;min-height:0;gap:5px;padding:12px 20px;background:linear-gradient(90deg,#07101aee,#101b28d9);border:1px solid #a48a54;border-radius:8px;box-shadow:0 5px 20px #0007}
+.landscape-story #dialogueText{min-height:0;line-height:1.55}
+.landscape-story .actions{position:absolute;right:18px;bottom:10px;width:30%;gap:8px}
+.landscape-story #goal{margin-top:5px}
+.landscape-story #rewardInfo{max-width:65%}
+.landscape-story #deckLink{position:absolute;bottom:16px;left:26%;font-size:.8em}
+.landscape-story #storyChoices{max-width:100%}
+.landscape-story #borrowSupport{max-width:65%}
+@media(max-height:650px){.landscape-story .dialogue{padding:8px 14px;bottom:5px;gap:3px}.landscape-story #storyChoices{font-size:.8em}.landscape-story .scene-title{padding:7px 18px}}
+
+/* Desktop story goal: retain the existing paged content. */
+body:has(#storyApp.landscape-story) #goalDialog{width:min(88vw,760px);padding:22px 28px;font-size:18px;line-height:1.75}
+
+/* Cinematic audio shares the existing story, choices and reward flow. */
+#storyApp.cinematic-story{width:min(100vw,177.7778dvh);height:min(100dvh,56.25vw)}
+.cinematic-story #sceneView{position:relative}
+.cinematic-story .scene-art{position:absolute;inset:0;background:#070c12!important}
+.cinematic-story .scene-art img,.cinematic-story .scene-art[data-chapter] img{object-fit:contain;object-position:center;padding:0;background:#070c12}
+.cinematic-story .scene-title{top:0;bottom:auto;max-width:75%;background:linear-gradient(90deg,#080e19dd,transparent)}
+.cinematic-story .dialogue{position:absolute;bottom:10px;left:auto;right:4%;width:30.666667%;min-height:0;padding:10px 16px;gap:4px;background:#0b1522eb;border:1px solid #a48a54;border-radius:8px}
+#cinematicPanel audio{display:none}
+#cinematicStatus{font-size:.8em;margin:2px 0}
+#cinematicPanel>button{font-size:.8em;padding:3px 12px}
+.cinematic-story .actions{position:static;display:flex;width:auto;justify-content:flex-end;margin:0}
+.cinematic-story #goal{position:absolute;right:18px;bottom:12px;transform:translateX(-210px);font-size:.8em}
+.cinematic-story #storyChoices{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:4px}
+.cinematic-subtitles p{margin:4px 0;font-size:.88em;line-height:1.5}
+.cinematic-subtitles button{font-size:.75em;padding:2px 10px}.cinematic-subtitles span{font-size:.75em;padding:0 12px}
+#cinematicPanel [hidden],.cinematic-story [hidden]{display:none!important}
+
+.cinematic-story .actions{gap:10px}.cinematic-story .actions button{width:auto;min-width:140px}.cinematic-story #goal{right:170px;transform:none}
+
+
+.cinematic-story #next,.cinematic-story #skip{flex:0 0 140px}.cinematic-story #goal{position:static;align-self:flex-start}.cinematic-story .actions{margin-top:-32px;align-self:flex-end}
+
+
+.cinematic-story .actions{margin-top:0;align-self:stretch;flex-wrap:wrap;gap:6px}.cinematic-story #next,.cinematic-story #skip{flex:1;min-width:0;padding:6px 10px}.cinematic-story #storyChoices{grid-template-columns:1fr}.cinematic-story .dialogue{max-height:85%;overflow-y:auto}

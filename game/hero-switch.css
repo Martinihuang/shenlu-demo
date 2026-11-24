@@ -1,0 +1,17 @@
+#heroSwitchDialog{box-sizing:border-box;width:min(94vw,1120px);height:min(88dvh,680px);max-height:94dvh;margin:auto;padding:10px;border:1px solid #b99a5f;border-radius:10px;background:#101925;color:#ffe3a0;font-family:system-ui,"Microsoft JhengHei",sans-serif;overflow:hidden}
+#heroSwitchDialog[open]{display:flex;flex-direction:column;gap:8px}
+#heroSwitchDialog::backdrop{background:#000b}
+.hero-switch-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none}
+.hero-switch-head h2{font-size:17px;margin:0}
+#heroSwitchDialog button{font:inherit;color:#ffe3a0;border:1px solid #8e7449;border-radius:6px;background:#241f17;cursor:pointer}
+.hero-switch-head button{padding:5px 12px}
+.hero-switch-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:12px;flex:1;min-height:0}
+.hero-switch-grid button{min-width:0;min-height:0;padding:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;overflow:hidden}
+.hero-switch-grid strong{font-size:clamp(11px,1.9dvh,15px)}
+.hero-switch-grid small{font-size:clamp(9px,1.5dvh,12px);color:#c8d3df}
+.hero-switch-grid button[aria-pressed=true]{background:#554026;border-color:#ffe3a0}
+.hero-switch-grid button:disabled{opacity:.5;cursor:default}
+#heroSwitchDialog p{font-size:12px;line-height:1.4;margin:0;flex:none}
+#heroSwitchDialog button:focus-visible{outline:2px solid #fff;outline-offset:-3px}
+
+.hero-switch-country{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr);gap:8px;min-height:0;padding:10px;border:1px solid #685737;border-radius:6px;background:#0b1420}.hero-switch-country h3{grid-column:1/-1;margin:0;text-align:center;font-size:16px;font-weight:400;color:#d7be87}

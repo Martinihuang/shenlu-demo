@@ -1,0 +1,13 @@
+/* Physical-screen overlays are outside the existing logical 1040px body zoom. */
+.demo-safe-area-probe{position:fixed;visibility:hidden;pointer-events:none;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+html.demo-mobile-safe #shenluSharedMenu{inset:auto!important;left:var(--demo-safe-x,0px)!important;top:var(--demo-safe-y,0px)!important;width:var(--demo-safe-width,100vw)!important;height:var(--demo-safe-height,100dvh)!important}
+html.demo-mobile-safe #shenluSpiritGallery>header{top:max(8px,var(--demo-inset-top,0px))!important;left:max(8px,var(--demo-inset-left,0px))!important;right:max(8px,var(--demo-inset-right,0px))!important}
+html.demo-mobile-safe #shenluSpiritGallery>footer{bottom:max(8px,var(--demo-inset-bottom,0px))!important;left:max(8px,var(--demo-inset-left,0px))!important;right:max(8px,var(--demo-inset-right,0px))!important}
+html.demo-mobile-safe #shenluSpiritGallery.spirit-card-gallery .spirit-zoom-tools{left:max(8px,var(--demo-inset-left,0px))!important;top:calc(max(8px,var(--demo-inset-top,0px)) + 44px)!important}
+html.demo-mobile-safe #opening-animation-dialog [data-close]{top:max(16px,var(--demo-inset-top,0px));right:max(16px,var(--demo-inset-right,0px))}
+html.demo-mobile-safe #opening-animation-dialog [data-play]{bottom:max(32px,var(--demo-inset-bottom,0px))}
+html.demo-mobile-safe #opening-animation-dialog .opening-animation-status{bottom:calc(max(32px,var(--demo-inset-bottom,0px)) + 64px)}
+#demoMobileOrientation{position:fixed;z-index:2147483646;box-sizing:border-box;left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));top:max(10px,env(safe-area-inset-top,0px));display:flex;align-items:flex-start;gap:8px;padding:10px 12px;background:#091520f5;color:#fff3d5;border:1px solid #c8a667;border-radius:8px;font-family:system-ui,sans-serif;font-size:14px;line-height:1.45;box-shadow:0 3px 14px #0008}
+#demoMobileOrientation[hidden]{display:none!important}
+#demoMobileOrientation span{flex:1;min-width:0;overflow-wrap:break-word}
+#demoMobileOrientation button{flex:0 0 40px;min-width:40px;min-height:40px;font:24px/1 system-ui;background:#1b2936;color:inherit;border:1px solid #c8a667;border-radius:5px;cursor:pointer}

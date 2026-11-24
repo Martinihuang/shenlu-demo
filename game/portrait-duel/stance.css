@@ -1,0 +1,20 @@
+.defense-screen{display:block;position:absolute;left:50%;bottom:0;width:76%;max-width:210px;aspect-ratio:1.5;pointer-events:none;opacity:0;transform:translate(-50%,20px);transition:opacity .22s,transform .22s;filter:drop-shadow(0 3px 5px #000a)}
+.defense-screen[hidden]{display:none}
+.cardUnit .defense-screen img{position:absolute;left:50%;top:50%;width:66.6667%;height:150%;max-height:none;margin:0;object-fit:fill;transform:translate(-50%,-50%) rotate(90deg)}
+.faceup-defense>.defense-screen{opacity:1;transform:translate(-50%,0)}
+.otherworld .allied-close-layer .cardUnit:not(.hidden)>img{object-position:center top}
+.otherworld .allied-close-layer .defense-screen{top:200px;bottom:auto;width:62%;max-width:285px}
+.otherworld .roster-face-wrap{position:relative;flex-shrink:0;width:49px;height:56px}
+.otherworld .roster-face-wrap .defense-screen{width:90%;bottom:0}
+.otherworld .roster-face-wrap .defense-screen img{position:absolute;left:50%;top:50%;width:66.6667%;height:150%;transform:translate(-50%,-50%) rotate(90deg)}
+.otherworld .guard-value{color:#c7e8ff}
+.otherworld .ally-number{white-space:nowrap;font-size:25px;min-width:82px;padding:5px 4px}
+@media(prefers-reduced-motion:reduce){.defense-screen{transition:none}}
+
+.enemybadge .stance-label,.ally-number .stance-label{display:block;font-size:18px;line-height:1.15;font-weight:600;letter-spacing:1px;color:#f9d9a1}
+.enemybadge .stance-value,.ally-number .stance-value{display:block;font-size:inherit;line-height:1.2}
+.enemybadge[data-position="def"] .stance-label,.ally-number[data-position="def"] .stance-label{color:#bce9ff}
+
+/* Expedition defense marker uses the same 140 x 210 rotated card as a set spirit. */
+html.shenlu-mobile.landscape-duel .expedition-duel .cardUnit>.defense-screen{width:210px!important;height:140px!important;max-width:none!important;aspect-ratio:auto!important;bottom:0!important;}
+html.shenlu-mobile.landscape-duel .expedition-duel .cardUnit>.defense-screen img{width:140px!important;height:210px!important;max-height:none!important;object-fit:contain!important;}
