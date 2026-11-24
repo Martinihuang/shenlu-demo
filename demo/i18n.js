@@ -72,7 +72,8 @@ async set(requested){const target=supported.includes(requested)?requested:source
  displayMap=new Map(Object.entries(source[3]).filter(([,v])=>typeof v==='string').map(([k,v])=>[v,core[k]||v]));
  for(const [text,translation]of Object.entries(requestedPack[4]))if(!displayMap.has(text))displayMap.set(text,translation);
  for(const [text,translation]of Object.entries(nextLines))displayMap.set(text,translation);dynamic=globalThis.ShenluDynamicCopy&&requestedPack[5]?.entries?ShenluDynamicCopy.create(requestedPack[5]):null;templates=compileTemplates(displayMap);
- savePreference();document.documentElement.lang=locale;notice('');document.querySelectorAll('[data-i18n]').forEach(n=>{n.textContent=api.t(n.dataset.i18n,n.textContent)});dispatchEvent(new Event('demo-language'));return true;
+ savePreference();document.documentElement.lang=locale;globalThis.ShenluDemoLocale?.setURL(locale);notice('');document.querySelectorAll('[data-i18n]').forEach(n=>{n.textContent=api.t(n.dataset.i18n,n.textContent)});dispatchEvent(new Event('demo-language'));return true;
  }catch(error){if(ticket!==sequence)return false;lastError=error;notice(core.packError||sourceUI.packError||'語言包暫時無法載入，請再試一次。');dispatchEvent(new Event('demo-language-error'));return false;}}};
-globalThis.ShenluDemoI18n=api;let initialLocale=sourceLocale;try{initialLocale=localStorage.getItem('shenlu-demo:locale')||sourceLocale;}catch(error){lastPreferenceError=error;}api.ready=api.set(initialLocale);
+globalThis.ShenluDemoI18n=api;let initialLocale=sourceLocale,savedLocale=null;try{savedLocale=localStorage.getItem('shenlu-demo:locale');initialLocale=savedLocale||sourceLocale;}catch(error){lastPreferenceError=error;}
+api.ready=(async()=>{try{await import(new URL('demo/locale-entry.js?v=intro1',base).href);initialLocale=globalThis.ShenluDemoLocale.choose({search:location.search,stored:savedLocale,languages:navigator.languages||[navigator.language]});}catch(error){console.warn('Language entry unavailable; using the saved language.',error);}return api.set(initialLocale);})();
 })();
