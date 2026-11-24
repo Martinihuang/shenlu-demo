@@ -3,6 +3,9 @@
 .mobile-launch-bar span{flex:1;min-width:0;overflow-wrap:break-word}.mobile-launch-bar button{flex:none;min-height:44px;padding:6px 12px;background:#4d351f;border:1px solid #d9b777;color:inherit;font:inherit;cursor:pointer}
 .mobile-launch-bar[hidden],.mobile-launch-bar button[hidden]{display:none!important}
 html.demo-launch-controls #demoMobileOrientation{display:none!important}
+.mobile-launch-bar.is-fullscreen{justify-content:flex-end}.mobile-launch-bar.is-fullscreen span:empty{display:none}
+html.demo-launch-controls body:has(.hero-info) .hero-info{overflow-y:auto!important;overscroll-behavior:contain}
+html.demo-launch-controls body:has(.hero-info) .hero-info .confirm{position:sticky!important;bottom:0;z-index:3;background-color:#101923;min-height:calc(44px / var(--pc-layout-scale,1))!important}
 dialog.mobile-launch-gate{box-sizing:border-box;width:min(440px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;margin:auto;padding:24px!important;border:1px solid #d9b777!important;border-radius:0!important;background:#091322!important;color:#f5e7c6!important;font:16px/1.7 system-ui,sans-serif!important;box-shadow:0 12px 80px #000b!important}
 dialog.mobile-launch-gate::backdrop{background:#030711ed}
 .mobile-launch-gate h2{font:600 24px/1.5 system-ui,sans-serif!important;letter-spacing:0!important;margin:0 0 12px!important;color:inherit!important}

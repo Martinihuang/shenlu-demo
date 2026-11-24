@@ -16,7 +16,7 @@
  const locale=()=>{const key=window.ShenluDemoI18n?.locale||document.documentElement.lang;return packs[key]?key:(key.startsWith('zh-Hans')?'zh-Hans':'zh-Hant');};
  const words=()=>packs[locale()];
  const make=(tag,cls)=>{const el=document.createElement(tag);if(cls)el.className=cls;return el;};
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('demo/mobile-launch.css?v=launch1',base);document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('demo/mobile-launch.css?v=launch2',base);document.head.append(css);
  if(intro){
   const play=document.getElementById('play-demo');if(!play)return;
   const movie=make('a','mobile-opening-link');movie.dataset.mobileMovie='';movie.href=play.href;play.after(movie);
@@ -35,9 +35,11 @@
  const api=window.ShenluMobileLaunch={reservedTop:0,enterFullscreen};
  function refresh(){
   const portrait=innerHeight>innerWidth,w=words();full.textContent=w.full;
-  hint.textContent=failed?w.unsupported:portrait?w.rotate:w.suggest;
-  bar.hidden=!!document.fullscreenElement&&!portrait;
-  full.hidden=!!document.fullscreenElement;
+  full.textContent=document.fullscreenElement?({'zh-Hant':'結束全螢幕',en:'Exit fullscreen',ja:'全画面を終了',ko:'전체 화면 종료','zh-Hans':'退出全屏'}[locale()]):w.full;
+  hint.textContent=failed?w.unsupported:portrait?w.rotate:document.fullscreenElement?'':w.suggest;
+  bar.classList.toggle('is-fullscreen',!!document.fullscreenElement);
+  bar.hidden=false;
+  full.hidden=false;
   if(gate){gate.lang=locale();gate.querySelector('h2').textContent=w.title;gate.querySelector('.mobile-launch-description').textContent=w.body;gate.querySelector('[data-start]').textContent=w.start;gate.querySelector('[data-movie]').textContent=w.movie;gate.querySelector('[data-continue]').textContent=w.continue;}
  }
  async function enterFullscreen(){
@@ -48,7 +50,7 @@
   }catch(_){failed=true;}
   refresh();
  }
- full.addEventListener('click',enterFullscreen);
+ full.addEventListener('click',()=>{if(document.fullscreenElement){document.exitFullscreen().catch(()=>{});}else enterFullscreen();});
  document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&locked){try{screen.orientation.unlock();}catch(_){}locked=false;}refresh();});
  addEventListener('resize',refresh);addEventListener('demo-language',refresh);
  new MutationObserver(refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});

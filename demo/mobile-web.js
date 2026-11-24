@@ -82,7 +82,7 @@
   const doc=win.document,html=doc.documentElement;if(html.dataset.demoMobileWeb)return;
   html.dataset.demoMobileWeb='v1';
   openingFallback(win);
-  if(win===win.top&&(win.matchMedia("(pointer: coarse)").matches||win.navigator.maxTouchPoints>0)){const script=doc.createElement("script");script.src=new URL("mobile-launch.js?v=launch1",doc.currentScript.src).href;doc.head.append(script);}
+  if(win===win.top&&(win.matchMedia("(pointer: coarse)").matches||win.navigator.maxTouchPoints>0)){const script=doc.createElement("script");script.src=new URL("mobile-launch.js?v=launch2",doc.currentScript.src).href;doc.head.append(script);}
   const lifecycle=createMediaLifecycle(doc);
   doc.addEventListener('visibilitychange',lifecycle.visibility);
   win.addEventListener('pagehide',lifecycle.pagehide);
