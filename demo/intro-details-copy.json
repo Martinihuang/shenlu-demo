@@ -1,0 +1,399 @@
+{
+  "version": "intro-details-20261124-v1",
+  "realms": [
+    {
+      "id": "TW",
+      "heroes": [
+        "TW",
+        "TW-YUAN"
+      ]
+    },
+    {
+      "id": "EG",
+      "heroes": [
+        "EG-P-HERO",
+        "EG-HERO"
+      ]
+    },
+    {
+      "id": "NO",
+      "heroes": [
+        "NO-EINAR",
+        "NO-INGRID"
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "id": "TW",
+      "image": "game/campaign/hero-gallery/TW-gallery-v2.lossless.webp"
+    },
+    {
+      "id": "TW-YUAN",
+      "image": "game/campaign/hero-gallery/TW-F-selection-pose1-v2.lossless.webp"
+    },
+    {
+      "id": "EG-P-HERO",
+      "image": "game/campaign/hero-gallery/EG-P-HERO-gallery-v2.lossless.webp"
+    },
+    {
+      "id": "EG-HERO",
+      "image": "game/campaign/hero-gallery/EG-HERO-gallery-v2.lossless.webp"
+    },
+    {
+      "id": "NO-EINAR",
+      "image": "game/campaign/hero-gallery/NO-EINAR-gallery-v2.lossless.webp"
+    },
+    {
+      "id": "NO-INGRID",
+      "image": "game/campaign/hero-gallery/NO-INGRID-gallery-v3.lossless.webp"
+    }
+  ],
+  "locales": {
+    "zh-Hant": {
+      "castTitle": "選一位主角，從故事出發",
+      "castLead": "三國六位主角，各有八章故事。台灣另有支線，三國交會篇可從旅程頁直接進入，不需先完成主線。",
+      "realms": {
+        "TW": {
+          "name": "台灣",
+          "lead": "從廟埕的紅繩走進山林迷霧。虎爺與雲豹同行，傳說一步步走近眼前。"
+        },
+        "EG": {
+          "name": "埃及",
+          "lead": "從河岸到神殿，尋回真名，也為同行者留下歸途。"
+        },
+        "NO": {
+          "name": "北歐",
+          "lead": "號角、預言與命線之間，仍有伙伴的聲音。一起尋找前進的方向。"
+        }
+      },
+      "gameplayTitle": "故事之外，把牌交到你手中",
+      "gameplayLead": "先用主角既有的基本牌組出發。讀過故事，再試著用自己的出牌選擇完成眼前的目標。",
+      "modes": [
+        {
+          "title": "故事旅程",
+          "body": "沿著每位主角的八章故事前進，依關卡提示完成對局目標。完成前一主線章節後，再繼續下一章；交會篇可從旅程頁直接進入，不需先完成主線。"
+        },
+        {
+          "title": "普通挑戰",
+          "body": "用既有基本牌組練習召喚、攻防與卡牌搭配，也可到卡庫與牌組調整組合。"
+        },
+        {
+          "title": "女妖挑戰",
+          "body": "三國各有八關。先在普通挑戰擊敗該國兩位主角，開放入口後再逐關前進。第八關確認獲勝後，才選擇本關獎勵卡；確認領取前可以更改選擇。"
+        }
+      ],
+      "scopeNote": "本次 Demo 可玩範圍為台灣、埃及與北歐。其餘國家與幽冥世界保留入口預覽，尚未開放遊玩。",
+      "play": "從遊戲開場選擇主角",
+      "imageSuffix": "主角展示圖",
+      "heroes": {
+        "TW": {
+          "name": "阿澤",
+          "label": "台灣乩童",
+          "summary": "跟隨阿澤走入山林迷霧，追查紅衣小女孩的身影。"
+        },
+        "TW-YUAN": {
+          "name": "林予安",
+          "label": "台灣女乩童",
+          "summary": "與林予安、護壇雲豹循著蛇祟徵兆，走近臨水夫人的傳說。"
+        },
+        "EG-P-HERO": {
+          "name": "卡里姆",
+          "label": "埃及法老",
+          "summary": "與卡里姆學會付出、求援與休整，為同行者留下走到黎明的力量。"
+        },
+        "EG-HERO": {
+          "name": "莎爾瑪",
+          "label": "埃及祭司",
+          "summary": "跟隨莎爾瑪循著真名與神殿線索，面對賽特的投影。"
+        },
+        "NO-EINAR": {
+          "name": "艾納",
+          "label": "維京吟遊者",
+          "summary": "與艾納聽見每位伙伴的聲音，讓不同的名字一起成為前進的力量。"
+        },
+        "NO-INGRID": {
+          "name": "英格麗",
+          "label": "維京女巫",
+          "summary": "與英格麗辨認預兆與未知，讓伙伴共同選擇今晚的路。"
+        }
+      }
+    },
+    "en": {
+      "castTitle": "Choose a hero. Follow their story.",
+      "castLead": "Six heroes across three lands, each with eight story chapters. Taiwan also has optional Side Stories. Each land’s Meeting Chapter is available directly from the journey screen; you don’t need to finish the main story first.",
+      "realms": {
+        "TW": {
+          "name": "Taiwan",
+          "lead": "Follow a red cord from the temple courtyard into the mountain mist, with Tiger Lord and the Clouded Leopard at your side."
+        },
+        "EG": {
+          "name": "Egypt",
+          "lead": "From the riverbank to the temples, recover true names and leave a way home for your companions."
+        },
+        "NO": {
+          "name": "Norse lands",
+          "lead": "Beyond horns, prophecies and threads of fate, listen to your companions and find a way forward together."
+        }
+      },
+      "gameplayTitle": "Take the story into your own hands",
+      "gameplayLead": "Start with your hero’s basic deck. Follow the story, then choose which cards will help you meet the next objective.",
+      "modes": [
+        {
+          "title": "Story journeys",
+          "body": "Follow each hero’s eight-chapter story and complete the duel objectives shown along the way. Complete each main chapter to unlock the next; Meeting Chapters can be started separately from the journey screen."
+        },
+        {
+          "title": "Normal challenges",
+          "body": "Practise summoning, attacking, defending and card combinations with your hero’s basic deck. Visit Cards & Decks to adjust your deck."
+        },
+        {
+          "title": "Expeditions",
+          "body": "Each playable land has eight stages. Defeat both heroes of that land in normal challenges to unlock its entrance, then advance stage by stage. After a confirmed victory in stage eight, choose a reward card from that stage’s pool. You can change your choice before claiming it."
+        }
+      ],
+      "scopeNote": "This demo’s playable lands are Taiwan, Egypt and the Norse lands. The other lands and the Netherworld have preview entrances only.",
+      "play": "Choose a hero from the start screen",
+      "imageSuffix": "hero showcase",
+      "heroes": {
+        "TW": {
+          "name": "A-Ze",
+          "label": "Taiwanese Spirit Medium",
+          "summary": "Follow A-Ze into the misty mountain woods and pick up the trail of the little girl in red."
+        },
+        "TW-YUAN": {
+          "name": "Lin Yu-an",
+          "label": "Taiwanese Spirit Medium",
+          "summary": "Follow signs of a serpent haunting with Lin Yu-an and the Altar-Guarding Clouded Leopard, and uncover the legend of Lady Linshui."
+        },
+        "EG-P-HERO": {
+          "name": "Karim",
+          "label": "Egyptian Pharaoh",
+          "summary": "Learn to give, ask for help, and rest with Karim, leaving your companions enough strength to reach dawn."
+        },
+        "EG-HERO": {
+          "name": "Salma",
+          "label": "Egyptian Priestess",
+          "summary": "Follow true names and temple clues with Salma, and face Set's projection."
+        },
+        "NO-EINAR": {
+          "name": "Einar",
+          "label": "Viking Bard",
+          "summary": "Listen to every companion’s voice with Einar. Let every name be part of the strength that carries you forward."
+        },
+        "NO-INGRID": {
+          "name": "Ingrid",
+          "label": "Viking Witch",
+          "summary": "Read omens and face the unknown with Ingrid. Let your companions choose tonight's path together."
+        }
+      }
+    },
+    "ja": {
+      "castTitle": "主人公を選んで、物語へ",
+      "castLead": "台湾、エジプト、北欧の六人の主人公に、それぞれ八章の物語があります。台湾には寄り道の物語も。各地域の合流編は、本編をクリアしなくても旅の選択画面から直接遊べます。",
+      "realms": {
+        "TW": {
+          "name": "台湾",
+          "lead": "廟の広場から、赤い縄をたどって霧深い山林へ。虎爺とウンピョウとともに、伝説の奥へ進もう。"
+        },
+        "EG": {
+          "name": "エジプト",
+          "lead": "河岸から神殿へ。真の名を取り戻し、仲間が帰れる道を残そう。"
+        },
+        "NO": {
+          "name": "北欧",
+          "lead": "角笛、予言、運命の糸。その向こうにある仲間の声を聞き、ともに進む道を探そう。"
+        }
+      },
+      "gameplayTitle": "物語の続きを、その手のカードで",
+      "gameplayLead": "まずは主人公の基本デッキで出発。物語を読み、その場の目標に合うカードを選んでみよう。",
+      "modes": [
+        {
+          "title": "物語の旅",
+          "body": "主人公ごとに八章の物語を進め、各場面で示される対戦目標に挑みます。本編の章をクリアすると次の章が開きます。合流編は本編を進めなくても、旅の選択画面から直接始められます。"
+        },
+        {
+          "title": "通常チャレンジ",
+          "body": "基本デッキで召喚や攻守、カードの組み合わせを練習できます。「カードとデッキ」画面でデッキ構成を調整することもできます。"
+        },
+        {
+          "title": "遠征",
+          "body": "遊べる三国には、それぞれ八つのステージがあります。通常チャレンジでその国の主人公二人に勝つと入口が開き、順に挑戦できます。第八ステージの勝利が確定してから報酬カードを選びます。受け取りを確定する前なら、選び直せます。"
+        }
+      ],
+      "scopeNote": "この体験版で遊べるのは台湾、エジプト、北欧です。ほかの国と幽冥世界は入口のプレビューのみで、まだ遊べません。",
+      "play": "ゲームのスタート画面から主人公を選ぶ",
+      "imageSuffix": "キャラクターイラスト",
+      "heroes": {
+        "TW": {
+          "name": "アーゼ",
+          "label": "台湾の霊媒師",
+          "summary": "アーゼと霧深い山林へ。赤い服の少女の姿を追おう。"
+        },
+        "TW-YUAN": {
+          "name": "リン・ユーアン",
+          "label": "台湾の女性霊媒師",
+          "summary": "リン・ユーアンと護壇のウンピョウとともに蛇の祟りの兆しをたどり、臨水夫人の伝説へ近づこう。"
+        },
+        "EG-P-HERO": {
+          "name": "カリム",
+          "label": "エジプトのファラオ",
+          "summary": "カリムと、力を差し出すこと、助けを求めること、休むことを学ぼう。仲間が夜明けまで歩ける力を残すために。"
+        },
+        "EG-HERO": {
+          "name": "サルマ",
+          "label": "エジプトの祭司",
+          "summary": "サルマと真の名や神殿の手がかりをたどり、セトの幻影に立ち向かおう。"
+        },
+        "NO-EINAR": {
+          "name": "エイナル",
+          "label": "ヴァイキングの吟遊詩人",
+          "summary": "エイナルと一人ひとりの仲間の声を聞こう。異なる名が、共に進む力になる。"
+        },
+        "NO-INGRID": {
+          "name": "イングリッド",
+          "label": "ヴァイキングの魔女",
+          "summary": "イングリッドと予兆を読み解き、未知に向き合おう。今夜進む道を仲間と一緒に選ぼう。"
+        }
+      }
+    },
+    "ko": {
+      "castTitle": "주인공을 고르고, 이야기를 시작하세요",
+      "castLead": "대만, 이집트, 북유럽에 여섯 주인공의 이야기가 펼쳐집니다. 각 이야기는 여덟 개 챕터로 구성되어 있으며, 대만에는 선택적으로 즐길 수 있는 곁이야기도 있습니다. 각 지역의 합류편은 본편을 먼저 완료하지 않아도 여정 선택 화면에서 바로 시작할 수 있습니다.",
+      "realms": {
+        "TW": {
+          "name": "대만",
+          "lead": "사원 앞 붉은 끈을 따라 안개 낀 산림으로. 호야와 구름표범이 전설 속 여정에 함께합니다."
+        },
+        "EG": {
+          "name": "이집트",
+          "lead": "강가에서 신전으로 향하며 진정한 이름을 되찾고, 동료가 돌아갈 길을 남겨 주세요."
+        },
+        "NO": {
+          "name": "북유럽",
+          "lead": "뿔피리와 예언, 운명의 실 너머에서 동료의 목소리를 듣고 함께 나아갈 길을 찾으세요."
+        }
+      },
+      "gameplayTitle": "이야기를 읽고, 직접 카드를 내세요",
+      "gameplayLead": "주인공의 기본 덱으로 출발하세요. 이야기를 읽고, 다음 목표를 달성할 카드와 행동을 골라 보세요.",
+      "modes": [
+        {
+          "title": "이야기 여정",
+          "body": "각 주인공의 이야기를 따라가며 제시되는 대결 목표에 도전하세요. 본편은 여덟 장으로 구성되며, 한 장을 완료하면 다음 장이 열립니다. 합류편은 여정 선택 화면에서 별도로 시작할 수 있습니다."
+        },
+        {
+          "title": "일반 도전",
+          "body": "기본 덱으로 소환, 공격과 수비, 카드 조합을 익혀 보세요. ‘카드와 덱’ 화면에서 덱 구성을 바꿀 수도 있습니다."
+        },
+        {
+          "title": "원정",
+          "body": "플레이 가능한 세 지역에는 각각 여덟 스테이지가 있습니다. 일반 도전에서 해당 지역의 주인공 두 명을 이기면 입구가 열리고, 순서대로 도전할 수 있습니다. 여덟 번째 스테이지의 승리가 확정된 뒤 보상 카드를 고릅니다. 수령을 확정하기 전에는 선택을 바꿀 수 있습니다."
+        }
+      ],
+      "scopeNote": "이번 데모에서는 대만, 이집트, 북유럽을 플레이할 수 있습니다. 다른 지역과 명계는 입구 미리보기만 제공하며 아직 플레이할 수 없습니다.",
+      "play": "게임 시작 화면에서 주인공 고르기",
+      "imageSuffix": "주인공 일러스트",
+      "heroes": {
+        "TW": {
+          "name": "아쩌",
+          "label": "대만 영매",
+          "summary": "아쩌와 함께 안개 낀 산림으로 들어가 붉은 옷의 소녀를 쫓아가세요."
+        },
+        "TW-YUAN": {
+          "name": "린위안",
+          "label": "대만 여성 영매",
+          "summary": "린위안, 호단 구름표범과 함께 뱀의 저주가 남긴 흔적을 따라 임수부인의 전설에 다가가세요."
+        },
+        "EG-P-HERO": {
+          "name": "카림",
+          "label": "이집트 파라오",
+          "summary": "카림과 함께 힘을 내어 주고 도움을 청하며 쉬는 법을 배워, 동료들이 새벽까지 나아갈 힘을 남겨 주세요."
+        },
+        "EG-HERO": {
+          "name": "살마",
+          "label": "이집트 여사제",
+          "summary": "살마와 진정한 이름, 신전의 단서를 따라 세트의 환영과 맞서세요."
+        },
+        "NO-EINAR": {
+          "name": "에이나르",
+          "label": "바이킹 음유시인",
+          "summary": "에이나르와 모든 동료의 목소리에 귀 기울이세요. 서로 다른 이름들이 함께 앞으로 나아갈 힘이 되게 해 주세요."
+        },
+        "NO-INGRID": {
+          "name": "잉그리드",
+          "label": "바이킹 마녀",
+          "summary": "잉그리드와 함께 징조를 읽고 알 수 없는 것들과 마주하세요. 동료들과 오늘 밤 나아갈 길을 함께 고르세요."
+        }
+      }
+    },
+    "zh-Hans": {
+      "castTitle": "选一位主角，从故事出发",
+      "castLead": "三国六位主角，各有八章故事。台湾另有支线，三国交会篇可从旅程页直接进入，不需先完成主线。",
+      "realms": {
+        "TW": {
+          "name": "台湾",
+          "lead": "从庙前的红绳走入山林迷雾。虎爷与云豹同行，传说一步步走近眼前。"
+        },
+        "EG": {
+          "name": "埃及",
+          "lead": "从河岸到神殿，寻回真名，也为同行者留下归途。"
+        },
+        "NO": {
+          "name": "北欧",
+          "lead": "号角、预言与命线之间，仍有伙伴的声音。一起寻找前进的方向。"
+        }
+      },
+      "gameplayTitle": "故事之外，把牌交到你手中",
+      "gameplayLead": "先用主角既有的基本牌组出发。读过故事，再试着用自己的出牌选择完成眼前的目标。",
+      "modes": [
+        {
+          "title": "故事旅程",
+          "body": "沿着每位主角的八章故事前进，按关卡提示完成对局目标。完成前一主线章节后，再继续下一章；交会篇可从旅程页直接进入，不需先完成主线。"
+        },
+        {
+          "title": "普通挑战",
+          "body": "用既有基本牌组练习召唤、攻防与卡牌搭配，也可到卡库与牌组调整组合。"
+        },
+        {
+          "title": "女妖挑战",
+          "body": "三国各有八关。先在普通挑战击败该国两位主角，开放入口后再逐关前进。第八关确认获胜后，才选择本关奖励卡；确认领取前可以更改选择。"
+        }
+      ],
+      "scopeNote": "本次 Demo 可玩范围为台湾、埃及与北欧。其他国家与幽冥世界保留入口预览，尚未开放游玩。",
+      "play": "从游戏开场选择主角",
+      "imageSuffix": "主角展示图",
+      "heroes": {
+        "TW": {
+          "name": "阿泽",
+          "label": "台湾灵媒",
+          "summary": "跟随阿泽走入山林迷雾，追查红衣小女孩的身影。"
+        },
+        "TW-YUAN": {
+          "name": "林予安",
+          "label": "台湾女灵媒",
+          "summary": "与林予安、护坛云豹循着蛇祟征兆，走近临水夫人的传说。"
+        },
+        "EG-P-HERO": {
+          "name": "卡里姆",
+          "label": "埃及法老",
+          "summary": "与卡里姆学会付出、求援与休整，为同行者留下走到黎明的力量。"
+        },
+        "EG-HERO": {
+          "name": "莎尔玛",
+          "label": "埃及祭司",
+          "summary": "跟随莎尔玛循着真名与神殿线索，面对赛特的投影。"
+        },
+        "NO-EINAR": {
+          "name": "艾纳",
+          "label": "维京吟游者",
+          "summary": "与艾纳听见每位伙伴的声音，让不同的名字一起成为前进的力量。"
+        },
+        "NO-INGRID": {
+          "name": "英格丽",
+          "label": "维京女巫",
+          "summary": "与英格丽辨认预兆与未知，让伙伴共同选择今晚的路。"
+        }
+      }
+    }
+  }
+}

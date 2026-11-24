@@ -1,0 +1,27 @@
+#intro-details{--detail-ink:var(--ink,#091322);--detail-gold:var(--gold,#d9b777);--detail-pale:var(--pale,#f5e7c6);--detail-muted:var(--muted,#d2c7ae);--detail-edge:var(--edge,#78613e);background:var(--detail-ink);color:var(--detail-pale);overflow-x:clip}
+#intro-details .intro-cast,#intro-details .intro-gameplay{width:min(1240px,100% - 80px);margin-inline:auto;padding-block:88px}
+#intro-details .detail-heading{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-bottom:64px}
+#intro-details h2,#intro-details h3,#intro-details h4{font-family:inherit;color:var(--detail-pale);font-weight:600;line-height:1.5;text-wrap:balance;margin:0}
+#intro-details h2{font-size:clamp(27px,2.7vw,40px);max-width:20ch}
+#intro-details p{font-size:16px;line-height:1.9;color:var(--detail-muted);margin:0;max-width:65ch;overflow-wrap:break-word}
+#intro-details .detail-realm{display:grid;grid-template-columns:230px minmax(0,1fr);gap:64px;padding-block:52px;border-top:1px solid var(--detail-edge)}
+#intro-details .realm-introduction{padding-top:10px}
+#intro-details .realm-introduction h3{font-size:30px;margin-bottom:22px}
+#intro-details .realm-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+#intro-details .detail-hero{min-width:0}
+#intro-details .detail-portrait{margin:0 0 22px;aspect-ratio:2/3;overflow:hidden;background:#060d18}
+#intro-details .detail-portrait img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;max-width:none}
+#intro-details .detail-bio h4{font-size:25px;margin-bottom:4px}
+#intro-details p.detail-role{font-size:14px;color:var(--detail-gold);margin-bottom:14px}
+#intro-details .intro-gameplay{border-top:1px solid var(--detail-edge);padding-top:72px}
+#intro-details .detail-modes{display:grid;gap:0}
+#intro-details .detail-mode{display:grid;grid-template-columns:230px minmax(0,1fr);gap:64px;padding-block:30px;border-top:1px solid #78613e66}
+#intro-details .detail-mode h3{font-size:23px}
+#intro-details .detail-scope{display:flex;gap:48px;align-items:center;justify-content:space-between;padding-top:48px}
+#intro-details .detail-scope p{font-size:14px;max-width:65ch}
+#intro-details .detail-play{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:11px 20px;border:1px solid var(--detail-gold);color:var(--detail-pale);text-decoration:none;line-height:1.5;font-size:16px;flex-shrink:0;max-width:100%;text-align:center}
+#intro-details .detail-play:hover{background:#76512c55}
+#intro-details .detail-play:focus-visible{outline:3px solid var(--focus,#fff1c8);outline-offset:5px}
+@media(max-width:1050px){#intro-details .intro-cast,#intro-details .intro-gameplay{width:calc(100% - 56px);padding-block:60px}#intro-details .detail-realm,#intro-details .detail-mode{grid-template-columns:180px minmax(0,1fr);gap:36px}#intro-details .realm-pair{gap:24px}#intro-details .detail-heading{gap:36px}#intro-details .detail-scope{display:block}#intro-details .detail-play{margin-top:24px}}
+@media(max-width:700px){#intro-details .intro-cast,#intro-details .intro-gameplay{width:calc(100% - 48px);padding-block:44px}#intro-details .detail-heading,#intro-details .detail-realm,#intro-details .detail-mode{display:block}#intro-details .detail-heading{margin-bottom:36px}#intro-details .detail-heading h2{margin-bottom:22px}#intro-details h2{font-size:28px}#intro-details .detail-realm{padding-block:32px}#intro-details .realm-introduction{padding-top:0;margin-bottom:30px}#intro-details .realm-introduction h3{font-size:25px;margin-bottom:14px}#intro-details .realm-pair{gap:36px;grid-template-columns:minmax(0,1fr)}#intro-details .detail-portrait{margin-bottom:18px}#intro-details .detail-bio h4{font-size:25px}#intro-details .detail-mode{padding-block:24px}#intro-details .detail-mode h3{font-size:21px;margin-bottom:14px}#intro-details p{font-size:16px}#intro-details .detail-scope{padding-top:28px}#intro-details .detail-play{width:100%;font-size:15px}}
+html[lang="ko"] #intro-details{word-break:keep-all}
