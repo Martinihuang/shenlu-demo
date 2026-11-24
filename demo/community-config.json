@@ -1,6 +1,6 @@
 {
   "goatcounter": {
-    "enabled": false,
+    "enabled": true,
     "site": "shenlu-demo",
     "event": "play-start"
   },

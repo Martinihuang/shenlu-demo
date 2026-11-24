@@ -8,7 +8,7 @@
  }
  Promise.all(['community-copy.json','community-config.json'].map(path=>fetch(new URL('demo/'+path,root),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}))).then(([p,c])=>{packs=p;config=c;refresh();
   if(!c.goatcounter?.enabled||!/^[a-z0-9-]+$/.test(c.goatcounter.site))return;
-  return fetch('https://'+c.goatcounter.site+'.goatcounter.com/counter/'+encodeURIComponent('play-start')+'.json',{credentials:'omit',signal:AbortSignal.timeout(8000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{const raw=String(data.count??'').replace(/,/g,'');if(!/^\d+$/.test(raw))throw Error();total=Number(raw);if(!Number.isSafeInteger(total))throw Error();refresh();});
+  return fetch('https://'+c.goatcounter.site+'.goatcounter.com/counter/'+encodeURIComponent('play-start')+'.json',{credentials:'omit',signal:AbortSignal.timeout(8000)}).then(async r=>{if(!r.ok&&r.status!==404)throw Error();const data=await r.json();if(r.status===404&&String(data.count)!=='0')throw Error();return data;}).then(data=>{const raw=String(data.count??'').replace(/,/g,'');if(!/^\d+$/.test(raw))throw Error();total=Number(raw);if(!Number.isSafeInteger(total))throw Error();refresh();});
  }).catch(()=>{});
  new MutationObserver(refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
