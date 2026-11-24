@@ -82,6 +82,7 @@
   const doc=win.document,html=doc.documentElement;if(html.dataset.demoMobileWeb)return;
   html.dataset.demoMobileWeb='v1';
   openingFallback(win);
+  if(win===win.top&&(win.matchMedia("(pointer: coarse)").matches||win.navigator.maxTouchPoints>0)){const script=doc.createElement("script");script.src=new URL("mobile-launch.js?v=launch1",doc.currentScript.src).href;doc.head.append(script);}
   const lifecycle=createMediaLifecycle(doc);
   doc.addEventListener('visibilitychange',lifecycle.visibility);
   win.addEventListener('pagehide',lifecycle.pagehide);
@@ -111,6 +112,7 @@
    if(!touch)return;
    const style=win.getComputedStyle(probe),insets={};
    for(const side of ['top','right','bottom','left'])insets[side]=embeddedSafe()?0:parseFloat(style.getPropertyValue('padding-'+side))||0;
+   insets.top=Math.max(insets.top,win.ShenluMobileLaunch?.reservedTop||0);
    const rect=safeRect(html.clientWidth,html.clientHeight,v,insets);
    for(const [key,value]of Object.entries(rect))html.style.setProperty('--demo-safe-'+key,value+'px');
    for(const [key,value]of Object.entries(insets))html.style.setProperty('--demo-inset-'+key,value+'px');

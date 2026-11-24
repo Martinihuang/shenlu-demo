@@ -35,7 +35,9 @@ function play(){
 }
 trigger.addEventListener('click',()=>{
  dialog.showModal();
- if(screen.requestFullscreen&&document.fullscreenEnabled)screen.requestFullscreen({navigationUI:'hide'}).catch(()=>{});
+ let mobile;try{mobile=parent!==window&&parent.ShenluMobileLaunch;}catch(_){}
+ if(mobile?.enterFullscreen)mobile.enterFullscreen();
+ else if(screen.requestFullscreen&&document.fullscreenEnabled)screen.requestFullscreen({navigationUI:'hide'}).catch(()=>{});
  play();
 });
 retry.addEventListener('click',play);

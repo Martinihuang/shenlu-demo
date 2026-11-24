@@ -1,0 +1,14 @@
+.mobile-opening-link{display:inline-flex;align-items:center;min-height:44px;color:var(--pale,#f5e7c6);font-size:14px;text-underline-offset:.25em}
+.mobile-launch-bar{position:fixed;z-index:2147483645;inset:0 0 auto;display:flex;align-items:center;gap:12px;padding:4px max(10px,env(safe-area-inset-right)) 4px max(10px,env(safe-area-inset-left));padding-top:max(4px,env(safe-area-inset-top));box-sizing:border-box;background:#091322;color:#f5e7c6;border-bottom:1px solid #78613e;font:14px/1.5 system-ui,sans-serif}
+.mobile-launch-bar span{flex:1;min-width:0;overflow-wrap:break-word}.mobile-launch-bar button{flex:none;min-height:44px;padding:6px 12px;background:#4d351f;border:1px solid #d9b777;color:inherit;font:inherit;cursor:pointer}
+.mobile-launch-bar[hidden],.mobile-launch-bar button[hidden]{display:none!important}
+html.demo-launch-controls #demoMobileOrientation{display:none!important}
+dialog.mobile-launch-gate{box-sizing:border-box;width:min(440px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;margin:auto;padding:24px!important;border:1px solid #d9b777!important;border-radius:0!important;background:#091322!important;color:#f5e7c6!important;font:16px/1.7 system-ui,sans-serif!important;box-shadow:0 12px 80px #000b!important}
+dialog.mobile-launch-gate::backdrop{background:#030711ed}
+.mobile-launch-gate h2{font:600 24px/1.5 system-ui,sans-serif!important;letter-spacing:0!important;margin:0 0 12px!important;color:inherit!important}
+.mobile-launch-gate p{margin:0 0 16px!important}.mobile-launch-gate button{display:block!important;float:none!important;width:100%;min-height:48px;margin:10px 0 0!important;padding:10px 14px!important;border:1px solid #d9b777!important;border-radius:0!important;background:#4d351f!important;color:inherit!important;font:inherit!important;letter-spacing:0!important;cursor:pointer}
+.mobile-launch-gate [data-movie]{background:#142031!important}.mobile-launch-gate .mobile-launch-continue{background:transparent!important;border-color:transparent!important;text-decoration:underline}
+.mobile-launch-gate .mobile-launch-status:empty{display:none}.mobile-launch-gate .mobile-launch-status{font-size:14px!important;margin-top:12px!important}
+.mobile-launch-bar button:focus-visible,.mobile-launch-gate button:focus-visible{outline:3px solid #fff1c8;outline-offset:2px}
+html[lang="ko"] .mobile-launch-gate{word-break:keep-all}
+@media(orientation:landscape) and (max-height:500px){dialog.mobile-launch-gate{width:min(620px,calc(100vw - 32px));padding:16px!important}.mobile-launch-gate h2{font-size:20px!important;margin-bottom:8px!important}.mobile-launch-gate p{font-size:14px!important;margin-bottom:8px!important}.mobile-launch-gate button{min-height:44px;margin-top:6px!important;padding:6px 12px!important}}
