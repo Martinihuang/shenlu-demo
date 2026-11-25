@@ -1,6 +1,6 @@
 /* Entry/manual checks only; never reloads automatically or writes journey storage. */
 (()=>{'use strict';if(window.top!==window.self)return;
- const root=new URL('../',document.currentScript.src),current='2026.11.25.6';
+ const root=new URL('../',document.currentScript.src),current='2026.11.25.7';
  const copy={
  'zh-Hant':['網站版本','檢查更新','已有新版本。請先完成對局並存檔，再返回開場更新。','目前已是最新版。','暫時無法檢查；仍可繼續遊玩。','存檔後回開場更新','稍後'],
  'en':['Web version','Check updates','A new version is available. Finish your duel and save before updating from the opening menu.','You have the latest version.','Cannot check now. You can keep playing.','Saved — update at opening','Later'],

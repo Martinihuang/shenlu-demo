@@ -10,12 +10,12 @@
         "進度與設定保存在目前瀏覽器的本機儲存空間，不會自動跨裝置同步。遊戲沒有要求玩家註冊帳號，也不會把存檔內容送入遊玩統計。清除網站資料可能使進度遺失，請先在遊戲內匯出備份。匯出檔案由你自行保管。"
       ],
       [
-        "遊玩開始次數",
-        "我們以 GoatCounter 統計成功開始故事或挑戰的事件，用來了解 Demo 是否有人開始遊玩。事件不包含玩家姓名、Email 或存檔內容；同一瀏覽階段內重複開始可能合併。數字不是不重複玩家數或即時在線人數，也可能延遲更新。網站尊重瀏覽器送出的 Do Not Track 與 Global Privacy Control 訊號，不向該服務送出開始事件。"
+        "造訪與遊玩統計",
+        "我們使用 GoatCounter 分開統計官網造訪、點擊立即試玩、遊戲選單完成載入，以及成功開始故事或挑戰。事件不包含姓名、Email、存檔或玩家帳號；同一瀏覽訪次內的重複事件可能合併。Sessions 是訪次口徑，不是精準不重複玩家數或即時在線人數；各事件總量的比率僅供粗估，不能辨識逐人轉換或留存。更新可能延遲。網站尊重 Do Not Track 與 Global Privacy Control，收到訊號便不送統計；本機及 QA 測試也排除。"
       ],
       [
         "網站與第三方技術資料",
-        "網站由 GitHub Pages 提供，統計腳本與計數由 GoatCounter 提供。連線至這些服務時，服務商仍可能依其政策處理 IP 位址與 HTTP 標頭等技術資料。本 Demo 未啟用來源、瀏覽器種類、螢幕尺寸、國家／地區或語言報表欄位；這不表示網路連線完全沒有技術資料處理。"
+        "GitHub Pages 提供網站，GoatCounter 提供統計。為了解 Threads 宣傳效果，我們僅使用固定白名單的 Threads 來源與貼文編號活動標記；標記會暫存於目前分頁的 sessionStorage 並隨站內連結延續，不是個人識別碼。不傳送任意網址參數或完整來源網址，未標記的歷史點擊無法逐篇回溯。目前不啟用瀏覽器、螢幕尺寸、國家／地區或語言報表。服務連線仍可能涉及依各公司政策處理 IP 位址及 HTTP 標頭；訪次去重可能短暫處理這些技術資料。"
       ],
       [
         "提問與回饋",
@@ -44,12 +44,12 @@
         "Progress and preferences stay in this browser’s local storage and do not automatically sync between devices. No player account is required, and saves are not sent to the play counter. Clearing site data may erase progress. Export a backup in the game first and keep the exported file yourself."
       ],
       [
-        "Journey-start statistics",
-        "GoatCounter records successful story or challenge starts to help us understand whether people begin playing. Events contain no player name, email or save data. Repeated starts within a browsing session may be grouped. This is neither unique-player nor live-online data, and updates may be delayed. The site respects Do Not Track and Global Privacy Control signals by not sending start events."
+        "Visit and play statistics",
+        "GoatCounter separately counts website visits, play-button clicks, a successfully initialized game menu, and successful story or challenge starts. Events contain no name, email, save or player account. Repeated events within a browsing visit may be grouped. Sessions represent visits, not precise unique players or people online. Ratios between aggregate event totals are rough estimates, not individual conversion funnels or retention. Updates may be delayed. Do Not Track and Global Privacy Control signals prevent statistics from being sent; local and QA tests are also excluded."
       ],
       [
         "Hosting and technical data",
-        "GitHub Pages hosts the site; GoatCounter provides the statistics script and counter. Connecting to these services may involve processing IP addresses and HTTP headers under their policies. This demo disables referrer, browser, screen-size, country/region and language reports. That does not mean network connections involve no technical data."
+        "GitHub Pages hosts the site and GoatCounter provides statistics. To understand Threads promotion, we use only fixed, allowlisted Threads source and numbered-post campaign tags. Tags stay in the current tab’s sessionStorage and carry through internal links; they are not personal identifiers. Arbitrary URL parameters and full referring URLs are not sent. Historical untagged clicks cannot be attributed to individual posts. Browser, screen-size, country/region and language reports remain disabled. Connections may still involve IP addresses and HTTP headers under each provider’s policy; visit deduplication may temporarily process these technical data."
       ],
       [
         "Questions and feedback",
@@ -78,12 +78,12 @@
         "進行状況と設定は現在のブラウザ内に保存され、端末間では自動同期されません。プレイヤー登録は不要で、セーブ内容をプレイ統計に送信することもありません。サイトデータの削除で進行状況が失われる場合があります。先にゲーム内でバックアップを書き出し、ご自身で保管してください。"
       ],
       [
-        "旅の開始回数",
-        "物語や挑戦を正常に開始したイベントをGoatCounterで集計し、プレイ開始状況の把握に使います。イベントに氏名・メールアドレス・セーブ内容は含めません。同じ閲覧セッション内の重複はまとめる場合があります。実人数や現在の接続人数ではなく、反映に時間がかかることもあります。Do Not TrackとGlobal Privacy Controlの信号を尊重し、その場合は開始イベントを送信しません。"
+        "アクセスとプレイの統計",
+        "GoatCounterで、紹介サイトへのアクセス、プレイボタンのクリック、ゲームメニューの正常な初期化、物語や挑戦の開始を別々に集計します。氏名・メール・セーブ・プレイヤーアカウントは送りません。同じ閲覧セッションの重複はまとめる場合があります。Sessionsは訪問回数の基準で、正確な実人数や同時接続数ではありません。イベント合計の比率は概算で、個人ごとの遷移や継続率を示しません。反映に時間がかかる場合があります。Do Not TrackとGlobal Privacy Controlの信号がある場合や、ローカル・QAテストでは統計を送りません。"
       ],
       [
         "配信サービスと技術情報",
-        "サイトはGitHub Pages、統計スクリプトと集計はGoatCounterを利用します。接続時には各社の方針に基づきIPアドレスやHTTPヘッダーなどが処理される場合があります。このデモでは参照元・ブラウザ・画面サイズ・国や地域・言語のレポート項目を無効にしていますが、通信時の技術情報処理が一切ないという意味ではありません。"
+        "サイトはGitHub Pages、統計はGoatCounterを利用します。Threadsの宣伝効果を確認するため、許可した固定のThreads参照元と投稿番号のキャンペーンタグのみを使用します。タグは現在のタブのsessionStorageに一時保存され、サイト内リンクで引き継がれます。個人識別子ではありません。任意のURLパラメータや完全な参照元URLは送信しません。過去のタグなしクリックは投稿別に遡れません。ブラウザ・画面サイズ・国や地域・言語のレポートは無効のままです。通信時には各社の方針に基づきIPアドレスやHTTPヘッダーが処理され、訪問の重複除外のため一時的に使われる場合があります。"
       ],
       [
         "質問とフィードバック",
@@ -112,12 +112,12 @@
         "진행 상황과 설정은 현재 브라우저의 로컬 저장 공간에 보관되며 기기 간 자동 동기화되지 않아요. 플레이어 계정 등록이 필요하지 않고 저장 내용을 플레이 통계로 보내지 않아요. 사이트 데이터를 삭제하면 진행 상황이 사라질 수 있으니 먼저 게임에서 백업을 내보내 직접 보관하세요."
       ],
       [
-        "여정 시작 통계",
-        "이야기나 도전을 정상적으로 시작한 이벤트를 GoatCounter로 집계해 플레이 시작 현황을 파악해요. 이벤트에는 이름, 이메일, 저장 내용이 포함되지 않아요. 같은 브라우징 세션의 반복 시작은 합칠 수 있어요. 실제 이용자 수나 현재 접속자 수가 아니며 반영이 늦을 수 있어요. Do Not Track과 Global Privacy Control 신호가 있으면 시작 이벤트를 보내지 않아요."
+        "방문 및 플레이 통계",
+        "GoatCounter로 사이트 방문, 플레이 버튼 클릭, 게임 메뉴 초기화 성공, 이야기나 도전 시작을 각각 집계해요. 이름, 이메일, 저장 내용, 플레이어 계정은 보내지 않아요. 같은 방문 세션의 반복 이벤트는 합칠 수 있어요. Sessions는 방문 기준이며 정확한 고유 이용자나 동시 접속자 수가 아니에요. 이벤트 합계의 비율은 대략적인 참고치로, 개인별 전환이나 재방문율을 나타내지 않아요. 반영이 늦을 수 있어요. Do Not Track과 Global Privacy Control 신호가 있거나 로컬·QA 테스트인 경우 통계를 보내지 않아요."
       ],
       [
         "호스팅과 기술 정보",
-        "사이트는 GitHub Pages, 통계 스크립트와 집계는 GoatCounter를 이용해요. 연결 시 서비스 제공자가 각자의 정책에 따라 IP 주소나 HTTP 헤더 같은 기술 정보를 처리할 수 있어요. 이 데모에서는 유입 경로, 브라우저, 화면 크기, 국가·지역, 언어 보고서를 사용하지 않지만, 네트워크에 기술 정보 처리가 전혀 없다는 뜻은 아니에요."
+        "사이트는 GitHub Pages, 통계는 GoatCounter를 이용해요. Threads 홍보 효과를 파악하기 위해 허용 목록에 있는 고정 Threads 유입 태그와 게시물 번호 캠페인 태그만 사용해요. 태그는 현재 탭의 sessionStorage에 임시 보관되고 사이트 내부 링크로 이어져요. 개인 식별자는 아니에요. 임의 URL 매개변수나 전체 유입 URL은 보내지 않아요. 과거 태그 없는 클릭은 게시물별로 소급할 수 없어요. 브라우저, 화면 크기, 국가·지역, 언어 보고서는 계속 사용하지 않아요. 연결 시 각 서비스 정책에 따라 IP 주소와 HTTP 헤더가 처리되거나 방문 중복 제거에 일시적으로 쓰일 수 있어요."
       ],
       [
         "질문과 의견",
@@ -146,12 +146,12 @@
         "进度与设置保存在当前浏览器的本地存储空间，不会自动跨设备同步。游戏不要求玩家注册账号，也不会把存档内容发送到游玩统计。清除网站数据可能使进度丢失，请先在游戏内导出备份。导出文件由你自行保管。"
       ],
       [
-        "游玩开始次数",
-        "我们使用 GoatCounter 统计成功开始故事或挑战的事件，了解 Demo 是否有人开始游玩。事件不包含玩家姓名、Email 或存档内容；同一浏览会话内重复开始可能合并。数字不是不重复玩家数或实时在线人数，也可能延迟更新。网站尊重浏览器的 Do Not Track 和 Global Privacy Control 信号，不向该服务发送开始事件。"
+        "访问与游玩统计",
+        "我们使用 GoatCounter 分开统计官网访问、点击立即试玩、游戏菜单完成加载，以及成功开始故事或挑战。事件不包含姓名、Email、存档或玩家账号；同一浏览访问内的重复事件可能合并。Sessions 是访问次数口径，不是精确的不重复玩家数或实时在线人数；各事件总量的比率仅供粗估，不能辨识逐人转化或留存。更新可能延迟。网站尊重 Do Not Track 和 Global Privacy Control，收到信号便不发送统计；本地及 QA 测试也排除。"
       ],
       [
         "网站与第三方技术数据",
-        "网站由 GitHub Pages 提供，统计脚本与计数由 GoatCounter 提供。连接这些服务时，服务商仍可能按其政策处理 IP 地址与 HTTP 标头等技术数据。本 Demo 未启用来源、浏览器类型、屏幕尺寸、国家／地区或语言报表字段；这不代表网络连接完全没有技术数据处理。"
+        "GitHub Pages 提供网站，GoatCounter 提供统计。为了解 Threads 宣传效果，我们仅使用固定白名单的 Threads 来源与帖子编号活动标记；标记暂存在当前标签页的 sessionStorage 并随站内链接延续，不是个人标识符。不发送任意网址参数或完整来源网址，未标记的历史点击无法逐篇回溯。目前不启用浏览器、屏幕尺寸、国家／地区或语言报表。服务连接仍可能涉及按各公司政策处理 IP 地址及 HTTP 标头；访问去重可能短暂处理这些技术数据。"
       ],
       [
         "提问与反馈",
