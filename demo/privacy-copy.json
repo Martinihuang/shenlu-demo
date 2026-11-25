@@ -2,7 +2,7 @@
   "zh-Hant": {
     "title": "隱私與資料說明",
     "back": "返回遊戲介紹",
-    "updated": "更新日期：2026-11-25",
+    "updated": "更新日期：2026-11-26",
     "lead": "本說明適用 Martin 提供的《神籙》公開網頁 Demo。以下說明目前使用的存檔、統計與回饋服務。",
     "sections": [
       [
@@ -15,7 +15,7 @@
       ],
       [
         "網站與第三方技術資料",
-        "GitHub Pages 提供網站，GoatCounter 提供統計。為了解 Threads 宣傳效果，我們僅使用固定白名單的 Threads 來源與貼文編號活動標記；標記會暫存於目前分頁的 sessionStorage 並隨站內連結延續，不是個人識別碼。不傳送任意網址參數或完整來源網址，未標記的歷史點擊無法逐篇回溯。目前不啟用瀏覽器、螢幕尺寸、國家／地區或語言報表。服務連線仍可能涉及依各公司政策處理 IP 位址及 HTTP 標頭；訪次去重可能短暫處理這些技術資料。"
+        "GitHub Pages 提供網站，GoatCounter 提供統計。為了解 Threads 與 Reddit 宣傳效果，我們僅使用固定白名單的來源與活動標記（Threads 貼文編號或 Reddit 社群名稱）；標記會暫存於目前分頁的 sessionStorage 並隨站內連結延續，不是個人識別碼。不傳送任意網址參數或完整來源網址，未標記的歷史點擊無法逐篇回溯。目前不啟用瀏覽器、螢幕尺寸、國家／地區或語言報表。服務連線仍可能涉及依各公司政策處理 IP 位址及 HTTP 標頭；訪次去重可能短暫處理這些技術資料。"
       ],
       [
         "提問與回饋",
@@ -36,7 +36,7 @@
   "en": {
     "title": "Privacy & data",
     "back": "Back to the introduction",
-    "updated": "Updated: 25 November 2026",
+    "updated": "Updated: 26 November 2026",
     "lead": "This notice covers the public Shenlu web demo provided by Martin, including its saves, statistics and feedback services.",
     "sections": [
       [
@@ -49,7 +49,7 @@
       ],
       [
         "Hosting and technical data",
-        "GitHub Pages hosts the site and GoatCounter provides statistics. To understand Threads promotion, we use only fixed, allowlisted Threads source and numbered-post campaign tags. Tags stay in the current tab’s sessionStorage and carry through internal links; they are not personal identifiers. Arbitrary URL parameters and full referring URLs are not sent. Historical untagged clicks cannot be attributed to individual posts. Browser, screen-size, country/region and language reports remain disabled. Connections may still involve IP addresses and HTTP headers under each provider’s policy; visit deduplication may temporarily process these technical data."
+        "GitHub Pages hosts the site and GoatCounter provides statistics. To understand Threads and Reddit promotion, we use only fixed, allowlisted source and campaign tags (Threads post numbers or Reddit community names). Tags stay in the current tab’s sessionStorage and carry through internal links; they are not personal identifiers. Arbitrary URL parameters and full referring URLs are not sent. Historical untagged clicks cannot be attributed to individual posts. Browser, screen-size, country/region and language reports remain disabled. Connections may still involve IP addresses and HTTP headers under each provider’s policy; visit deduplication may temporarily process these technical data."
       ],
       [
         "Questions and feedback",
@@ -70,7 +70,7 @@
   "ja": {
     "title": "プライバシーとデータ",
     "back": "ゲーム紹介に戻る",
-    "updated": "更新日：2026年11月25日",
+    "updated": "更新日：2026年11月26日",
     "lead": "Martinが提供する「神籙」公開ウェブデモの保存・統計・フィードバックについて説明します。",
     "sections": [
       [
@@ -83,7 +83,7 @@
       ],
       [
         "配信サービスと技術情報",
-        "サイトはGitHub Pages、統計はGoatCounterを利用します。Threadsの宣伝効果を確認するため、許可した固定のThreads参照元と投稿番号のキャンペーンタグのみを使用します。タグは現在のタブのsessionStorageに一時保存され、サイト内リンクで引き継がれます。個人識別子ではありません。任意のURLパラメータや完全な参照元URLは送信しません。過去のタグなしクリックは投稿別に遡れません。ブラウザ・画面サイズ・国や地域・言語のレポートは無効のままです。通信時には各社の方針に基づきIPアドレスやHTTPヘッダーが処理され、訪問の重複除外のため一時的に使われる場合があります。"
+        "サイトはGitHub Pages、統計はGoatCounterを利用します。ThreadsとRedditの宣伝効果を確認するため、許可した固定の参照元とキャンペーンタグ（Threadsの投稿番号またはRedditのコミュニティ名）のみを使用します。タグは現在のタブのsessionStorageに一時保存され、サイト内リンクで引き継がれます。個人識別子ではありません。任意のURLパラメータや完全な参照元URLは送信しません。過去のタグなしクリックは投稿別に遡れません。ブラウザ・画面サイズ・国や地域・言語のレポートは無効のままです。通信時には各社の方針に基づきIPアドレスやHTTPヘッダーが処理され、訪問の重複除外のため一時的に使われる場合があります。"
       ],
       [
         "質問とフィードバック",
@@ -104,7 +104,7 @@
   "ko": {
     "title": "개인정보와 데이터",
     "back": "게임 소개로 돌아가기",
-    "updated": "업데이트: 2026년 11월 25일",
+    "updated": "업데이트: 2026년 11월 26일",
     "lead": "Martin이 제공하는 신록 공개 웹 데모의 저장, 통계, 의견 제출 서비스에 관한 안내입니다.",
     "sections": [
       [
@@ -117,7 +117,7 @@
       ],
       [
         "호스팅과 기술 정보",
-        "사이트는 GitHub Pages, 통계는 GoatCounter를 이용해요. Threads 홍보 효과를 파악하기 위해 허용 목록에 있는 고정 Threads 유입 태그와 게시물 번호 캠페인 태그만 사용해요. 태그는 현재 탭의 sessionStorage에 임시 보관되고 사이트 내부 링크로 이어져요. 개인 식별자는 아니에요. 임의 URL 매개변수나 전체 유입 URL은 보내지 않아요. 과거 태그 없는 클릭은 게시물별로 소급할 수 없어요. 브라우저, 화면 크기, 국가·지역, 언어 보고서는 계속 사용하지 않아요. 연결 시 각 서비스 정책에 따라 IP 주소와 HTTP 헤더가 처리되거나 방문 중복 제거에 일시적으로 쓰일 수 있어요."
+        "사이트는 GitHub Pages, 통계는 GoatCounter를 이용해요. Threads와 Reddit 홍보 효과를 파악하기 위해 허용 목록에 있는 고정 출처와 캠페인 태그(Threads 게시물 번호 또는 Reddit 커뮤니티 이름)만 사용해요. 태그는 현재 탭의 sessionStorage에 임시 보관되고 사이트 내부 링크로 이어져요. 개인 식별자는 아니에요. 임의 URL 매개변수나 전체 유입 URL은 보내지 않아요. 과거 태그 없는 클릭은 게시물별로 소급할 수 없어요. 브라우저, 화면 크기, 국가·지역, 언어 보고서는 계속 사용하지 않아요. 연결 시 각 서비스 정책에 따라 IP 주소와 HTTP 헤더가 처리되거나 방문 중복 제거에 일시적으로 쓰일 수 있어요."
       ],
       [
         "질문과 의견",
@@ -138,7 +138,7 @@
   "zh-Hans": {
     "title": "隐私与数据说明",
     "back": "返回游戏介绍",
-    "updated": "更新日期：2026-11-25",
+    "updated": "更新日期：2026-11-26",
     "lead": "本说明适用 Martin 提供的《神籙》公开网页 Demo。以下说明当前使用的存档、统计与反馈服务。",
     "sections": [
       [
@@ -151,7 +151,7 @@
       ],
       [
         "网站与第三方技术数据",
-        "GitHub Pages 提供网站，GoatCounter 提供统计。为了解 Threads 宣传效果，我们仅使用固定白名单的 Threads 来源与帖子编号活动标记；标记暂存在当前标签页的 sessionStorage 并随站内链接延续，不是个人标识符。不发送任意网址参数或完整来源网址，未标记的历史点击无法逐篇回溯。目前不启用浏览器、屏幕尺寸、国家／地区或语言报表。服务连接仍可能涉及按各公司政策处理 IP 地址及 HTTP 标头；访问去重可能短暂处理这些技术数据。"
+        "GitHub Pages 提供网站，GoatCounter 提供统计。为了解 Threads 与 Reddit 宣传效果，我们仅使用固定白名单的来源与活动标记（Threads 帖子编号或 Reddit 社区名称）；标记暂存在当前标签页的 sessionStorage 并随站内链接延续，不是个人标识符。不发送任意网址参数或完整来源网址，未标记的历史点击无法逐篇回溯。目前不启用浏览器、屏幕尺寸、国家／地区或语言报表。服务连接仍可能涉及按各公司政策处理 IP 地址及 HTTP 标头；访问去重可能短暂处理这些技术数据。"
       ],
       [
         "提问与反馈",
