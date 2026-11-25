@@ -13,3 +13,7 @@
 @media(max-height:600px) and (orientation:landscape){.mast{padding-top:8px;padding-bottom:8px}.mast-brand{font-size:16px}.languages button{min-height:40px;font-size:12px;padding:4px 7px}.portal{padding:78px 5vw 40px;min-height:100svh}.invitation{width:43%;min-width:300px}.wordmark{margin-bottom:6px}.wordmark svg{width:100px}.invitation h2{font-size:22px;line-height:1.35;margin-bottom:10px}.invitation p{font-size:13px;line-height:1.65;margin-bottom:13px}.actions{gap:0}.play{min-height:44px;font-size:15px;padding:8px 24px}.test-link{font-size:12px;min-height:40px}.compatibility{display:none}.realm-line{bottom:14px;font-size:12px}.testing{gap:28px;padding-top:40px;padding-bottom:40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.play{transition:none}.play:hover,.play:active{transform:none}}
 @media(max-width:360px) and (orientation:portrait){.mast{padding-left:8px;padding-right:8px}.languages button{font-size:12px;padding-left:5px;padding-right:5px}}
+
+.realm-line{background:#091322d9;border-radius:4px;padding:4px 10px}.foot{flex-wrap:wrap;align-items:center}.foot .demo-version{flex-basis:100%}.foot [data-privacy]{min-height:44px;display:inline-flex;align-items:center}
+
+@media(max-width:700px){.foot>span{display:block}.foot>[data-copy=creator]{margin-top:8px}.foot>.demo-version{margin-top:20px}}

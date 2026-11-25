@@ -1,6 +1,6 @@
 /* Entry/manual checks only; never reloads automatically or writes journey storage. */
 (()=>{'use strict';if(window.top!==window.self)return;
- const root=new URL('../',document.currentScript.src),current='2026.11.25.2';
+ const root=new URL('../',document.currentScript.src),current='2026.11.25.3';
  const copy={
  'zh-Hant':['網站版本','檢查更新','已有新版本。請先完成對局並存檔，再返回開場更新。','目前已是最新版。','暫時無法檢查；仍可繼續遊玩。','存檔後回開場更新','稍後'],
  'en':['Web version','Check updates','A new version is available. Finish your duel and save before updating from the opening menu.','You have the latest version.','Cannot check now. You can keep playing.','Saved — update at opening','Later'],
@@ -25,8 +25,8 @@
   link=document.createElement('a');const destination=new URL('preview/opening.html',root);destination.searchParams.set('lang',document.documentElement.lang||'zh-Hant');destination.searchParams.set('webv',Date.now());link.href=destination;link.hidden=true;
   link.onclick=event=>{const destination=new URL('preview/opening.html',root);destination.searchParams.set('lang',document.documentElement.lang||'zh-Hant');destination.searchParams.set('webv',Date.now());link.href=destination;};
   later=document.createElement('button');later.type='button';later.hidden=true;later.onclick=()=>{box.open=false;};
-  box.append(summary,button,status,link,later);(document.querySelector('.foot')||document.body).append(box);
-  const style=document.createElement('style');style.textContent='.demo-version{position:fixed;bottom:max(6px,env(safe-area-inset-bottom));right:max(8px,env(safe-area-inset-right));z-index:10020;max-width:min(360px,85vw);font:13px/1.6 system-ui;color:#eee5cf;background:#0b1727ee;border:1px solid #807055;border-radius:8px;padding:5px 9px}.demo-version summary{cursor:pointer}.demo-version button,.demo-version a{font:inherit;color:inherit;background:#203149;border:1px solid #807055;border-radius:5px;padding:5px 9px;margin:4px;text-decoration:none;cursor:pointer}.demo-version [hidden]{display:none!important}.demo-version p:empty{display:none}@media(max-height:400px){.demo-version:not([open]){font-size:11px;padding:2px 5px}}';document.head.append(style);
+  box.append(summary,button,status,link,later);const host=document.querySelector('.foot')||document.getElementById('settings-dialog');if(!host)return;const closeForm=host.querySelector('form');if(closeForm)closeForm.before(box);else host.append(box);
+  const style=document.createElement('style');style.textContent='.demo-version{position:static;max-width:100%;font:13px/1.6 system-ui;color:#eee5cf;border-top:1px solid #807055;padding:12px 0;margin-top:12px;overflow-wrap:anywhere}.demo-version summary{cursor:pointer;min-height:44px;display:flex;align-items:center}.demo-version button,.demo-version a{display:inline-flex;align-items:center;min-height:44px;font:inherit;color:inherit;background:#203149;border:1px solid #807055;border-radius:5px;padding:5px 9px;margin:4px;text-decoration:none;cursor:pointer}.demo-version [hidden]{display:none!important}.demo-version p:empty{display:none}';document.head.append(style);
   new MutationObserver(refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});refresh();check();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',build,{once:true});else build();

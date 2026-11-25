@@ -5,7 +5,7 @@
     "ask": "提問與回饋",
     "private": "不用登入，也不收集 Email。回覆僅供開發者閱讀；常見問題會整理到這裡。請勿填寫密碼或私人資料。",
     "stat": "累計開始旅程：{n} 次",
-    "statNote": "記錄成功進入故事或挑戰的開始事件，會合併短時間內的重複；不是不重複玩家數或即時在線人數，數字可能延遲更新。",
+    "statNote": "自 2026-11-25 開始統計。 記錄成功進入故事或挑戰的開始事件，會合併短時間內的重複；不是不重複玩家數或即時在線人數，數字可能延遲更新。",
     "faq": [
       [
         "手機怎麼玩？",
@@ -35,7 +35,7 @@
     "ask": "Questions & feedback",
     "private": "No sign-in or email collection. Only the developer can read responses. Common questions will be added here. Do not include passwords or private data.",
     "stat": "Journeys started: {n}",
-    "statNote": "Counts successful story or challenge starts, with short-session repeats grouped. This is not a count of unique people or players online. Updates may be delayed.",
+    "statNote": "Counting since 25 November 2026. Counts successful story or challenge starts, with short-session repeats grouped. This is not a count of unique people or players online. Updates may be delayed.",
     "faq": [
       [
         "How do I play on my phone?",
@@ -65,7 +65,7 @@
     "ask": "質問・フィードバック",
     "private": "ログイン不要、メールアドレスの収集もありません。回答は開発者のみが確認します。よくある質問はここに掲載します。パスワードや個人情報は記入しないでください。",
     "stat": "旅の開始回数：{n} 回",
-    "statNote": "物語や挑戦を正常に開始した回数です。短時間の重複はまとめます。実人数や現在の接続人数ではなく、反映には時間がかかる場合があります。",
+    "statNote": "2026年11月25日から集計。 物語や挑戦を正常に開始した回数です。短時間の重複はまとめます。実人数や現在の接続人数ではなく、反映には時間がかかる場合があります。",
     "faq": [
       [
         "スマートフォンで遊ぶには？",
@@ -95,7 +95,7 @@
     "ask": "질문과 의견 보내기",
     "private": "로그인이나 이메일 수집 없이 이용할 수 있어요. 답변은 개발자만 확인하며 자주 묻는 질문은 여기에 정리해요. 비밀번호나 개인정보는 적지 마세요.",
     "stat": "누적 여정 시작: {n}회",
-    "statNote": "이야기나 도전을 정상적으로 시작한 횟수예요. 짧은 시간의 중복은 합쳐요. 실제 이용자 수나 현재 접속자 수가 아니며 반영이 늦을 수 있어요.",
+    "statNote": "2026년 11월 25일부터 집계합니다. 이야기나 도전을 정상적으로 시작한 횟수예요. 짧은 시간의 중복은 합쳐요. 실제 이용자 수나 현재 접속자 수가 아니며 반영이 늦을 수 있어요.",
     "faq": [
       [
         "휴대폰으로 어떻게 플레이하나요?",
@@ -125,7 +125,7 @@
     "ask": "提问与反馈",
     "private": "不用登录，也不收集 Email。回复仅供开发者阅读；常见问题会整理到这里。请勿填写密码或私人资料。",
     "stat": "累计开始旅程：{n} 次",
-    "statNote": "记录成功进入故事或挑战的开始事件，会合并短时间内的重复；不是不重复玩家数或实时在线人数，数字可能延迟更新。",
+    "statNote": "自 2026-11-25 开始统计。 记录成功进入故事或挑战的开始事件，会合并短时间内的重复；不是不重复玩家数或实时在线人数，数字可能延迟更新。",
     "faq": [
       [
         "手机怎么玩？",

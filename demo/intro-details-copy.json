@@ -117,7 +117,10 @@
           "label": "維京女巫",
           "summary": "與英格麗辨認預兆與未知，讓伙伴共同選擇今晚的路。"
         }
-      }
+      },
+      "realmPicker": "選擇國別",
+      "jumpCast": "認識主角",
+      "jumpGameplay": "看卡牌玩法"
     },
     "en": {
       "castTitle": "Choose a hero. Follow their story.",
@@ -186,7 +189,10 @@
           "label": "Viking Witch",
           "summary": "Read omens and face the unknown with Ingrid. Let your companions choose tonight's path together."
         }
-      }
+      },
+      "realmPicker": "Choose a realm",
+      "jumpCast": "Meet the heroes",
+      "jumpGameplay": "Explore card play"
     },
     "ja": {
       "castTitle": "主人公を選んで、物語へ",
@@ -255,7 +261,10 @@
           "label": "ヴァイキングの魔女",
           "summary": "イングリッドと予兆を読み解き、未知に向き合おう。今夜進む道を仲間と一緒に選ぼう。"
         }
-      }
+      },
+      "realmPicker": "地域を選ぶ",
+      "jumpCast": "主人公を知る",
+      "jumpGameplay": "カードの遊び方"
     },
     "ko": {
       "castTitle": "주인공을 고르고, 이야기를 시작하세요",
@@ -324,7 +333,10 @@
           "label": "바이킹 마녀",
           "summary": "잉그리드와 함께 징조를 읽고 알 수 없는 것들과 마주하세요. 동료들과 오늘 밤 나아갈 길을 함께 고르세요."
         }
-      }
+      },
+      "realmPicker": "지역 선택",
+      "jumpCast": "주인공 소개",
+      "jumpGameplay": "카드 플레이 소개"
     },
     "zh-Hans": {
       "castTitle": "选一位主角，从故事出发",
@@ -393,7 +405,10 @@
           "label": "维京女巫",
           "summary": "与英格丽辨认预兆与未知，让伙伴共同选择今晚的路。"
         }
-      }
+      },
+      "realmPicker": "选择国别",
+      "jumpCast": "认识主角",
+      "jumpGameplay": "看卡牌玩法"
     }
   }
 }

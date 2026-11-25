@@ -1,0 +1,172 @@
+{
+  "zh-Hant": {
+    "title": "隱私與資料說明",
+    "back": "返回遊戲介紹",
+    "updated": "更新日期：2026-11-25",
+    "lead": "本說明適用 Martin 提供的《神籙》公開網頁 Demo。以下說明目前使用的存檔、統計與回饋服務。",
+    "sections": [
+      [
+        "遊戲進度與語言設定",
+        "進度與設定保存在目前瀏覽器的本機儲存空間，不會自動跨裝置同步。遊戲沒有要求玩家註冊帳號，也不會把存檔內容送入遊玩統計。清除網站資料可能使進度遺失，請先在遊戲內匯出備份。匯出檔案由你自行保管。"
+      ],
+      [
+        "遊玩開始次數",
+        "我們以 GoatCounter 統計成功開始故事或挑戰的事件，用來了解 Demo 是否有人開始遊玩。事件不包含玩家姓名、Email 或存檔內容；同一瀏覽階段內重複開始可能合併。數字不是不重複玩家數或即時在線人數，也可能延遲更新。網站尊重瀏覽器送出的 Do Not Track 與 Global Privacy Control 訊號，不向該服務送出開始事件。"
+      ],
+      [
+        "網站與第三方技術資料",
+        "網站由 GitHub Pages 提供，統計腳本與計數由 GoatCounter 提供。連線至這些服務時，服務商仍可能依其政策處理 IP 位址與 HTTP 標頭等技術資料。本 Demo 未啟用來源、瀏覽器種類、螢幕尺寸、國家／地區或語言報表欄位；這不表示網路連線完全沒有技術資料處理。"
+      ],
+      [
+        "提問與回饋",
+        "回饋使用 Google 表單，不要求登入，也不自動收集 Email。你輸入的訊息及選填裝置／關卡資料會交給開發者用於重現問題與改善遊戲，不會自動公開。請勿填寫密碼、證件、完整存檔或其他私人資料；若自行填入聯絡方式或個人資訊，該內容也會包含在回覆中。Google 會依其政策處理服務連線與使用資訊。"
+      ],
+      [
+        "查詢、移除與你的選擇",
+        "你可停止遊玩、不送回饋，或在瀏覽器中使用前述隱私訊號。刪除本機網站資料前請先備份存檔。若需查詢或移除先前提交的回饋，可由同一表單提供大概提交時間與相關內容，方便開發者查找；不需提供密碼或證件。"
+      ],
+      [
+        "範圍與後續更新",
+        "本說明針對目前公開網頁版本。若日後 Android 封測版、帳號或資料處理方式有改變，會在此更新對應說明。第三方服務的處理方式請參考下列官方政策。"
+      ]
+    ],
+    "contact": "聯絡開發者／回饋",
+    "sources": "第三方政策"
+  },
+  "en": {
+    "title": "Privacy & data",
+    "back": "Back to the introduction",
+    "updated": "Updated: 25 November 2026",
+    "lead": "This notice covers the public Shenlu web demo provided by Martin, including its saves, statistics and feedback services.",
+    "sections": [
+      [
+        "Progress and language settings",
+        "Progress and preferences stay in this browser’s local storage and do not automatically sync between devices. No player account is required, and saves are not sent to the play counter. Clearing site data may erase progress. Export a backup in the game first and keep the exported file yourself."
+      ],
+      [
+        "Journey-start statistics",
+        "GoatCounter records successful story or challenge starts to help us understand whether people begin playing. Events contain no player name, email or save data. Repeated starts within a browsing session may be grouped. This is neither unique-player nor live-online data, and updates may be delayed. The site respects Do Not Track and Global Privacy Control signals by not sending start events."
+      ],
+      [
+        "Hosting and technical data",
+        "GitHub Pages hosts the site; GoatCounter provides the statistics script and counter. Connecting to these services may involve processing IP addresses and HTTP headers under their policies. This demo disables referrer, browser, screen-size, country/region and language reports. That does not mean network connections involve no technical data."
+      ],
+      [
+        "Questions and feedback",
+        "Google Forms handles feedback without requiring sign-in or automatically collecting email addresses. Your message and optional device/stage information go to the developer to reproduce problems and improve the game; they are not published automatically. Do not send passwords, identity documents, complete saves or other private data. Contact details or personal information you choose to type will be part of your response. Google handles service connection and usage information under its policy."
+      ],
+      [
+        "Requests and choices",
+        "You can stop playing, choose not to submit feedback, or use the privacy signals above. Back up saves before deleting local site data. To ask about or request removal of a submitted response, use the same feedback form and include its approximate date and relevant text so the developer can locate it. No password or identity document is needed."
+      ],
+      [
+        "Scope and changes",
+        "This notice describes the current public web version. It will be updated if a future Android test build, account feature or data practice changes. See the official policies below for third-party practices."
+      ]
+    ],
+    "contact": "Contact the developer / feedback",
+    "sources": "Third-party policies"
+  },
+  "ja": {
+    "title": "プライバシーとデータ",
+    "back": "ゲーム紹介に戻る",
+    "updated": "更新日：2026年11月25日",
+    "lead": "Martinが提供する「神籙」公開ウェブデモの保存・統計・フィードバックについて説明します。",
+    "sections": [
+      [
+        "進行状況と言語設定",
+        "進行状況と設定は現在のブラウザ内に保存され、端末間では自動同期されません。プレイヤー登録は不要で、セーブ内容をプレイ統計に送信することもありません。サイトデータの削除で進行状況が失われる場合があります。先にゲーム内でバックアップを書き出し、ご自身で保管してください。"
+      ],
+      [
+        "旅の開始回数",
+        "物語や挑戦を正常に開始したイベントをGoatCounterで集計し、プレイ開始状況の把握に使います。イベントに氏名・メールアドレス・セーブ内容は含めません。同じ閲覧セッション内の重複はまとめる場合があります。実人数や現在の接続人数ではなく、反映に時間がかかることもあります。Do Not TrackとGlobal Privacy Controlの信号を尊重し、その場合は開始イベントを送信しません。"
+      ],
+      [
+        "配信サービスと技術情報",
+        "サイトはGitHub Pages、統計スクリプトと集計はGoatCounterを利用します。接続時には各社の方針に基づきIPアドレスやHTTPヘッダーなどが処理される場合があります。このデモでは参照元・ブラウザ・画面サイズ・国や地域・言語のレポート項目を無効にしていますが、通信時の技術情報処理が一切ないという意味ではありません。"
+      ],
+      [
+        "質問とフィードバック",
+        "Googleフォームを利用し、ログインやメールアドレスの自動収集は求めません。入力した内容と任意の端末・ステージ情報は、不具合の再現やゲーム改善のため開発者が確認し、自動公開しません。パスワード・身分証・完全なセーブデータなどは送らないでください。自分で連絡先や個人情報を書いた場合、その内容も回答に含まれます。Googleは接続・利用情報を自社の方針に従って処理します。"
+      ],
+      [
+        "問い合わせ・削除と選択",
+        "プレイをやめる、回答を送らない、前述のプライバシー信号を利用するといった選択ができます。ブラウザ内のデータ削除前にはセーブをバックアップしてください。送信した回答の確認や削除を希望する場合は、同じフォームにおおよその送信日時と該当内容を記入すると開発者が探しやすくなります。パスワードや身分証は不要です。"
+      ],
+      [
+        "対象と変更",
+        "現在の公開ウェブ版が対象です。今後Androidテスト版・アカウント機能・データ処理に変更がある場合は説明を更新します。外部サービスについては下記の公式方針をご確認ください。"
+      ]
+    ],
+    "contact": "開発者への連絡・フィードバック",
+    "sources": "外部サービスの方針"
+  },
+  "ko": {
+    "title": "개인정보와 데이터",
+    "back": "게임 소개로 돌아가기",
+    "updated": "업데이트: 2026년 11월 25일",
+    "lead": "Martin이 제공하는 신록 공개 웹 데모의 저장, 통계, 의견 제출 서비스에 관한 안내입니다.",
+    "sections": [
+      [
+        "진행 상황과 언어 설정",
+        "진행 상황과 설정은 현재 브라우저의 로컬 저장 공간에 보관되며 기기 간 자동 동기화되지 않아요. 플레이어 계정 등록이 필요하지 않고 저장 내용을 플레이 통계로 보내지 않아요. 사이트 데이터를 삭제하면 진행 상황이 사라질 수 있으니 먼저 게임에서 백업을 내보내 직접 보관하세요."
+      ],
+      [
+        "여정 시작 통계",
+        "이야기나 도전을 정상적으로 시작한 이벤트를 GoatCounter로 집계해 플레이 시작 현황을 파악해요. 이벤트에는 이름, 이메일, 저장 내용이 포함되지 않아요. 같은 브라우징 세션의 반복 시작은 합칠 수 있어요. 실제 이용자 수나 현재 접속자 수가 아니며 반영이 늦을 수 있어요. Do Not Track과 Global Privacy Control 신호가 있으면 시작 이벤트를 보내지 않아요."
+      ],
+      [
+        "호스팅과 기술 정보",
+        "사이트는 GitHub Pages, 통계 스크립트와 집계는 GoatCounter를 이용해요. 연결 시 서비스 제공자가 각자의 정책에 따라 IP 주소나 HTTP 헤더 같은 기술 정보를 처리할 수 있어요. 이 데모에서는 유입 경로, 브라우저, 화면 크기, 국가·지역, 언어 보고서를 사용하지 않지만, 네트워크에 기술 정보 처리가 전혀 없다는 뜻은 아니에요."
+      ],
+      [
+        "질문과 의견",
+        "Google 설문지를 이용하며 로그인이나 이메일 자동 수집을 요구하지 않아요. 입력한 내용과 선택 항목인 기기·스테이지 정보는 문제 재현과 게임 개선을 위해 개발자가 확인하고 자동 공개하지 않아요. 비밀번호, 신분증, 전체 저장 파일 같은 개인 자료는 보내지 마세요. 직접 연락처나 개인정보를 적으면 그 내용도 답변에 포함돼요. Google은 자체 정책에 따라 연결 및 이용 정보를 처리해요."
+      ],
+      [
+        "문의·삭제 요청과 선택",
+        "플레이를 중단하거나 의견을 제출하지 않거나 위의 개인정보 보호 신호를 이용할 수 있어요. 로컬 사이트 데이터를 삭제하기 전 저장 내용을 백업하세요. 제출한 답변의 확인이나 삭제를 원하면 같은 설문지에 대략적인 제출 날짜와 내용을 알려 주세요. 비밀번호나 신분증은 필요하지 않아요."
+      ],
+      [
+        "범위와 변경",
+        "현재 공개 웹 버전에 관한 안내예요. 향후 Android 테스트 버전, 계정 기능, 데이터 처리 방식이 달라지면 내용을 업데이트해요. 외부 서비스의 처리 방식은 아래 공식 정책을 확인하세요."
+      ]
+    ],
+    "contact": "개발자 문의 / 의견 보내기",
+    "sources": "외부 서비스 정책"
+  },
+  "zh-Hans": {
+    "title": "隐私与数据说明",
+    "back": "返回游戏介绍",
+    "updated": "更新日期：2026-11-25",
+    "lead": "本说明适用 Martin 提供的《神籙》公开网页 Demo。以下说明当前使用的存档、统计与反馈服务。",
+    "sections": [
+      [
+        "游戏进度与语言设置",
+        "进度与设置保存在当前浏览器的本地存储空间，不会自动跨设备同步。游戏不要求玩家注册账号，也不会把存档内容发送到游玩统计。清除网站数据可能使进度丢失，请先在游戏内导出备份。导出文件由你自行保管。"
+      ],
+      [
+        "游玩开始次数",
+        "我们使用 GoatCounter 统计成功开始故事或挑战的事件，了解 Demo 是否有人开始游玩。事件不包含玩家姓名、Email 或存档内容；同一浏览会话内重复开始可能合并。数字不是不重复玩家数或实时在线人数，也可能延迟更新。网站尊重浏览器的 Do Not Track 和 Global Privacy Control 信号，不向该服务发送开始事件。"
+      ],
+      [
+        "网站与第三方技术数据",
+        "网站由 GitHub Pages 提供，统计脚本与计数由 GoatCounter 提供。连接这些服务时，服务商仍可能按其政策处理 IP 地址与 HTTP 标头等技术数据。本 Demo 未启用来源、浏览器类型、屏幕尺寸、国家／地区或语言报表字段；这不代表网络连接完全没有技术数据处理。"
+      ],
+      [
+        "提问与反馈",
+        "反馈使用 Google 表单，不要求登录，也不自动收集 Email。你输入的消息及选填的设备／关卡数据会交给开发者，用于重现问题与改善游戏，不会自动公开。请勿填写密码、证件、完整存档或其他私人数据；如果自行填入联系方式或个人信息，也会包含在回复中。Google 会按其政策处理服务连接和使用信息。"
+      ],
+      [
+        "查询、移除与你的选择",
+        "你可以停止游玩、不提交反馈，或在浏览器中使用上述隐私信号。删除本地网站数据前请先备份存档。如果需要查询或移除之前提交的反馈，可以通过同一表单提供大致提交时间和相关内容，方便开发者查找；无需提供密码或证件。"
+      ],
+      [
+        "范围与后续更新",
+        "本说明针对当前公开网页版本。将来 Android 封测版、账号或数据处理方式如有变化，会更新对应说明。第三方服务的处理方式请参考下面的官方政策。"
+      ]
+    ],
+    "contact": "联系开发者／反馈",
+    "sources": "第三方政策"
+  }
+}
