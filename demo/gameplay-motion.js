@@ -13,6 +13,7 @@
   'zh-Hans':{play:'播放演示',pause:'暂停演示'}
  };
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const media={'zh-Hant':'duel-zh-Hant-aze-vs-salma-v1',en:'duel-en-aze-vs-salma-v1'};
  let current='',available=false,visible=false,manualPause=false,failed=false;
  function label(){const p=words[current]||words['zh-Hant'];button.textContent=video.paused?p.play:p.pause;}
  function mayAutoplay(){return !reduced.matches&&!navigator.connection?.saveData&&!manualPause;}
@@ -20,11 +21,11 @@
  function refresh(){
   const locale=document.documentElement.lang;if(locale===current)return;
   video.pause();video.removeAttribute('src');video.load();current=locale;failed=false;manualPause=false;
-  available=locale==='zh-Hant'||locale==='en';
+  available=!!media[locale];
   image.hidden=available;video.hidden=!available;button.hidden=!available;
-  if(available){video.poster=new URL('motion/duel-'+locale+'-poster.jpg',document.currentScript?.src||new URL('demo/',location.href)).href;
+  if(available){video.poster=new URL('demo/motion/'+media[locale]+'-poster.jpg',location.href).href;
    image.src=video.poster;
-   video.src=new URL('demo/motion/duel-'+locale+'.mp4?v=distinct1',location.href).href;
+   video.src=new URL('demo/motion/'+media[locale]+'.mp4',location.href).href;
    video.setAttribute('aria-label',image.alt);if(visible&&mayAutoplay())play();}
   label();
  }
