@@ -6,7 +6,7 @@
  const pending=new Set(),sent=new Set();let ready;
  const campaignKey='shenlu-demo:campaign',qaKey='shenlu-demo:statistics-qa';
  const valid=c=>c==='shenlu-threads'||/^shenlu-threads-(0[1-9]|10)$/.test(c||'');
- let campaign='',qa=params.has('qa');
+ let campaign='',qa=params.has('qa'),storageAvailable=true;
  try{
   if(qa)sessionStorage.setItem(qaKey,'1');
   qa=qa||sessionStorage.getItem(qaKey)==='1';
@@ -16,9 +16,9 @@
    if(!campaign&&document.referrer){const host=new URL(document.referrer).hostname;if(['threads.com','www.threads.com','threads.net','www.threads.net'].includes(host))campaign='shenlu-threads';}
   }
   if(campaign)sessionStorage.setItem(campaignKey,campaign);
- }catch(_){}
+ }catch(_){storageAvailable=false;}
  const production=location.hostname==='martinihuang.github.io'&&location.pathname.startsWith('/shenlu-demo/')&&window===window.top&&!qa;
- const excluded=()=>!production||navigator.doNotTrack==='1'||window.doNotTrack==='1'||navigator.globalPrivacyControl===true;
+ const excluded=()=>!production||!storageAvailable||navigator.doNotTrack==='1'||window.doNotTrack==='1'||navigator.globalPrivacyControl===true;
  function flush(){if(excluded()||!ready?.count)return;for(const path of pending){if(sent.has(path))continue;sent.add(path);try{ready.count({path,title:titles[path],event:true,referrer:campaign?'threads':''});}catch(_){}}}
  function track(path){if(!titles[path]||excluded())return;pending.add(path);flush();}
  globalThis.ShenluDemoStatistics={start(){track('play-start');}};
