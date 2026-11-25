@@ -19,3 +19,13 @@ html[lang=en] #scene>.subtitle{font-size:48px;letter-spacing:2px;white-space:now
 .entry-card.locked:before{content:attr(data-demo-locked)}
 
 @media(max-width:1100px){html[lang="en"] .detail-copy p{font-size:16px;line-height:1.4}}
+
+/* Localized outlined word images; the existing Traditional Chinese artwork is preserved. */
+.hero-info h1[data-selection-art="name"] .country-word{width:100%;height:7.4cqw;max-width:100%}
+.hero-info h2[data-selection-art="title"]{height:3.8cqw;display:flex;align-items:center;justify-content:center}
+.hero-info h2[data-selection-art="title"] .country-word{width:100%;height:100%}
+.portrait-name[data-selection-art="portrait"]{display:block;width:100%;height:1.8cqw}
+.portrait-name[data-selection-art="portrait"] .country-word{width:100%;height:100%}
+.hero-info [data-selection-art="fallback"]{font-size:2.2cqw!important;line-height:1.3;color:#ffe8a0;white-space:normal}
+
+.hero-info h2[data-selection-art="title"][data-selection-lines="2"]{height:5.2cqw}

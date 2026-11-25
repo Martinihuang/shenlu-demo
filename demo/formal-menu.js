@@ -3,7 +3,41 @@ if(!api)return;const t=(key,fallback='')=>api.t(key,fallback),label=(s,key)=>{co
 if(location.pathname.endsWith('/game/world-portrait.html')&&!lands.has(new URLSearchParams(location.search).get('country'))){location.replace(new URL('preview/character-selection.html?country='+encodeURIComponent(new URLSearchParams(location.search).get('country')||'TW'),root));return;}
 let atlas,names,teasers,currentHero;const ready=Promise.all([fetch(new URL('demo/word-art.json',root)).then(r=>r.json()),fetch(new URL('demo/world-teasers.json',root)).then(r=>r.json())]).then(([a,v])=>{atlas=a;teasers=v});
 function word(e,id){if(e&&atlas&&globalThis.ShenluWordArt)ShenluWordArt.mount(e,atlas,api.locale,id,api.country(id))}
-function selection(hero){currentHero=hero;const b=$('#confirm');if(!b)return;b.disabled=!available.has(hero.key);b.textContent=t(b.disabled?'notAvailable':'chooseHero');Promise.all([ready,api.ready]).then(()=>{if(currentHero!==hero)return;word($('#country'),hero.region);for(const c of document.querySelectorAll('#countries button')){word(c,c.dataset.region);c.title=t(lands.has(c.dataset.region)?'availableDemo':'previewOnly')}if($('#job'))$('#job').textContent=api.display(hero.label);if($('#summary')&&api.locale!=='zh-Hant')$('#summary').textContent=api.display(hero.summary);for(const button of document.querySelectorAll('#portraits button')){const original=button.getAttribute('aria-label')||'';if(original.startsWith('選擇'))button.setAttribute('aria-label',t('chooseHero')+' '+api.display(original.slice(2)));}$('#story-title')?.setAttribute('aria-label',api.display(hero.title));})}
+let selectionAtlas;const selectionReady=$('#confirm')&&globalThis.SHENLU_SELECTION?fetch(new URL('demo/selection-word-art.json?v=1',root)).then(r=>{if(!r.ok)throw Error('selection-word-art');return r.json()}).then(a=>{selectionAtlas=a}).catch(()=>{}):Promise.resolve();
+const selectionOriginals=new Map();
+function selectionWords(hero){
+ const locale=api.locale,spec=selectionAtlas?.locales[locale],original=selectionOriginals.get(hero.id)||{};
+ for(const [field,selector]of [['name','#hero-name'],['title','#story-title']]){
+  const e=$(selector);if(!e)continue;
+  if(!e.querySelector('.country-word'))original[field]=[...e.childNodes].map(n=>n.cloneNode(true));
+  if(locale==='zh-Hant'){
+   if(original[field])e.replaceChildren(...original[field].map(n=>n.cloneNode(true)));
+   delete e.dataset.selectionArt;delete e.dataset.selectionLines;e.setAttribute('aria-label',hero[field]);continue;
+  }
+  if(!spec||!globalThis.ShenluWordArt)continue;
+  const label=spec.labels[hero.id][field];
+  ShenluWordArt.mount(e,selectionAtlas,locale,hero.id+'-'+field,label);
+  e.dataset.selectionArt=field;e.dataset.selectionLines=spec.lines[hero.id+'-'+field];
+  e.querySelector('image')?.addEventListener('error',()=>{
+   if(currentHero!==hero||api.locale!==locale)return;
+   e.textContent=label;e.dataset.selectionArt='fallback';
+  },{once:true});
+ }
+ selectionOriginals.set(hero.id,original);
+ const candidates=SHENLU_SELECTION.filter(h=>h.region===hero.region);
+ for(const [index,e]of [...document.querySelectorAll('#portraits .portrait-name')].entries()){
+  const candidate=candidates[index];if(!candidate)continue;
+  if(locale==='zh-Hant'){e.textContent=candidate.name;delete e.dataset.selectionArt;continue;}
+  if(spec&&globalThis.ShenluWordArt){
+   const label=spec.labels[candidate.id].name;
+   ShenluWordArt.mount(e,selectionAtlas,locale,candidate.id+'-name',label);
+   e.dataset.selectionArt='portrait';
+   e.querySelector('image')?.addEventListener('error',()=>{if(api.locale===locale){e.textContent=label;delete e.dataset.selectionArt}},{once:true});
+  }
+ }
+}
+addEventListener('demo-language',()=>{if(currentHero)selection(currentHero)});
+function selection(hero){currentHero=hero;const b=$('#confirm');if(!b)return;b.disabled=!available.has(hero.key);b.textContent=t(b.disabled?'notAvailable':'chooseHero');Promise.all([ready,api.ready,selectionReady]).then(()=>{if(currentHero!==hero)return;word($('#country'),hero.region);for(const c of document.querySelectorAll('#countries button')){word(c,c.dataset.region);c.title=t(lands.has(c.dataset.region)?'availableDemo':'previewOnly')}if($('#job'))$('#job').textContent=api.display(hero.label);if($('#summary')&&api.locale!=='zh-Hant')$('#summary').textContent=api.display(hero.summary);for(const button of document.querySelectorAll('#portraits button')){const original=button.getAttribute('aria-label')||'';if(original.startsWith('選擇'))button.setAttribute('aria-label',t('chooseHero')+' '+api.display(original.slice(2)));}selectionWords(hero);})}
 function journey(story){for(const [s,k]of [['#mode-story','story'],['#mode-world','worldTab'],['#show-gallery','gallery'],['#collection','cards'],['#saves','saves']])label(s,k);if(!story){const selected=$('#entry-grid [aria-pressed=true]'),c=globalThis.SHENLU_JOURNEY?.countries.find(c=>c.name===selected?.getAttribute('aria-label'));if(c&&!lands.has(c.id))label('#enter','previewOnly')}for(const entry of document.querySelectorAll('.entry-card.locked'))entry.dataset.demoLocked=api.display('尚未解鎖');const meeting=$('#extra-entry strong');if(story&&api.locale!=='zh-Hant'&&meeting){let translated=api.storyLine(meeting.textContent)||api.display(meeting.textContent);if(translated===meeting.textContent&&meeting.textContent.startsWith('交會篇・'))translated=api.storyLine(meeting.textContent.slice(4));if(translated){meeting.textContent=translated;$('#extra-entry').setAttribute('aria-label',translated);}}const im=$('#detail-content img');if(im)im.classList.add('demo-nether-preview')}
 globalThis.ShenluDemoMenu={selection,journey};
 // VOICE_PREVIEW_COPY_BEGIN
