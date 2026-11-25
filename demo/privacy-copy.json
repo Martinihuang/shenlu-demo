@@ -19,7 +19,7 @@
       ],
       [
         "提問與回饋",
-        "回饋使用 Google 表單，不要求登入，也不自動收集 Email。你輸入的訊息及選填裝置／關卡資料會交給開發者用於重現問題與改善遊戲，不會自動公開。請勿填寫密碼、證件、完整存檔或其他私人資料；若自行填入聯絡方式或個人資訊，該內容也會包含在回覆中。Google 會依其政策處理服務連線與使用資訊。"
+        "主要互動入口是 Threads 中英共用討論串。回覆需要 Threads 帳號；留言、帳號名稱與自行附上的圖片可能公開，並由 Meta 依其政策處理。你可在 Threads 管理或刪除自己的留言。請勿公開聯絡方式、密碼或完整存檔。備用回饋使用 Google 表單，不要求登入，也不自動收集 Email。你輸入的訊息及選填裝置／關卡資料會交給開發者用於重現問題與改善遊戲，不會自動公開。請勿填寫密碼、證件、完整存檔或其他私人資料；若自行填入聯絡方式或個人資訊，該內容也會包含在回覆中。Google 會依其政策處理服務連線與使用資訊。"
       ],
       [
         "查詢、移除與你的選擇",
@@ -53,7 +53,7 @@
       ],
       [
         "Questions and feedback",
-        "Google Forms handles feedback without requiring sign-in or automatically collecting email addresses. Your message and optional device/stage information go to the developer to reproduce problems and improve the game; they are not published automatically. Do not send passwords, identity documents, complete saves or other private data. Contact details or personal information you choose to type will be part of your response. Google handles service connection and usage information under its policy."
+        "The main feedback channel is a shared Chinese/English Threads discussion. Replying requires a Threads account. Comments, account names and attached images may be public and are handled by Meta under its policy. You can manage or delete your own comments on Threads. Do not post contact details, passwords or full saves. As a backup, Google Forms handles feedback without requiring sign-in or automatically collecting email addresses. Your message and optional device/stage information go to the developer to reproduce problems and improve the game; they are not published automatically. Do not send passwords, identity documents, complete saves or other private data. Contact details or personal information you choose to type will be part of your response. Google handles service connection and usage information under its policy."
       ],
       [
         "Requests and choices",
@@ -87,7 +87,7 @@
       ],
       [
         "質問とフィードバック",
-        "Googleフォームを利用し、ログインやメールアドレスの自動収集は求めません。入力した内容と任意の端末・ステージ情報は、不具合の再現やゲーム改善のため開発者が確認し、自動公開しません。パスワード・身分証・完全なセーブデータなどは送らないでください。自分で連絡先や個人情報を書いた場合、その内容も回答に含まれます。Googleは接続・利用情報を自社の方針に従って処理します。"
+        "主な窓口は中国語・英語共通のThreadsスレッドです。返信にはThreadsアカウントが必要です。コメント・アカウント名・添付画像は公開される場合があり、Metaの方針で処理されます。自分のコメントはThreadsで管理・削除できます。連絡先・パスワード・完全なセーブデータは投稿しないでください。予備の Googleフォームを利用し、ログインやメールアドレスの自動収集は求めません。入力した内容と任意の端末・ステージ情報は、不具合の再現やゲーム改善のため開発者が確認し、自動公開しません。パスワード・身分証・完全なセーブデータなどは送らないでください。自分で連絡先や個人情報を書いた場合、その内容も回答に含まれます。Googleは接続・利用情報を自社の方針に従って処理します。"
       ],
       [
         "問い合わせ・削除と選択",
@@ -121,7 +121,7 @@
       ],
       [
         "질문과 의견",
-        "Google 설문지를 이용하며 로그인이나 이메일 자동 수집을 요구하지 않아요. 입력한 내용과 선택 항목인 기기·스테이지 정보는 문제 재현과 게임 개선을 위해 개발자가 확인하고 자동 공개하지 않아요. 비밀번호, 신분증, 전체 저장 파일 같은 개인 자료는 보내지 마세요. 직접 연락처나 개인정보를 적으면 그 내용도 답변에 포함돼요. Google은 자체 정책에 따라 연결 및 이용 정보를 처리해요."
+        "주요 의견 창구는 중국어·영어 공용 Threads 토론 글이에요. 댓글에는 Threads 계정이 필요해요. 댓글, 계정 이름과 첨부 이미지는 공개될 수 있으며 Meta 정책에 따라 처리돼요. 자신의 댓글은 Threads에서 관리하거나 삭제할 수 있어요. 연락처, 비밀번호나 전체 저장 파일은 올리지 마세요. 보조 창구로 Google 설문지를 이용하며 로그인이나 이메일 자동 수집을 요구하지 않아요. 입력한 내용과 선택 항목인 기기·스테이지 정보는 문제 재현과 게임 개선을 위해 개발자가 확인하고 자동 공개하지 않아요. 비밀번호, 신분증, 전체 저장 파일 같은 개인 자료는 보내지 마세요. 직접 연락처나 개인정보를 적으면 그 내용도 답변에 포함돼요. Google은 자체 정책에 따라 연결 및 이용 정보를 처리해요."
       ],
       [
         "문의·삭제 요청과 선택",
@@ -155,7 +155,7 @@
       ],
       [
         "提问与反馈",
-        "反馈使用 Google 表单，不要求登录，也不自动收集 Email。你输入的消息及选填的设备／关卡数据会交给开发者，用于重现问题与改善游戏，不会自动公开。请勿填写密码、证件、完整存档或其他私人数据；如果自行填入联系方式或个人信息，也会包含在回复中。Google 会按其政策处理服务连接和使用信息。"
+        "主要互动入口是 Threads 中英共用讨论串。回复需要 Threads 账号；留言、账号名称与自行附上的图片可能公开，并由 Meta 按其政策处理。你可以在 Threads 管理或删除自己的留言。请勿公开联系方式、密码或完整存档。备用反馈使用 Google 表单，不要求登录，也不自动收集 Email。你输入的消息及选填的设备／关卡数据会交给开发者，用于重现问题与改善游戏，不会自动公开。请勿填写密码、证件、完整存档或其他私人数据；如果自行填入联系方式或个人信息，也会包含在回复中。Google 会按其政策处理服务连接和使用信息。"
       ],
       [
         "查询、移除与你的选择",
