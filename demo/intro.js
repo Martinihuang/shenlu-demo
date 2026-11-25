@@ -29,7 +29,6 @@
     "testingStep2Title": "加入 Play 測試並下載",
     "testingStep2Body": "使用同一個 Google 帳號開啟 Play 測試頁，依頁面指示加入測試，再前往商店安裝。若顯示未受邀，請先確認這個帳號已加入測試群組。",
     "testingPending": "目前狀態：封閉測試審查中；既有內部測試帳號可下載 0.1.5（6）。",
-    "testingInternal": "已參加舊版「內部測試」的人，開放後請先退出內部測試，再用同一帳號加入封閉測試。",
     "testingPlay": "開啟 Play 測試頁"
   },
   "en": {
@@ -59,7 +58,6 @@
     "testingStep2Title": "Opt in on Play and download",
     "testingStep2Body": "Open the Play test page with the same Google account, follow its opt-in instructions, then install from the store. If you see an invitation error, check that this account has joined the tester group.",
     "testingPending": "Current status: closed test under review. Existing internal testers can download 0.1.5 (6).",
-    "testingInternal": "Already in the old internal test? Once the closed test opens, leave internal testing before opting in with the same account.",
     "testingPlay": "Open the Play test page"
   },
   "ja": {
@@ -89,7 +87,6 @@
     "testingStep2Title": "Play で参加してダウンロード",
     "testingStep2Body": "同じGoogleアカウントでPlayのテストページを開き、案内に従って参加し、ストアからインストールしてください。招待エラーが出る場合は、そのアカウントでグループに参加しているか確認してください。",
     "testingPending": "現在：クローズドテストは審査中です。既存の内部テスターは0.1.5（6）をダウンロードできます。",
-    "testingInternal": "旧内部テストに参加中の場合、クローズドテスト開始後に内部テストを退出してから、同じアカウントで参加してください。",
     "testingPlay": "Play のテストページを開く"
   },
   "ko": {
@@ -119,7 +116,6 @@
     "testingStep2Title": "Play에서 참여 후 다운로드",
     "testingStep2Body": "같은 Google 계정으로 Play 테스트 페이지를 열고 안내에 따라 참여한 다음 스토어에서 설치하세요. 초대 오류가 표시되면 해당 계정으로 테스트 그룹에 가입했는지 확인하세요.",
     "testingPending": "현재 상태: 비공개 테스트 심사 중. 기존 내부 테스터는 0.1.5(6)를 다운로드할 수 있습니다.",
-    "testingInternal": "이전 내부 테스트 참여자는 비공개 테스트가 열리면 내부 테스트에서 나간 후 같은 계정으로 참여하세요.",
     "testingPlay": "Play 테스트 페이지 열기"
   },
   "zh-Hans": {
@@ -149,7 +145,6 @@
     "testingStep2Title": "加入 Play 测试并下载",
     "testingStep2Body": "使用同一 Google 账号打开 Play 测试页，按页面指示加入测试，再前往商店安装。若显示未受邀，请先确认这个账号已加入测试群组。",
     "testingPending": "当前状态：封闭测试审核中；已有内部测试账号可下载 0.1.5（6）。",
-    "testingInternal": "已参加旧版“内部测试”的人，开放后请先退出内部测试，再用同一账号加入封闭测试。",
     "testingPlay": "打开 Play 测试页"
   }
 };
