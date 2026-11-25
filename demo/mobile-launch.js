@@ -5,7 +5,7 @@
  const touch=matchMedia('(pointer: coarse)').matches||navigator.maxTouchPoints>0;
  if(!touch)return;
  const scriptURL=document.currentScript?.src||new URL('demo/mobile-launch.js',location.href).href;
- const base=new URL('../',scriptURL),intro=location.pathname===base.pathname||location.pathname===new URL('index.html',base).pathname;
+ const base=new URL('../',scriptURL),intro=!!document.body?.dataset.page||location.pathname===base.pathname||location.pathname===new URL('index.html',base).pathname;
  const packs={
   'zh-Hant':{start:'全螢幕開始',movie:'觀看開場動畫',title:'橫向，走進《神籙》',body:'建議將手機轉橫，再以全螢幕遊玩。你也可以先觀看開場動畫。',continue:'以目前畫面繼續',full:'全螢幕',rotate:'請將手機轉橫，完整顯示遊戲。',suggest:'建議使用全螢幕遊玩。',unsupported:'目前無法開啟全螢幕，仍可轉橫手機繼續。',loading:'開場正在載入…',retry:'開場動畫尚未就緒，可先開始遊戲，稍後從選單播放。'},
   en:{start:'Start fullscreen',movie:'Watch the opening',title:'Turn your phone. Enter Shenlu.',body:'Play in landscape and fullscreen for a clearer view. You can also watch the opening first.',continue:'Continue in this view',full:'Fullscreen',rotate:'Turn your phone sideways for the full game view.',suggest:'Fullscreen is recommended.',unsupported:'Fullscreen is unavailable. You can still turn your phone sideways and continue.',loading:'Loading the opening…',retry:'The opening movie is not ready. Start playing, or watch it later from the menu.'},
@@ -18,8 +18,8 @@
  const make=(tag,cls)=>{const el=document.createElement(tag);if(cls)el.className=cls;return el;};
  const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('demo/mobile-launch.css?v=launch2',base);document.head.append(css);
  if(intro){
-  const play=document.getElementById('play-demo');if(!play)return;
-  const movie=make('a','mobile-opening-link');movie.dataset.mobileMovie='';movie.href=play.href;play.after(movie);
+  const play=document.getElementById('play-demo')||document.querySelector('.nav-play');if(!play)return;
+  const movie=make('a','mobile-opening-link');movie.dataset.mobileMovie='';if(play.classList.contains('nav-play'))movie.hidden=true;movie.href=play.href;play.after(movie);
   function refresh(){movie.textContent=words().movie;const u=new URL(play.href);u.searchParams.set('launch','movie');movie.href=u.href;}
   new MutationObserver(refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});refresh();
   document.addEventListener('click',event=>{

@@ -109,16 +109,18 @@
   }
 };
  const nav=document.querySelector('[data-languages]');
- for(const locale of localeAPI.supported){const button=document.createElement('button');button.type='button';button.lang=locale;button.textContent=localeAPI.labels[locale];button.dataset.locale=locale;button.addEventListener('click',()=>render(locale));nav.append(button);}
+ const picker=document.createElement('select');picker.id='site-language';picker.setAttribute('aria-label','Language');
+ for(const locale of localeAPI.supported){const option=document.createElement('option');option.value=locale;option.lang=locale;option.textContent=localeAPI.labels[locale];picker.append(option);}
+ picker.addEventListener('change',()=>render(picker.value));nav.append(picker);
  function render(locale){
   const words=copy[locale];document.documentElement.lang=locale;document.title=words.pageTitle;
   for(const el of document.querySelectorAll('[data-copy]'))el.textContent=words[el.dataset.copy];
-  for(const el of nav.querySelectorAll('button'))el.setAttribute('aria-pressed',String(el.dataset.locale===locale));
+  picker.value=locale;
   for(const el of document.querySelectorAll('#play-demo,[data-direct-game]')){const url=new URL('preview/opening.html',location.href);url.searchParams.set('lang',locale);el.href=url.href;}
   document.querySelector('meta[name=description]').content=words.intro;
   document.querySelector('meta[property="og:title"]').content=words.pageTitle;
   document.querySelector('meta[property="og:description"]').content=words.intro;
-  document.getElementById('preference-status').textContent=localeAPI.remember(locale)?'':words.preferenceError;
+  const remembered=localeAPI.remember(locale),status=document.getElementById('preference-status');if(status)status.textContent=remembered?'':words.preferenceError;
   const privacy=document.querySelector('[data-privacy]');if(privacy){const url=new URL('privacy.html',location.href);url.searchParams.set('lang',locale);privacy.href=url.href;}
   for(const key of ['title','description'])document.querySelector('meta[name="twitter:'+key+'"]').content=key==='title'?words.pageTitle:words.intro;
   localeAPI.setURL(locale);

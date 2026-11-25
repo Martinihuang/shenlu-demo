@@ -25,7 +25,7 @@
       ],
       [
         "網頁遊玩算 Google Play 封測嗎？",
-        "不計入。必須在 Google Play 封測開放後加入測試，並從 Play 安裝 Android 測試版；加入連結會公布在上方。"
+        "不計入。必須在 Google Play 封測開放後加入測試，並從 Play 安裝 Android 測試版；加入連結會公布在「封測資訊」頁。"
       ]
     ]
   },
@@ -55,7 +55,7 @@
       ],
       [
         "Does browser play count toward the Google Play closed test?",
-        "No. Once the closed test opens, join it and install the Android test build from Google Play. The join link will appear above."
+        "No. Once the closed test opens, join it and install the Android test build from Google Play. The join link will appear on the Android testing page."
       ]
     ]
   },
@@ -85,7 +85,7 @@
       ],
       [
         "ブラウザでのプレイはGoogle Playのテストに含まれますか？",
-        "含まれません。クローズドテスト開始後に参加し、Google PlayからAndroidテスト版をインストールする必要があります。参加リンクは上に掲載します。"
+        "含まれません。クローズドテスト開始後に参加し、Google PlayからAndroidテスト版をインストールする必要があります。参加リンクは「Android テスト」ページに掲載します。"
       ]
     ]
   },
@@ -115,7 +115,7 @@
       ],
       [
         "브라우저 플레이도 Google Play 비공개 테스트에 포함되나요?",
-        "포함되지 않아요. 테스트가 열리면 참여하고 Google Play에서 Android 테스트 버전을 설치해야 해요. 참여 링크는 위에 안내할 예정이에요."
+        "포함되지 않아요. 테스트가 열리면 참여하고 Google Play에서 Android 테스트 버전을 설치해야 해요. 참여 링크는 Android 테스트 페이지에서 안내할 예정이에요."
       ]
     ]
   },
@@ -145,7 +145,7 @@
       ],
       [
         "网页游玩算 Google Play 封测吗？",
-        "不计入。必须在 Google Play 封测开放后加入测试，并从 Play 安装 Android 测试版；加入链接会公布在上方。"
+        "不计入。必须在 Google Play 封测开放后加入测试，并从 Play 安装 Android 测试版；加入链接会公布在“封测信息”页。"
       ]
     ]
   }

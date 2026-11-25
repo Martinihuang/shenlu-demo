@@ -16,23 +16,28 @@
  <meta name="twitter:title" content="神籙｜三國神話，六段旅程">
  <meta name="twitter:description" content="跟隨六位主角走入三國神話，以靈體召喚與卡牌攻防推進故事。">
  <meta name="twitter:image" content="https://martinihuang.github.io/shenlu-demo/assets/menu-shared-v1/opening-concept-v2/art-plate-v2.webp">
- <link rel="stylesheet" href="demo/intro.css?v=polish1">
+ <link rel="stylesheet" href="demo/intro.css?v=site2">
  <script defer src="demo/locale-entry.js?v=intro1"></script>
- <script defer src="demo/intro.js?v=polish1"></script>
- <link rel="stylesheet" href="demo/intro-details.css?v=polish1">
- <script defer src="demo/intro-details.js?v=polish1"></script>
- <script defer src="demo/mobile-launch.js?v=launch2"></script>
+ <script defer src="demo/intro.js?v=site2"></script>
+ <link rel="stylesheet" href="demo/intro-details.css?v=site2">
+ <script defer src="demo/intro-details.js?v=site2"></script>
+ <script defer src="demo/mobile-launch.js?v=site2"></script>
  <link rel="stylesheet" href="demo/community.css?v=community1">
- <script defer src="demo/community.js?v=community2"></script>
-<script src="demo/statistics.js?v=community1"></script><script defer src="demo/version.js?v=polish1"></script></head>
-<body>
- <a class="skip" href="#introduction" data-copy="skip">跳到遊戲介紹</a>
- <header class="mast">
-  <a class="mast-brand" href="#introduction">神籙<span data-copy="brandNote">免費網頁 Demo</span></a>
-  <nav class="languages" aria-label="Language" data-languages></nav>
- </header>
- <main>
-  <section class="portal" id="introduction" aria-labelledby="intro-title">
+ <script defer src="demo/community.js?v=site2"></script>
+<script src="demo/statistics.js?v=community1"></script><script defer src="demo/version.js?v=site2"></script><link rel="stylesheet" href="demo/site.css?v=site2"><script defer src="demo/site.js?v=site2"></script></head>
+<body data-page="home"><a class="skip" href="#introduction" data-copy="skip">跳到遊戲介紹</a>
+<header class="mast">
+ <a class="mast-brand" href="index.html" data-site-link>神籙<span data-copy="brandNote">免費網頁 Demo</span></a>
+ <nav class="site-nav" id="site-navigation" aria-label="主選單">
+  <a href="characters.html" data-site-link data-site-copy="characters">角色</a>
+  <a href="gameplay.html" data-site-link data-site-copy="gameplay">玩法</a>
+  <a href="faq.html" data-site-link data-site-copy="faq">常見問題</a>
+  <a href="testing.html" data-site-link data-site-copy="testing">封測資訊</a>
+ </nav>
+ <div class="mast-tools"><nav class="languages" aria-label="Language" data-languages></nav>
+ <a class="nav-play" href="preview/opening.html?lang=zh-Hant" data-direct-game data-copy="play">立即試玩</a>
+ <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-site-copy="menu">選單</button></div>
+</header><main><section class="portal" id="introduction" aria-labelledby="intro-title">
    <img class="portal-art" src="assets/menu-shared-v1/opening-concept-v2/art-plate-v2.webp" alt="" fetchpriority="high" width="1844" height="853">
    <div class="invitation">
     <h1 class="wordmark" aria-label="神籙 Shenlu"><svg viewBox="0 0 293 162" aria-hidden="true"><defs><clipPath id="brand-clip"><rect width="293" height="162"/></clipPath></defs><image href="assets/selection-type-v1/ui.webp" x="-164" y="-15" width="1774" height="887" clip-path="url(#brand-clip)"/></svg></h1>
@@ -40,27 +45,10 @@
     <p data-copy="intro">跟隨六位主角走入三國神話，以靈體召喚與卡牌攻防推進故事。</p>
     <div class="actions">
      <a class="play" id="play-demo" href="preview/opening.html?lang=zh-Hant" data-copy="play">立即試玩</a>
-     <a class="test-link" href="#android-testing" data-copy="testingLink">Android 封測準備中・查看說明</a>
+     <a class="test-link" href="gameplay.html" data-site-link data-site-copy="learn">看卡牌玩法</a>
     </div>
     <p class="compatibility" data-copy="compatibility">免安裝，瀏覽器即可玩。手機遊玩時建議橫向。</p>
     <div class="preference-status" role="status" id="preference-status"></div>
    </div>
    <p class="realm-line" data-copy="realms">台灣山林　／　埃及神殿　／　北歐命線</p>
-  </section>
-  <div id="intro-details"></div>
-  <section class="community community-stat" id="community-stat" aria-label="Journey starts" hidden></section>
-  <section class="testing" id="android-testing" aria-labelledby="testing-title">
-   <h2 id="testing-title" data-copy="testingTitle">一起讓《神籙》更好</h2>
-   <div>
-    <span class="status" data-copy="testingStatus">Android 封測尚未開放</span>
-    <p data-copy="testingBody">Google Play 版本仍在準備中，目前可以先玩網頁 Demo。封測正式開放後，這裡會提供加入測試與從 Google Play 安裝的步驟。</p>
-    <p data-copy="testingRule">網頁試玩不計入 Google Play 的 14 天封閉測試。封測開放後，請由 Google Play 加入並安裝測試版。</p>
-    <a href="#introduction" data-copy="back">返回遊戲介紹</a>
-   </div>
-  </section>
-  <section class="community" id="community" aria-labelledby="community-title"></section>
- </main>
- <footer class="foot"><span data-copy="saveNote">遊戲進度儲存在目前瀏覽器；請善用遊戲內的匯出備份。</span><a href="preview/opening.html?lang=zh-Hant" data-direct-game data-copy="direct">直接進入遊戲開場</a><span data-copy="creator">製作：Martin</span><a data-privacy href="privacy.html?lang=zh-Hant" data-copy="privacy">隱私與資料說明</a></footer>
- <noscript><p>繁體中文介紹可直接閱讀。啟用 JavaScript 後即可切換語言及遊玩 Demo。</p></noscript>
-</body>
-</html>
+  </section><section class="game-glimpse" aria-labelledby="glimpse-title"><div class="glimpse-heading"><div><h2 id="glimpse-title" data-site-copy="glimpse">走進故事，也走上決鬥場</h2><p data-site-copy="glimpseBody">選擇主角，沿著故事前進；召喚靈體、運用手牌，完成每一場對局。</p></div><a class="text-link" href="gameplay.html" data-site-link data-site-copy="learn">看卡牌玩法</a></div><div class="screens"><figure><img src="demo/screens/story.webp" width="1536" height="729" loading="lazy" alt="莎爾瑪在埃及河岸的故事介面" data-site-alt="storyAlt"><figcaption><strong data-site-copy="story">跟著主角，走入神話</strong><span data-site-copy="storyCaption">埃及・莎爾瑪故事畫面</span></figcaption></figure><figure><img src="demo/screens/duel.webp" width="1280" height="720" loading="lazy" alt="北歐卡牌決鬥介面，顯示手牌與靈體場地" data-site-alt="duelAlt"><figcaption><strong data-site-copy="duel">把下一步，交給你的牌</strong><span data-site-copy="duelCaption">北歐・卡牌決鬥畫面</span></figcaption></figure></div><a class="cast-invitation text-link" href="characters.html" data-site-link data-site-copy="meet">認識三國六位主角</a></section><section class="community community-stat" id="community-stat" aria-label="Journey starts" hidden></section></main><footer class="foot"><div class="footer-top"><a class="footer-brand" href="index.html" data-site-link>神籙</a><nav aria-label="Footer"><a href="characters.html" data-site-link data-site-copy="characters">角色</a><a href="gameplay.html" data-site-link data-site-copy="gameplay">玩法</a><a href="faq.html" data-site-link data-site-copy="faq">常見問題</a><a href="testing.html" data-site-link data-site-copy="testing">封測資訊</a><a data-privacy href="privacy.html?lang=zh-Hant" data-copy="privacy">隱私與資料說明</a></nav></div><div class="footer-note"><span data-copy="saveNote">遊戲進度儲存在目前瀏覽器；請善用遊戲內的匯出備份。</span><span data-copy="creator">製作：Martin</span><a href="preview/opening.html?lang=zh-Hant" data-direct-game data-copy="direct">直接進入遊戲開場</a></div></footer><noscript><p class="no-script">啟用 JavaScript 可查看五語完整內容。 <a href="preview/opening.html?lang=zh-Hant">進入遊戲開場</a></p></noscript></body></html>
