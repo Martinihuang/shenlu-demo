@@ -11,7 +11,7 @@
       ],
       [
         "造訪與遊玩統計",
-        "我們使用 GoatCounter 分開統計官網造訪、點擊立即試玩、遊戲選單完成載入，以及成功開始故事或挑戰。事件不包含姓名、Email、存檔或玩家帳號；同一瀏覽訪次內的重複事件可能合併。Sessions 是訪次口徑，不是精準不重複玩家數或即時在線人數；各事件總量的比率僅供粗估，不能辨識逐人轉換或留存。更新可能延遲。網站尊重 Do Not Track 與 Global Privacy Control，收到訊號便不送統計；本機及 QA 測試也排除。"
+        "我們使用 GoatCounter 分開統計官網造訪、點擊立即試玩、遊戲選單完成載入，以及成功開始故事或挑戰。事件不包含姓名、Email、存檔或玩家帳號；同一瀏覽訪次內的重複事件可能合併。Sessions 是訪次口徑，不是精準不重複玩家數或即時在線人數；各事件總量的比率僅供粗估，不能辨識逐人轉換或留存。更新可能延遲。網站尊重 Do Not Track 與 Global Privacy Control，收到訊號便不送統計；本機及 QA 測試也排除。 此統計也涵蓋從 itch.io 內嵌開啟的試玩；來源僅記為固定的 itchio 標記。"
       ],
       [
         "網站與第三方技術資料",
@@ -45,7 +45,7 @@
       ],
       [
         "Visit and play statistics",
-        "GoatCounter separately counts website visits, play-button clicks, a successfully initialized game menu, and successful story or challenge starts. Events contain no name, email, save or player account. Repeated events within a browsing visit may be grouped. Sessions represent visits, not precise unique players or people online. Ratios between aggregate event totals are rough estimates, not individual conversion funnels or retention. Updates may be delayed. Do Not Track and Global Privacy Control signals prevent statistics from being sent; local and QA tests are also excluded."
+        "GoatCounter separately counts website visits, play-button clicks, a successfully initialized game menu, and successful story or challenge starts. Events contain no name, email, save or player account. Repeated events within a browsing visit may be grouped. Sessions represent visits, not precise unique players or people online. Ratios between aggregate event totals are rough estimates, not individual conversion funnels or retention. Updates may be delayed. Do Not Track and Global Privacy Control signals prevent statistics from being sent; local and QA tests are also excluded. This also covers play inside the itch.io embed; its source is recorded only as the fixed itchio label."
       ],
       [
         "Hosting and technical data",
@@ -79,7 +79,7 @@
       ],
       [
         "アクセスとプレイの統計",
-        "GoatCounterで、紹介サイトへのアクセス、プレイボタンのクリック、ゲームメニューの正常な初期化、物語や挑戦の開始を別々に集計します。氏名・メール・セーブ・プレイヤーアカウントは送りません。同じ閲覧セッションの重複はまとめる場合があります。Sessionsは訪問回数の基準で、正確な実人数や同時接続数ではありません。イベント合計の比率は概算で、個人ごとの遷移や継続率を示しません。反映に時間がかかる場合があります。Do Not TrackとGlobal Privacy Controlの信号がある場合や、ローカル・QAテストでは統計を送りません。"
+        "GoatCounterで、紹介サイトへのアクセス、プレイボタンのクリック、ゲームメニューの正常な初期化、物語や挑戦の開始を別々に集計します。氏名・メール・セーブ・プレイヤーアカウントは送りません。同じ閲覧セッションの重複はまとめる場合があります。Sessionsは訪問回数の基準で、正確な実人数や同時接続数ではありません。イベント合計の比率は概算で、個人ごとの遷移や継続率を示しません。反映に時間がかかる場合があります。Do Not TrackとGlobal Privacy Controlの信号がある場合や、ローカル・QAテストでは統計を送りません。 itch.io の埋め込み内でのプレイも集計し、流入元には固定の itchio ラベルのみを記録します。"
       ],
       [
         "配信サービスと技術情報",
@@ -113,7 +113,7 @@
       ],
       [
         "방문 및 플레이 통계",
-        "GoatCounter로 사이트 방문, 플레이 버튼 클릭, 게임 메뉴 초기화 성공, 이야기나 도전 시작을 각각 집계해요. 이름, 이메일, 저장 내용, 플레이어 계정은 보내지 않아요. 같은 방문 세션의 반복 이벤트는 합칠 수 있어요. Sessions는 방문 기준이며 정확한 고유 이용자나 동시 접속자 수가 아니에요. 이벤트 합계의 비율은 대략적인 참고치로, 개인별 전환이나 재방문율을 나타내지 않아요. 반영이 늦을 수 있어요. Do Not Track과 Global Privacy Control 신호가 있거나 로컬·QA 테스트인 경우 통계를 보내지 않아요."
+        "GoatCounter로 사이트 방문, 플레이 버튼 클릭, 게임 메뉴 초기화 성공, 이야기나 도전 시작을 각각 집계해요. 이름, 이메일, 저장 내용, 플레이어 계정은 보내지 않아요. 같은 방문 세션의 반복 이벤트는 합칠 수 있어요. Sessions는 방문 기준이며 정확한 고유 이용자나 동시 접속자 수가 아니에요. 이벤트 합계의 비율은 대략적인 참고치로, 개인별 전환이나 재방문율을 나타내지 않아요. 반영이 늦을 수 있어요. Do Not Track과 Global Privacy Control 신호가 있거나 로컬·QA 테스트인 경우 통계를 보내지 않아요. itch.io 임베드에서의 플레이도 집계하며, 유입 경로는 고정된 itchio 표기로만 기록합니다."
       ],
       [
         "호스팅과 기술 정보",
@@ -147,7 +147,7 @@
       ],
       [
         "访问与游玩统计",
-        "我们使用 GoatCounter 分开统计官网访问、点击立即试玩、游戏菜单完成加载，以及成功开始故事或挑战。事件不包含姓名、Email、存档或玩家账号；同一浏览访问内的重复事件可能合并。Sessions 是访问次数口径，不是精确的不重复玩家数或实时在线人数；各事件总量的比率仅供粗估，不能辨识逐人转化或留存。更新可能延迟。网站尊重 Do Not Track 和 Global Privacy Control，收到信号便不发送统计；本地及 QA 测试也排除。"
+        "我们使用 GoatCounter 分开统计官网访问、点击立即试玩、游戏菜单完成加载，以及成功开始故事或挑战。事件不包含姓名、Email、存档或玩家账号；同一浏览访问内的重复事件可能合并。Sessions 是访问次数口径，不是精确的不重复玩家数或实时在线人数；各事件总量的比率仅供粗估，不能辨识逐人转化或留存。更新可能延迟。网站尊重 Do Not Track 和 Global Privacy Control，收到信号便不发送统计；本地及 QA 测试也排除。 此统计也涵盖从 itch.io 内嵌打开的试玩；来源仅记为固定的 itchio 标记。"
       ],
       [
         "网站与第三方技术数据",
